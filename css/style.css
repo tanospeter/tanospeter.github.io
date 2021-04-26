@@ -87,6 +87,32 @@ main {
   background-color:#fff;
 }
 
+.people {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 10px
+}
+.people-box {
+	flex: 1;
+	min-width: 250px;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 0 0 10px 0;
+	margin: 0 10px 20px 10px
+}
+.people-box h2 {
+	font-size: 18px;
+	padding: 10px 20px 0 20px;
+	margin: 0
+}
+.people-box p {
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 14px;
+	line-height: 19px
+}
+
+
 aside {
 	flex-basis: 22vw;
 	order: 3;  
@@ -145,4 +171,33 @@ footer a{
   color:rgb(206, 206, 206);  
   font-size: 14px;
   text-decoration: none;
+}
+
+.worker-h1 {
+  color: rgba(22, 68, 105, 1); 
+  background: #fff; 
+  font-weight: 700;
+  font-size:32px;  
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 40px 15px 0px 15px;
+}
+
+
+.worker-h2 {
+  color: rgba(22, 68, 105, 1);
+  background: #fff;  
+  font-weight: 700;
+  font-size:16px;  
+  letter-spacing: 1px;  
+  padding: 0px 15px 15px 15px;
+}
+
+
+.worker-h3 {   
+  font-weight: 700;     
+  font-size:16px;  
+  letter-spacing: 1px;  
+  padding: 15px 15px 15px 15px;
+  
 }
