@@ -47,7 +47,7 @@ main p{
 }
 
 nav {
-  background: rgb(46, 7, 1); 
+  background: rgb(167, 167, 167); 
 	flex-basis: 17vw;
   order: 1;
 }
@@ -65,12 +65,13 @@ nav a {
 	padding: 15px;
   font-size: 18px;
 	text-decoration: none;
-	color: rgb(182, 182, 182);
+	color: rgb(4, 58, 83);
+  font-weight: 700;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5)
 }
 nav a:hover {
-	background: rgba(255,255,255,0.2);
-	color: rgb(182, 182, 182);
+	background: rgba(68, 113, 156, 0.2);
+	color: rgb(4, 58, 83);
   border-radius: 5px;
 }
 nav img {
@@ -116,7 +117,7 @@ main {
 aside {
 	flex-basis: 22vw;
 	order: 3;  
-  background: rgb(46, 7, 1,.3);  
+  background: rgb(167, 167, 167);  
 }
 aside ul {
 	list-style: none;
@@ -132,10 +133,10 @@ aside a {
 	line-height: 20px
 }
 aside a:hover {
-	text-decoration: underline;
-  background:  rgba(46, 7, 1, .9);
-	color: #fff;
+	text-decoration: underline;  
   border-radius: 5px;
+  background: rgba(68, 113, 156, 0.2);
+	color: rgb(4, 58, 83);
 }
 aside li {
 	padding: 0;
@@ -143,13 +144,13 @@ aside li {
 }
 
 .aside-title {
-  color:rgb(46, 7, 1);;  
+  color: rgb(4, 58, 83);  
   font-weight: 700;
   font-size: 16px;  
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 40px 15px 15px 15px;
-  text-shadow: 0 0 2px rgba(255, 255, 255)
+  text-shadow: 0 0 1px rgba(255, 255, 255)
 }
 aside h3 {
   padding: 0 15px;
@@ -204,11 +205,11 @@ footer a{
 
 .worker-content ul {  
   list-style: none;  
-  padding: 7px 10px;
-  line-height: 25px; 
+  padding: 0px 10px;
+  line-height: 18px; 
 }
 
 .worker-content li {  
-  padding: 7px 5px;
-  line-height: 25px; 
+  padding: 0px 5px;
+  line-height: 18px; 
 }
