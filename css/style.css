@@ -47,17 +47,13 @@ main p{
   line-height: 25px;
 }
 
-.d-nav {
-  flex-basis: 17vw;
-  order: 1;
-  background: #8ba4c8;
-}
 
-nav {
-  
+nav {  
   border-left: 1px solid rgb(135, 156, 173);
   border-right: 1px solid rgb(135, 156, 173); 
-	
+	flex-basis: 17vw;
+  order: 1;
+  background: #8ba4c8;
   
 }
 
