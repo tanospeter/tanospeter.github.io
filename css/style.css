@@ -124,7 +124,8 @@ aside {
 	order: 3;  
   background: #8ba4c8;;
   border-left: 1px solid rgb(135, 156, 173);
-  border-right: 1px solid rgb(135, 156, 173);   
+  border-right: 1px solid rgb(135, 156, 173); 
+  padding-bottom: 200px;  
 }
 
 aside ul {
