@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css" media="all">
+  <script src="script/includeHTML.js"></script>
 </head>
 <body>  
   <div class="wrapper">
@@ -12,7 +13,7 @@
       <img src="pics/heading_w.png" alt="">      
     </header>    
     <div class="content">
-      <div class="d-nav" include-html="nav.html"></div>
+      <nav include-html="nav.html"></nav>
       <main>        
         <div class="people">          
           <div class="people-box">
@@ -45,28 +46,14 @@
           </div>
         </div>       
       </main>
-      <aside>
-        <div class="aside-title">Linkek</div>
-        <ul>
-          <li><a href="http://www.elkh.org/" target="_blank">Eötvös Loránd Kutatási Hálózat</a></li>
-          <li><a href="http://www.geochem.hu/gp" target="_blank">Geokémia és Paleoklima Kutatócsoport</a></li>
-          <li><a href="http://paleoclimate2ka.hu/" target="_blank">Lendület Paleoklíma 2ka Kutatócsoport</a></li>
-          <li><a href="http://www.geochem.hu/archeometry" target="_blank">Archeometria Kutatócsoport</a></li>
-          <li><a href="http://www.mta.hu/" target="_blank">Magyar Tudományos Akadémia</a></li> 
-          <li><a href="http://www.foldtan.hu/" target="_blank">Magyarhoni Földtani Társulat</a></li>
-          <li><a href="http://www.mft-asvgeok.nhmus.hu/" target="_blank">MFT Ásványtan-geokémiai Szakosztály</a></li>
-        </ul>        
-        <div class="aside-title">Elérhetőségek</div>
-        <h3>Igazgatói titkárság</h3>          
-        <p>Cím: 1112 Budapest, Budaörsi út 45.</p>
-        <p>E-mail: fgi.titkarsag@csfk.org</p>
-        <p>Telefon: +36-30-317-5323</p>
-        <p>Igazgató: Demény Attila, az MTA rendes tagja</p>
-      </aside>
+      <aside include-html="aside.html"></aside>
   	</div>
     <footer>
       <a href="http://geochem.hu" target="_blank">Copyright 2021 CSFK ©</a>
     </footer>
+    <script>
+      includeHTML();
+    </script>
   </div>
 </body>
 </html>
