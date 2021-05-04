@@ -150,6 +150,16 @@ aside a:hover {
 	color: rgb(4, 58, 83);
 }
 
+.rg-btn{
+  margin: 5px 40px;
+  max-width: 17%;
+}
+
+.mtmt-btn {
+  margin: 4px 17px 0;
+  max-width: 39%;
+}
+
 aside li {
 	padding: 0;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -258,6 +268,11 @@ footer a{
 	margin: 0 0 2px;
 	overflow: hidden;
 	background: url('../pics/bg-title.gif') repeat-x 0 50%;
+}
+
+.title3 {
+  margin: 0 0 8px 20px;
+  font-weight: 400;
 }
 
 .hidden { 
