@@ -19,14 +19,21 @@
         <!-- A oldal középső sávja
         A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
         Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
-        <div class="worker">
-          <!-- név szerkeszthető -->
-          <div class="worker-h1">Demény Attila</div>
-          <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-          <div class="worker-h2">az MTA rendes tagja</div>          
-          <div class="worker-h2">Igazgató</div>		  
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+            <!-- név szerkeszthető -->
+            <div class="worker-h1">Demény Attila</div>
+            <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+            <div class="worker-h2">az MTA rendes tagja</div>          
+            <div class="worker-h2">Igazgató</div>		            
+          </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="pics/demeny2.png" alt="">
+            </div>
+          </div>
           
-          
+
           <div class="worker-h3">
             <div class="title2">Elérhetőségek</div>
             <div class="worker-content-no-marker">
@@ -39,9 +46,17 @@
                 <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
                 <!-- <li>...</li> -->
               </ul>
-              <a href="https://www.researchgate.net/profile/Attila-Demeny">
-                <img class=rg-btn src="pics/rg-btn.png" alt="">
-              </a>
+              
+              
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div> 
+                kikapcssoláshoz: <div class="hidden"> 
+              -->
+              <div>
+                <a href="https://www.researchgate.net/profile/Attila-Demeny">
+                  <img class=rg-btn src="pics/rg-btn2.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
 
@@ -271,9 +286,22 @@
           <div class="worker-h3">
             <div class="title2">Publikációk</div>
             <div class="worker-content-no-marker">
-              <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=authors10000314">
-                <img class="mtmt-btn" src="pics/mtmt-btn.png" alt=""></li>
-              </a>               
+              
+              
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div> 
+                kikapcssoláshoz: <div class="hidden">
+                
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.  
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314">
+                  <img class="mtmt-btn" src="pics/mtmt-btn.png" alt=""></li>
+                </a>               
+              </div>
             </div>
           </div>
 

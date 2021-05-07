@@ -47,7 +47,6 @@ main p{
   line-height: 25px;
 }
 
-
 nav {  
   border-left: 1px solid rgb(135, 156, 173);
   border-right: 1px solid rgb(135, 156, 173); 
@@ -212,21 +211,27 @@ footer a{
 }
 
 .worker-h1 {
+  /*
   color: rgba(22, 68, 105, 1); 
   background: #fff; 
+  */  
+  color:  rgba(255, 255, 255, 0.8);
   font-weight: 700;
   font-size:32px;  
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding: 40px 15px 0px 15px;
+  padding: 5px 15px;
 }
 
 .worker-h2 {
+  /*
   color: rgba(22, 68, 105, 1);
   background: #fff;  
+  */
+  color:  rgba(255, 255, 255, 0.7);  
   font-weight: 700;
-  font-size:16px;  
-  letter-spacing: 1px;  
+  font-size:18px;  
+  letter-spacing: 2px;  
   padding: 0px 15px 15px 15px;
 }
 
@@ -288,7 +293,33 @@ footer a{
 	line-height: 20px
 }
 
+.worker-header {
+  display: flex;
+	flex-wrap: nowrap;
+  background: rgb(66, 69, 72);
+  justify-content: center;
+  align-items: center;
+  margin: 15px -15px;
+}
 
+.worker-header-left{
+  flex-basis: 60vw;
+  margin: 0 0 0 20px;
+  order: 1;
+}
+
+.worker-header-right{
+  flex-basis: 40vw;
+  order: 2;
+}
+
+.worker-img{
+  margin: 0;
+  padding: 0;
+  max-height: 250px;
+  display: block;
+  margin: auto;
+}
 
 @font-face {
   font-family: 'fontello';
