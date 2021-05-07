@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>
+  <title>Földtai és Geokémiai Kutatóintézet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <script src="script/includeHTML.js"></script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="pics/heading_w.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="nav.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+            <!-- név szerkeszthető -->
+            <div class="worker-h1">Hatvani István Gábor</div>
+            <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+            <div class="worker-h2">PhD</div>          
+            <div class="worker-h2">Tudományos munkatárs</div>		            
+          </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="pics/hatvani.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Elérhetőségek</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone"> +36 1 309 2600 / 1353 </li>
+                <li class="icon-fax"> +36 1 319 3137</li>
+                <li class="icon-mail"> hatvani.istvan at geochem.hu</li>
+                <li class="icon-mail"> hatvaniig at gmail.com</li>  
+                <li class="icon-home"> 313 szoba </li>
+              </ul>
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div> 
+                kikapcssoláshoz: <div class="hidden">
+                  
+                Amennyiben a gombot bekapcsoljuk a linket meg kell adnunk!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div>
+                <a href="https://www.researchgate.net/profile/Istvan-Hatvani" target="_blank">
+                  <img class=rg-btn src="pics/rg-btn2.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Születési hely és idő...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Születési hely és idő</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Budapest, 1987</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Képesítés és fokozat...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Képesítés és fokozat</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>2013 PhD ELTE TTK Környezettudományi Doktori Iskola - Környezeti-földtudomány Ph.D. program. A dolgozat címe: „Application of state-of-the-art geomathematical methods in water protection - on the example of the data series of the Kis-Balaton Water Protection System„</li>
+                <li>2010 MSc ELTE TTK Környezettudomány szak. A dolgozat címe: „Idősoros, egy- és többváltozós adatelemző módszerek alkalmazása a Kis-Balaton Vízvédelmi Rendszer idősoraira”</li>                             				
+              </ul>
+            </div>
+          </div>
+          
+
+          <!-- ...Nyelvtudás...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Nyelvtudás</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>angol, felsőfok, 2002</li>
+                <li>olasz, középfok, 2010</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Fontosabb kutatási területek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Fontosabb kutatási területek</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>
+                  <a href="http://www.geochem.hu/gp">Paleoklíma-kutatás</a>
+                </li>
+                <li>Vízminőség védelem</li>
+                <li>Geostatisztika</li>
+                <li>Sztochasztikus modellezés</li>               
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Kiemelt kutatási eredmények...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Kiemelt kutatási eredmények</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Fontosabb tanulmányutak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Fontosabb tanulmányutak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Szakmai közéleti tevékenység...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Szakmai közéleti tevékenység</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>Magyarhoni Földtani Társulat 2009-</li> 
+                <li>Magyarhoni Földtani Társulat, Geomatematikai Szakosztály titkára 2015-</li> 
+                <li>Magyar Hidrológiai Társaság 2011-2015</li> 
+                <li>IAMG Student Chapter Szeged (Nemzetközi Geomatematikai Társulat Diák Szervezete) 2011-2014</li> 
+                <li>IAMG(Nemzetközi Geomatematikai Társulat) 2014-</li>
+                <li>Magyar Mérnöki Kamara 2014- (01-15205)</li>  
+                <li>Magyar Tudományos Akadémia, X. Földtudományok Osztálya, Földtani Tudományos Bizottság, köztestületi tag 2014-</li>
+                <li>Oktató az ELTE TTK Földtudományi- és Környezettudományi Doktori Iskoláiban 2017-</li>
+                <li>Szerkesztő az Open Geosciences-nél (IF 0,726) 2012-</li>
+                <li>Társszerkesztő a Central European Geology-nál 2015-</li>
+                <li>Vendégszerkesztő az International Journal on Geomathematics-nél 2019-2020</li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          <!-- ...Konferenciaszervezés...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden hidden">
+            <div class="title2">Konferenciaszervezés</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Kutatási pályázatok, ösztöndíjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden hidden">
+            <div class="title2">Kutatási pályázatok, ösztöndíjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2018. Fő erdőalkotó európai fafajok levélzetéből cellulóztartalom- és cellulóz-stabil izotóp adatbázis előállítása és statisztikai kiértékelése. Új Nemzeti Kíválóság Program Bolyai+ Kutatási Ösztöndíj; Emberi Erőforrások Minisztériuma (témavezető/egyedüli pályázás; 2018-2019)</li>
+                <li>2018. Konferenciarészvételi támogatás az Annual Conference of the International Association for Mathematical Geosciences (IAMG 2018) c. konferencián. Ifjúsági Nemzetközi Konferencia Pályázat; 580/5/2018/NKF; Magyar Tudományos Akadémia (témavezető; 2018)</li>
+                <li>2017. Regionalizált csapadék stabilizotóp adatok geostatisztikai vizsgálata. A Nemzet Fiatal Tehetségeiért Ösztöndíj; NTP-NTFÖ-17-B0028; Emberi Erőforrások Minisztériuma (témavezető; 2017-2018)</li>
+                <li>2017. Bilaterális Kutatási Ösztöndíj a Fertő tó hosszú-távú mikrobiális és fekális szennyezésének modellezésére; Osztrák-Magyar Tudományos és Oktatási Akcióprogram Alapítvány (97öu-1; témavezető; 2017-2018)</li>
+                <li>2016. Víz izotópok térbeli eloszlása európai csapadékban - különös tekintettel az Adria-Alföld páraáramlási útvonalra; SNN OTKA 118205; NKFIH (résztvevő kutató; 2016-2019)</li>
+                <li>2016. Hidrológiai és paleoklíma idősorok elemzése geomatematikai módszerekkel. Bolyai János Kutatási Ösztöndíj; MTA (témavezető/egyedüli pályázás; 2016-2019)</li>
+                <li>2016. A Kárpát-Balkán régió hőmérséklet és hidroklíma érzékeny proxijainak vizsgálata az elmúlt 1000 évre. A Nemzet Fiatal Tehetségeiért Ösztöndíj; NTP-EFÖ-P15-0550; Emberi Erőforrások Minisztériuma (témavezető; 2016-2017)</li>
+                <li>2014. Háttérfolyamatok és kapcsolt rendszerek feltárása a hidrológiai ciklus regionális alrendszereiben egy-, többváltozós és idősoros geomatematikai módszerek alkalmazásával. Erdős Pál Fiatal Kutatói Ösztöndíj; TÁMOP-4.2.4-A/1-11/1-2012-0001 (kiváló záró minősítés) (témavezető/egyedüli pályázás)</li>
+                <li>2013. Kis-Balaton Vízvédelmi Rendszer (KBVR) adatsorainak vizsgálata, egy-, többváltozós és idősoros geomatematikai módszerekkel. Apáczai Csere János Doktoranduszi Ösztöndíj; TÁMOP-4.2.4-A/1-11/1-2012-0001 (kiváló záró minősítés) (témavezető/egyedüli pályázás; 2013-2014)</li>
+                <li>2012. A Fertőzug sekély felszín alatti vízrendszerének vizsgálata geostatisztikai és többváltozós adatelemző módszerekkel. Osztrák-Magyar Tudományos és Oktatási Akcióprogram Alapítvány Ernst Mach Ösztöndíja (témavezető/egyedüli pályázás; 2012-2013)</li>
+                <li>2009. Köztársasági ösztöndíj a 2009/2010-es tanévre; Oktatási és Kulturális Minisztérium</li>                  
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Elnyert díjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Elnyert díjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2019.	Kiváló CSFK Kutató; MTA CSFK</li>
+                <li>2018.	Szádeczky-Kardoss Elemér Díj; MTA, Földtudományok Osztálya</li>
+                <li>2018.	Kiváló CSFK Kutató; MTA CSFK</li>
+                <li>2018.	Akadémiai Ifjúsági Díj; MTA</li>
+                <li>2017.	Danubius Young Scientist Award; Austrian Federal Ministry for Science, Research and Economy, Institute for the Danube Region and Central Europe</li>
+                <li>2017.	Kiváló CSFK Kutató; MTA CSFK</li>
+                <li>2016.	Környezetvédelmi Tudományos Ifjúsági pályadíj; MTA</li>
+                <li>2015.	Junior Príma Díj – Magyar Tudomány Kategória; Príma Primisszima Alapítvány & Magyar Fejlesztési Bank Zrt.</li>
+                <li>2011.	Magyar Fejlesztési Bank Habilitas Ösztöndíja</li>
+                <li>2010.	Dr. Pauka Imre Tanulmányi Díj; Golder Zrt. tudományos tevékenységet elismerő díja.</li>
+                <li>2010.	Természettudományi Kar kiváló hallgatója (dékáni kitüntetés)</li>
+                <li>2008.	Természettudományi Kar kiváló hallgatója (dékáni kitüntetés)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Tudományos versenyeken elért helyezések...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Tudományos versenyeken elért helyezések</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>1.  Fiatal előadó kategória, első helyezés. Determining Anthropogenic Effects Using Principal Component Analysis on a fluvial (E Hungary) and Two Lake Ecosystems (W Hungary, E Austria). CMA4CH, Mediterraneum Meeting, Rome 2012</li>
+                <li>2.  TXM Olaj- és Gázkutató Kft. különdíja. Principal Component Analysis (PCA) on data series of Hídvégi Pond (W Hungary). Ifjú Szakemberek Ankétja, Mátrafüred 2010. </li>
+                <li>3. Gyakorlati kategória első dij és Magyarhoni Földtani Társulat Geomatematikai szakosztályának különdíja. Többváltozós és idősoros módszerek alkalmazása a Kis-Balaton Vízvédelmi Rendszer Adatsoraira. Ifjú Szakemberek Ankétja, Keszthely 2009. </li>
+                <li>4. Zsűri kiemelt dicsérete. A Kis-Balaton Vízvédelmi Rendszer hosszútávú adatsorainak elemzése; OTDK, Hidrolgeológia-Hidrológia tagozat, Szombathely 2009.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Oktatási tevékenység...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Oktatási tevékenység</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2019-2022 Környezettudomány nemzetközi mesterszak államvizsga bizottsági tag 2017.  – Data analysis in environmental sciences – Ph.D. föld- és környezettan szakos hallgatók részére </li>
+                <li>2015- Advanced environmental calculations – M.Sc. környezettan szakos hallgatók részére </li>
+                <li>2015- Geomathematics – M.Sc. földtudomány és környezettan szakos hallgatók részére </li>
+                <li>2015- A mintavételezéstől az adatig – M.Sc. környezettan szakos hallgatók részére </li>
+                <li>2010- Bevezetés a térinformatikába – B.Sc. föltudomány szakos hallgatók részére </li>
+                <li>2014- Környezettudományi számítások – B.Sc. környezettudomány szakos hallgatók részére</li>                
+                <li>
+                  <a href="http://www.geochem.hu/people/hatvani/TV.pdf" target="_blank">Témavezetői, konzulensi tevékenység (pdf)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publikációk</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div> 
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <ul>
+                  <li>
+                    <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10028467" target="_blank">
+                      <img src="pics/mtmt-btn.png" alt="mtmt">
+                    </a>    
+                  </li>
+                  <li>
+                    <a href="https://scholar.google.com/citations?user=3BhxsS8AAAAJ&hl=it" target="_blank">
+                      <img src="pics/google-scolar-btn.png" alt="Google Scolar">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://hu.linkedin.com/in/istv%C3%A1n-g%C3%A1bor-hatvani-815829ab">
+                      <img src="pics/linkedin-btn.png" alt="LinkedIn">
+                    </a>                      
+                  </li>
+                </ul>               
+                
+                
+                
+              </div>  
+            </div>            
+          </div>
+
+          <!-- ...Az utolsó 5 év fontosabb publikációi...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3">Az utolsó 5 év fontosabb publikációi</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Utolsó frissítés 2021.05.05.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="aside.html"></aside>
+  	</div>
+    <footer>
+      <a href="http://geochem.hu" target="_blank">Copyright 2021 CSFK ©</a>
+    </footer>
+    <script>
+      includeHTML();
+    </script>
+  </div>
+</body>
+</html>

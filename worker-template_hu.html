@@ -19,25 +19,32 @@
         <!-- A oldal középső sávja
         A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
         Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
-        <div class="worker">
-          <!-- név szerkeszthető -->
-          <div class="worker-h1">név</div>
-          <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-          <div class="worker-h2">fokozat</div>          
-          <div class="worker-h2">beosztás</div>		  
-          
-          
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+            <!-- név szerkeszthető -->
+            <div class="worker-h1">név</div>
+            <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+            <div class="worker-h2">fokozat</div>          
+            <div class="worker-h2">beosztas</div>		            
+          </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="pics/avatar3.png" alt="">
+            </div>
+          </div>
+
+
           <div class="worker-h3">
             <div class="title2">Elérhetőségek</div>
             <div class="worker-content-no-marker">
               <ul>
-                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
                 <li class="icon-phone"> +36 1 ...</li>
                 <li class="icon-fax"> +36 1 ...</li>
                 <li class="icon-mail"> ... at geochem.hu</li>  
                 <li class="icon-home"> ... szoba </li>                
-                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
-                <!-- <li>...</li> -->
               </ul>
 
               <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
@@ -48,7 +55,7 @@
                 pl. "https://www.researchgate.net/profile/Attila-Demeny"
               -->
               <div>
-                <a href="https://www.researchgate.net/profile/...">
+                <a href="https://www.researchgate.net/profile/..." target="_blank">
                   <img class=rg-btn src="pics/rg-btn2.png" alt="">
                 </a>
               </div>
@@ -92,6 +99,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
                 <li>...</li>
                 <li>...</li>   
                 <li>...</li>             				
@@ -112,7 +120,7 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <!-- formátum: nyelv, fok; pl. angol, felsőfok -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
                 <li>..., ...</li>
               </ul>
             </div>
@@ -189,6 +197,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
                 <li>...</li> 
                 <li>...</li> 
                 <li>...</li> 
@@ -217,6 +226,26 @@
             </div>
           </div>
 
+           <!-- ...Kutatási pályázatok, ösztöndíjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden hidden">
+            <div class="title2">Kutatási pályázatok, ösztöndíjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
           <!-- ...Elnyert díjak...
             A szakasz ki- és bekapcsolható!
             - Kiapcsoláshoz a következő kódsort használja:
@@ -237,6 +266,25 @@
             </div>
           </div>
 
+          <!-- ...Tudományos versenyeken elért helyezések...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Tudományos versenyeken elért helyezések</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
 
           <!-- ...Oktatási tevékenység...
             A szakasz ki- és bekapcsolható!
@@ -280,7 +328,7 @@
                 
               -->
               <div>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314">
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=12345678" target="_blank">
                   <img class="mtmt-btn" src="pics/mtmt-btn.png" alt=""></li>
                 </a>               
               </div>
