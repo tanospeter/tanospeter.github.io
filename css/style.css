@@ -57,7 +57,29 @@ h3 {
   border-top: 3px solid rgba(22, 68, 105, 1);
 }
 main p{
-  line-height: 25px;
+  line-height: 27px;
+}
+
+.img-right {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.img-right p{
+  line-height: 16px;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #343639;
+}
+
+.img-right img{  
+  min-width: 280px;
+}
+
+.lib ul {
+  margin: 10px 20px;
+  list-style:disc;
 }
 
 nav {  
@@ -65,8 +87,7 @@ nav {
   border-right: 1px solid rgb(135, 156, 173); 
 	flex-basis: 17vw;
   order: 1;
-  background: #8ba4c8;
-  
+  background: #8ba4c8;  
 }
 
 nav ul {
