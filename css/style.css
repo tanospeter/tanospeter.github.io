@@ -78,6 +78,10 @@ main p{
 }
 
 .lib ul {
+  margin: 10px 0px;  
+}
+
+.lib .marked_list {
   margin: 10px 20px;
   list-style:disc;
 }
