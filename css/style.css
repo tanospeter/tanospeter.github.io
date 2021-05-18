@@ -123,6 +123,55 @@ nav img {
   border-bottom: 1px dashed rgba(255,255,255,0.3)
 }
 
+nav .has_submenu{
+  position: relative;
+}
+
+/*
+nav .has_submenu::after{
+  content:'🢒';
+  color: rgb(43, 56, 62);
+  position: absolute;
+  top: 6px;
+  right: 27px;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5)
+}
+
+nav .has_submenu:hover::after{
+  color: rgb(4, 58, 83);
+}
+*/
+
+nav .has_submenu:hover .submenu{
+  display: block;
+}
+
+nav .submenu {
+  position: absolute;  
+  width: 300px;
+  top: 0px;
+  right: -300px;
+  background: #8ba4c8;
+  display: none;
+}
+
+nav .submenu a{
+  display: block;
+  padding: 13px 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(43, 56, 62);
+  font-weight: 500;
+  text-shadow: none;  
+}
+
+nav .submenu a:hover{
+  color: rgb(4, 58, 83);
+}
+
 main {
 	flex-basis: 61vw;
 	order: 2;
