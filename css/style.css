@@ -99,9 +99,11 @@ nav ul {
 	margin: 0;
 	list-style: none;
 }
+
 nav li {
 	border-bottom: 1px rgba(255,255,255,0.3)
 }
+
 nav a {
 	display: block;
 	padding: 13px 25px;
@@ -112,11 +114,13 @@ nav a {
   font-weight: 700;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5)
 }
+
 nav a:hover {
 	background: rgba(68, 113, 156, 0.2);
 	color: rgb(4, 58, 83);
   border-radius: 5px;
 }
+
 nav img {
   max-width: 100%;
   padding: 40px 25px 40px; 
@@ -125,6 +129,23 @@ nav img {
 
 nav .has_submenu{
   position: relative;
+}
+
+.l1 {
+  list-style: disc;
+  padding-left: 20px;
+}
+.l1 li{
+  line-height: 24px;
+}
+
+.l1>li {
+  padding: 10px 0;
+}
+
+.l2 {
+  list-style: circle;
+  padding-left: 25px;
 }
 
 /*
@@ -448,6 +469,49 @@ footer a{
   max-height: 250px;
   display: block;
   margin: auto;  
+}
+
+.lab-header {
+  display: flex;
+	flex-wrap: nowrap;
+  background: rgb(66, 69, 72);
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px -15px;
+  min-height: 150px;
+}
+
+.lab-header-left{
+  flex-basis: 60vw;
+  margin: 0 0 0 20px;
+  order: 1;
+}
+
+.lab-header-right{
+  flex-basis: 40vw;
+  order: 2;
+}
+
+.lab-img{
+  margin: 0;
+  padding: 0;
+  min-height: 150px;
+  max-height: 150px;
+  display: block;
+  margin: auto;  
+}
+
+.lab-h1 {
+  /*
+  color: rgba(22, 68, 105, 1); 
+  background: #fff; 
+  */  
+  color:  rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  font-size:32px;  
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 5px 15px;
 }
 
 @font-face {
