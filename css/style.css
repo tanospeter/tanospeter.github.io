@@ -172,9 +172,12 @@ p {
 .read_more a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
-  
-   
 }
+
+.read_more a:hover {
+  text-decoration: underline overline;
+}
+
 .read_more {
   font-size: 18px;
   text-transform: uppercase;
