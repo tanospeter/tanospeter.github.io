@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <script src="script/includeHTML.js"></script>
+  <script src="script/headGen.js"></script>
+  <script>    
+    generateHead()
+  </script>
+</head>  
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="pics/headers/heading_lib_en.png" alt="">      
+    </header>
+    <div class="content">      
+      <nav include-html="nav_en.html"></nav>
+      <main>
+        <div class="lib">
+          <div class="title">
+            <h2>Library</h2>
+          </div>                
+          <p>The Library of the Institute for Geochemical Research is nationally registered as a special library collecting materials in the field of geochemistry. </p>
+          <p>Featured collection: geochemisty</p>
+          <h3>Services</h3>
+          <ul class="marked_list">
+            <li>Interlibrary lending </li>
+            <li>Reading at spot </li>
+            <li>Photo copy</li>            
+          </ul>
+          <h3>Open</h3>
+          <ul>
+            <li>Monday - Thursday 8:00 - 16:00</li>
+            <li>Friday 8:00 - 15:00</li>
+          </ul>
+          <h3>Contact persons</h3>
+          <ul>
+            <li>
+              <a href="">Márta Polgári</a>
+            </li>
+            <li>
+              <a href="mailto:temi@geochem.hu">Katalin Temesvári</a>
+            </li>
+          </ul>
+          <h3>Contacts</h3>
+          <ul>
+            <li class="icon-location">1112 Budapest, Budaörsi út 45. </li>
+            <li class="icon-phone">+36 1 309-2600 / 1258, 1249, 1136 mellék</li>
+          </ul>
+          <h3>Books</h3>
+          <p>The collection consists of about 3000 entries. There is a catalogue by authors, and the catalogue since 1990 is computerized.</p>
+          <h3>Journals</h3>
+          <p>There are about 1800 volumes of mostly international journals.</p>
+          <a href="http://geochem.hu/journals_hu.html">List of journals</a>
+        </div>
+      </main>      
+      <aside include-html="aside_en.html"></aside>
+  	</div>
+    <footer>
+      <a href="http://geochem.hu" target="_blank">Copyright 2021 CSFK ©</a>
+    </footer>
+    <script>
+      includeHTML();
+    </script>
+  </div>
+</body>
+</html>
