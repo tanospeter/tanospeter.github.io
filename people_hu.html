@@ -10,7 +10,29 @@
     generateHead()
   </script>
 </head>
-<body>  
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script> 
   <div class="wrapper">
     <header>
       <img src="pics/headers/heading_w.png" alt="">      
@@ -18,10 +40,13 @@
     <div class="content">
       <nav include-html="nav.html"></nav>
       <main>
+        
+        <!--
         <div class="title">
           <h2>Az intézet munkatársai</h2>          
         </div>    
-        <h3>Tudományos kutatók</h3>
+        -->
+        <div class="people-sep">Tudományos kutatók</div>
         <div class="people">          
           <div class="people-box">
             
@@ -41,7 +66,7 @@
                 <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
                 <li class="icon-phone"> +36 1 319 3137</li>
                 <li class="icon-fax"> +36 1 319 3137</li>
-                <li class="icon-mail"> demeny at geochem.hu</li>  
+                <li class="icon-mail"> demeny at csfk.org</li>  
                 <li class="icon-home"> 305-306. szoba </li>
                 <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
                 <!-- <li>...</li> -->
@@ -74,6 +99,7 @@
               </ul>
             </div>            
           </div>
+
           <div class="people-box">
             <div class="people-img">
               <a href="czuppon_hu.html">
@@ -95,9 +121,57 @@
                 <li class="icon-mail">czuppon at geochem.hu</li>  
                 <li class="icon-home">312 szoba</li>                
               </ul>
-            </div>           
-            
+            </div> 
           </div>
+
+          <div class="people-box">
+            <div class="people-img">
+              <a href="Ruszkiczay_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/Ruszkiczay.jpg" alt="">
+                  <div class="people-box-name">Ruszkiczay-Rüdiger Zsófia</div>
+                  <div>PhD</div>
+                  <div>tudományos főmunkatárs</div>
+                </div>                                
+              </a>
+            </div>
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone">+36 1 309 2600 / 1355</li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">rrzsofi at csfk.org</li>  
+                <li class="icon-home">315 szoba</li>                
+              </ul>
+            </div> 
+          </div>
+
+          <div class="people-box">
+            <div class="people-img">
+              <a href="sipos_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/sipos.jpg" alt="">
+                  <div class="people-box-name">Sipos Péter</div>
+                  <div>PhD</div>
+                  <div> tudományos főmunkatárs, tudományos titkár</div>
+                </div>                                
+              </a>
+            </div>
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone">+36 1 309 2600 / 1104</li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">sipos at csfk.org</li>  
+                <li class="icon-home">210 szoba</li>                
+              </ul>
+            </div> 
+          </div>
+
           <div class="people-box">
             <div>
               <a href="worker-template_hu.html">
@@ -123,7 +197,7 @@
             </div>
           </div>
         </div>
-        <h3>Nem kutató besorolású munkatársak</h3>
+        <div class="people-sep">Nem kutató besorolású munkatársak</div>
         <div class="people">
           
           <div class="people-box">            
@@ -191,24 +265,252 @@
             </div>            
           </div>
 
-        </div>
-        <h3>Az Intézet tiszteleti tagjai és tudományos kapcsolatban levő korábbi munkatársai</h3>
-        <div class="people">
-          <div class="people-box">
+          <div class="people-box">            
             <div>
               <a href="worker-template_hu.html">
                 <div class="people-box-header">
                   <img src="pics/avatar2.png" alt="">
-                  <div class="people-box-name">Sablon</div>
-                  <div>fokozat</div>
-                  <div>beosztás</div>
+                  <div class="people-box-name">Farkas Csaba</div>
+                  <div>kutatási asszisztens</div>                  
                 </div>
               </a>
             </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue purus non risus tempor, nec venenatis tellus mattis.</p>
-          
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 319 3137</li>    
+                <li class="icon-phone"> +36 1 309 2681</li>
+                <li class="icon-phone"> +36 1 309 2600 / 1164</li>
+                <li class="icon-mail"> farkas.csaba at csfk.org</li>             
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>            
           </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="worker-template_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/avatar2.png" alt="">
+                  <div class="people-box-name">Müller Alexandra</div>
+                  <div>csiszoló</div>                  
+                </div>
+              </a>
+            </div>
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 / 1102</li>                                    
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>            
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="worker-template_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/avatar2.png" alt="">
+                  <div class="people-box-name">Reitmeyer Bence</div>
+                  <div>technikus</div>                  
+                </div>
+              </a>
+            </div>
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 / 1366</li>                                    
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>            
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="worker-template_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/avatar2.png" alt="">
+                  <div class="people-box-name">Szabó Máté</div>
+                  <div>intézeti mérnök</div>                  
+                </div>
+              </a>
+            </div>
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 / 1159</li>                                    
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>            
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="worker-template_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/avatar2.png" alt="">
+                  <div class="people-box-name">Temesvári Katalin</div>
+                  <div>intézeti MTMT adminisztártor</div>                  
+                </div>
+              </a>
+            </div>
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 / 1249</li>
+                <li class="icon-mail"> temi at csfk.org</li>                                   
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>            
+          </div>
+
+        </div>
+        <div class="people-sep">
+          Az Intézet tiszteleti tagjai és tudományos kapcsolatban levő korábbi munkatársai
+        </div>
+        <div class="people">
+          <div class="people-box">            
+            <div>
+              <a href="arkai_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/arkai.jpg" alt="">
+                  <div class="people-box-name">Árkai Péter</div>
+                  <div>az MTA rendes tagja</div>
+                  <div>az intézet korábbi igazgatója</div>
+                </div>                                
+              </a>
+            </div>            
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 397 4409</li>
+                <li class="icon-fax"> +36 1 397 4409</li>
+                <li class="icon-mail"> arkai.paksy at t-online.hu</li>                  
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="dobosi_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/Dobosi_Gabor.jpg" alt="">
+                  <div class="people-box-name">Dobosi Gábor</div>
+                  <div>az MTA doktora</div>
+                  <div>nyugalmazott tudományos tanácsadó</div>
+                </div>                                
+              </a>
+            </div>            
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 / 1108 </li>
+                <li class="icon-fax"> +36 1 319 3137</li>
+                <li class="icon-mail"> dobosi at csfk.org</li>  
+                <li class="icon-home"> 310. szoba </li>
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="nagyg_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/nagyg.jpg" alt="">
+                  <div class="people-box-name">Nagy Géza</div>
+                  <div>egyetemi dr</div>
+                  <div>nyugalmazott tudományos munkatárs</div>
+                </div>                                
+              </a>
+            </div>            
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 /  1106</li>
+                <li class="icon-fax"> +36 1 319 3137</li>
+                <li class="icon-mail"> gnagy at csfk.org</li>  
+                <li class="icon-home"> 309. szoba </li>
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="poka_hu.html">
+                <div class="people-box-header">
+                  <img src="pics/poka.jpg" alt="">
+                  <div class="people-box-name">Póka Teréz</div>
+                  <div>a földtudomány kandidátusa</div>
+                  <div>nyugalmazott tudományos főmunkatárs</div>
+                </div>                                
+              </a>
+            </div>            
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 /  1106</li>
+                <li class="icon-fax"> +36 1 319 3137</li>
+                <li class="icon-mail"> poka at csfk.org</li>  
+                <li class="icon-home"> 309. szoba </li>
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="">
+                <div class="people-box-header">
+                  <img src="pics/avatar2.png" alt="">
+                  <div class="people-box-name">Borsodiné Kovács Magdolna</div>
+                  <div>???</div>
+                  <div>tudományos munkatárs</div>
+                </div>                                
+              </a>
+            </div>            
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-mail"> bomagdi at csfk.org</li>
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="people-box">            
+            <div>
+              <a href="">
+                <div class="people-box-header">
+                  <img src="pics/avatar2.png" alt="">
+                  <div class="people-box-name">Györkös Dorottya</div>                  
+                  <div>tudományos segédmunkatárs</div>
+                </div>                                
+              </a>
+            </div>            
+            <div class="people-contacts">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
+                <li class="icon-phone"> +36 1 309 2600 /  1159</li>
+                <li class="icon-mail"> gyorkos.dorottya at csfk.org</li>
+                <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
+                <!-- <li>...</li> -->
+              </ul>
+            </div>
+          </div>
+
         </div>  
       </main>
       <aside include-html="aside.html"></aside>
