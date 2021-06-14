@@ -3,9 +3,9 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -13,10 +13,10 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_l.png" alt="">      
+      <img src="/pics/headers/heading_l.png" alt="">      
     </header>
     <div class="content">      
-      <nav include-html="nav.html"></nav>
+      <nav include-html="/static/nav.html"></nav>
       <main>
 
         <div class="lab-header">
@@ -24,20 +24,20 @@
             <div class="lab-h1">Stabilizotóp laboratórium</div>            
           </div>        
           <div class="lab-header-right">
-            <img class="lab-img" src="pics/facilities/lab01.jpg" alt="">
+            <img class="lab-img" src="/pics/facilities/lab01.jpg" alt="">
           </div>
         </div>
         
                
         <div>
           <div class="img-right">
-            <p><img src="pics/facilities/delta S.jpg" alt=""></p>
+            <p><img src="/pics/facilities/delta S.jpg" alt=""></p>
             <p class="fig-caption"></p>
-            <p><img src="pics/facilities/delta XP.jpg" alt=""></p>
+            <p><img src="/pics/facilities/delta XP.jpg" alt=""></p>
             <p class="fig-caption"></p>
-            <p><img src="pics/facilities/deltaV.jpg" alt=""></p>
+            <p><img src="/pics/facilities/deltaV.jpg" alt=""></p>
             <p class="fig-caption"></p>
-            <p><img src="pics/facilities/laser.jpg" alt=""></p>
+            <p><img src="/pics/facilities/laser.jpg" alt=""></p>
             <p class="fig-caption"></p>
           </div>
           <h3>Kutatók</h3>
@@ -147,11 +147,11 @@
           </li>
         </ul>
       </main>      
-      <aside include-html="aside.html"></aside>
+      <aside include-html="/static/aside.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="/static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};

@@ -3,9 +3,9 @@
 <head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -13,11 +13,11 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_h_en.png" alt="">
+      <img src="/pics/headers/heading_h_en.png" alt="">
       
     </header>    
     <div class="content">
-      <nav include-html="nav_en.html"></nav>
+      <nav include-html="/static/nav_en.html"></nav>
       <main>
         <div class="title">
           <h2>A CSFK Földtani és Geokémiai Intézetének több, mint fél évszázados története</h2>
@@ -25,7 +25,7 @@
         <div>
           <div class="img-right">
             <p>
-              <img src="pics/szadeczky-kardoss.jpg" alt="Szadeczky-Kardoss">
+              <img src="/pics/szadeczky-kardoss.jpg" alt="Szadeczky-Kardoss">
             </p>
             <p>Elemér Szádeczky Kardoss,</p>
             <p>founder of the Laboratory for Geochemical Research</p>
@@ -39,11 +39,11 @@
           
         </div>
       </main>
-      <aside include-html="aside_en.html"></aside>
+      <aside include-html="/static/aside_en.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="/static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};

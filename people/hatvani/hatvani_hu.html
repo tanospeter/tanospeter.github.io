@@ -4,9 +4,9 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -14,10 +14,10 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_w.png" alt="">      
+      <img src="/pics/headers/heading_w.png" alt="">      
     </header>  
     <div class="content">
-      <nav include-html="nav.html"></nav>
+      <nav include-html="/static/nav.html"></nav>
       <main>
         <!-- A oldal középső sávja
         A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
@@ -32,7 +32,7 @@
             <div class="worker-h2">Tudományos munkatárs</div>		            
           </div>
             <div class="worker-header-right">
-              <img class="worker-img" src="pics/hatvani.png" alt="">
+              <img class="worker-img" src="/people/hatvani/hatvani.png" alt="">
             </div>
           </div>
 
@@ -46,7 +46,7 @@
                 <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
                 <li class="icon-phone"> +36 1 309 2600 / 1353 </li>
                 <li class="icon-fax"> +36 1 319 3137</li>
-                <li class="icon-mail"> hatvani.istvan at geochem.hu</li>
+                <li class="icon-mail"> hatvani.istvan at csfk.org</li>
                 <li class="icon-mail"> hatvaniig at gmail.com</li>  
                 <li class="icon-home"> 313 szoba </li>
               </ul>
@@ -60,7 +60,7 @@
               -->
               <div>
                 <a href="https://www.researchgate.net/profile/Istvan-Hatvani" target="_blank">
-                  <img class=rg-btn src="pics/rg-btn2.png" alt="">
+                  <img class=rg-btn src="/pics/rg-btn2.png" alt="">
                 </a>
               </div>
             </div>
@@ -390,17 +390,17 @@
                 <ul>
                   <li>
                     <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10028467" target="_blank">
-                      <img src="pics/mtmt-btn.png" alt="mtmt">
+                      <img src="/pics/mtmt-btn.png" alt="mtmt">
                     </a>    
                   </li>
                   <li>
                     <a href="https://scholar.google.com/citations?user=3BhxsS8AAAAJ&hl=it" target="_blank">
-                      <img src="pics/google-scolar-btn.png" alt="Google Scolar">
+                      <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
                     </a>
                   </li>
                   <li>
                     <a href="https://hu.linkedin.com/in/istv%C3%A1n-g%C3%A1bor-hatvani-815829ab">
-                      <img src="pics/linkedin-btn.png" alt="LinkedIn">
+                      <img src="/pics/linkedin-btn.png" alt="LinkedIn">
                     </a>                      
                   </li>
                 </ul>               
@@ -437,11 +437,11 @@
           <!-- A további sorokat NE szerkessze! -->
         </div>
       </main>
-      <aside include-html="aside.html"></aside>
+      <aside include-html="/static/aside.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="/static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};

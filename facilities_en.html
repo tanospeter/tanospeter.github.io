@@ -3,9 +3,9 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -13,10 +13,10 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_l_en.png" alt="">      
+      <img src="/pics/headers/heading_l_en.png" alt="">      
     </header>
     <div class="content">      
-      <nav include-html="nav_en.html"></nav>
+      <nav include-html="/static/nav_en.html"></nav>
       <main>
         <div class="title">
           <h2>Laboratories and research groups</h2>
@@ -33,7 +33,7 @@
             The laboratory was established in 1990. Until 2005 the stable isotope laboratory was equipped with a Finnigan MAT delta S isotope ratio mass spectrometer that has a collector system for <sup>13</sup>C/<sup>12</sup>C, <sup>18</sup>O/<sup>16</sup>O, <sup>15</sup>N/<sup>14</sup>N and <sup>34</sup>S/<sup>32</sup>S ratio determinations in CO<sub>2</sub>, N<sub>2</sub> and SO<sub>2</sub> gases, and a collector system for D/H ratio determination in H<sub>2</sub> gas. Now the lab also contains to other mass spectrometers. In 2005 a Finnigan delta plus XP mass spectrometer equipped with a GASBENCH II unit was installed. Although water samples can be analysed using CO<sub>2</sub>-H<sub>2</sub>O equilibration, the mass spec is currently used only for carbonate samples. In 2014 a Thermo Finnigan delta V mass spec was purchased and a TC/EA and and elemental analyzer were attached in order to measure H-C-N-O isotopes in organic matter and hydrous minerals. H-O isotope compositions of water samples are measured using two laser spectroscopes (Los Gatos Instruments), one of them dedicated to fluid inclusion research...
           </p>
           <div class="read_more">
-            <a href="isotope_en.html">Read more</a>
+            <a href="/facilities/isotope_en.html">Read more</a>
           </div>
         </div>
 
@@ -52,7 +52,7 @@
  
           </p>
           <div class="read_more">
-            <a href="xrd_en.html">Read more</a>
+            <a href="/facilities/xrd_en.html">Read more</a>
           </div>          
         </div>
 
@@ -67,16 +67,16 @@
             The setup of a sample preparation laboratory for in-situ produced cosmogenic nuclides in our Institute begun in 2013. From 2014 to 2016 the laboratory has been prepared for processing quartz-containing sediment and rock samples for the determination of their in-situ produced cosmogenic <sup>10</sup>Be and <sup>26</sup>Al concentrations. Main research topics: exposure age and denudation rate determination of fluvial terraces using 10Be depth profiles, burial age determination using the <sup>26</sup>Al/<sup>10</sup>Be nuclide-pair and 10Be exposure age determination of glacial landforms...
           </p>
           <div class="read_more">
-            <a href="lab_en.html">Read more</a>
+            <a href="/facilities/lab_en.html">Read more</a>
           </div>
         </div>
 
       </main>      
-      <aside include-html="aside_en.html"></aside>
+      <aside include-html="/static/aside_en.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="/static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};

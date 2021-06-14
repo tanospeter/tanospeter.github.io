@@ -3,9 +3,9 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -13,10 +13,10 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_l.png" alt="">      
+      <img src="/pics/headers/heading_l.png" alt="">      
     </header>
     <div class="content">      
-      <nav include-html="nav.html"></nav>
+      <nav include-html="/static/nav.html"></nav>
       <main>
 
         <div class="lab-header">
@@ -31,21 +31,21 @@
                
         <div>
           <div class="img-right">
-            <p><img src="pics/facilities/1_Rapid.jpg" alt=""></p>
+            <p><img src="/pics/facilities/1_Rapid.jpg" alt=""></p>
             <p class="fig-caption">Rigaku DMax RapidII röntgen diffraktométer</p>
-            <p><img src="pics/facilities/2_Miniflex.jpg" alt=""></p>
+            <p><img src="/pics/facilities/2_Miniflex.jpg" alt=""></p>
             <p class="fig-caption">Rigaku Miniflex 600 röntgen diffraktométer</p>
-            <p><img src="pics/facilities/3_PW1729.jpg" alt=""></p>
+            <p><img src="/pics/facilities/3_PW1729.jpg" alt=""></p>
             <p class="fig-caption">Philips PW1729 röntgen diffraktométer</p>
-            <p><img src="pics/facilities/4_PW2404.jpg" alt=""></p>
+            <p><img src="/pics/facilities/4_PW2404.jpg" alt=""></p>
             <p class="fig-caption">Philips PW2404 röntgenfluoreszcens spektrométer</p>
-            <p><img src="pics/facilities/5_Spectro.jpg" alt=""></p>
+            <p><img src="/pics/facilities/5_Spectro.jpg" alt=""></p>
             <p class="fig-caption">Spectro XSort Combi hordozható röntgenfluoreszcens spektrométer</p>
-            <p><img src="pics/facilities/6_Jeol.jpg" alt=""></p>
+            <p><img src="/pics/facilities/6_Jeol.jpg" alt=""></p>
             <p class="fig-caption">Jeol Superprobe JCXA733 elektron-mikroszonda</p>
-            <p><img src="pics/facilities/7_AAS.jpg" alt=""></p>
+            <p><img src="/pics/facilities/7_AAS.jpg" alt=""></p>
             <p class="fig-caption">Perkin-Elmer AAnalyst 300 atomabszorpciós spektrofotométer</p>
-            <p><img src="pics/facilities/8_DKK.jpg" alt=""></p>            
+            <p><img src="/pics/facilities/8_DKK.jpg" alt=""></p>            
             <p class="fig-caption">DKK TOA AUT701 automata titrátor</p>
           </div>
           <h3>Kutatók</h3>
@@ -134,11 +134,11 @@
 
         
       </main>      
-      <aside include-html="aside.html"></aside>
+      <aside include-html="/static/aside.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="/static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};

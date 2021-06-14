@@ -4,9 +4,9 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -14,10 +14,10 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_w.png" alt="">      
+      <img src="/pics/headers/heading_w.png" alt="">      
     </header>  
     <div class="content">
-      <nav include-html="nav.html"></nav>
+      <nav include-html="//static/nav.html"></nav>
       <main>
         <!-- A oldal középső sávja
         A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
@@ -32,7 +32,7 @@
             <div class="worker-h2">Igazgató</div>		            
           </div>
             <div class="worker-header-right">
-              <img class="worker-img" src="pics/demeny2.png" alt="">
+              <img class="worker-img" src="/pics/demeny2.png" alt="">
             </div>
           </div>
 
@@ -43,7 +43,7 @@
                 <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->
                 <li class="icon-phone"> +36 1 319 3137</li>
                 <li class="icon-fax"> +36 1 319 3137</li>
-                <li class="icon-mail"> demeny at geochem.hu</li>  
+                <li class="icon-mail"> demeny at csfk.org</li>  
                 <li class="icon-home"> 305-306. szoba </li>                
                 <!-- A mennyiben további elérhetőség szükséges töröld a megjegyzést az alábbi sorból -->
                 <!-- <li>...</li> -->
@@ -56,7 +56,7 @@
               -->
               <div>
                 <a href="https://www.researchgate.net/profile/Attila-Demeny" target="_blank">
-                  <img class=rg-btn src="pics/rg-btn2.png" alt="">
+                  <img class=rg-btn src="/pics/rg-btn2.png" alt="">
                 </a>
               </div>
             </div>
@@ -301,7 +301,7 @@
               -->
               <div>
                 <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-                  <img class="mtmt-btn" src="pics/mtmt-btn.png" alt=""></li>
+                  <img class="mtmt-btn" src="/pics/mtmt-btn.png" alt=""></li>
                 </a>               
               </div>
             </div>
@@ -341,11 +341,11 @@
           <!-- A további sorokat NE szerkessze! -->
         </div>
       </main>
-      <aside include-html="aside.html"></aside>
+      <aside include-html="//static/aside.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="//static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};

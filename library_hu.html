@@ -3,9 +3,9 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css" media="all">
-  <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
   <script>    
     generateHead()
   </script>
@@ -13,10 +13,10 @@
 <body>  
   <div class="wrapper">
     <header>
-      <img src="pics/headers/heading_lib.png" alt="">      
+      <img src="/pics/headers/heading_lib.png" alt="">      
     </header>
     <div class="content">      
-      <nav include-html="nav.html"></nav>
+      <nav include-html="/static/nav.html"></nav>
       <main>
         <div class="lib">
           <div class="title">
@@ -57,11 +57,11 @@
           <a href="http://geochem.hu/journals_hu.html">A folyóiratok jegyzéke</a>
         </div>
       </main>      
-      <aside include-html="aside.html"></aside>
+      <aside include-html="/static/aside.html"></aside>
   	</div>
-    <footer include-html="footer.html"></footer>
+    <footer include-html="/static/footer.html"></footer>
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="script/scroll.js"></script>
+    <script src="/script/scroll.js"></script>
     <script>
       includeHTML();      
       window.onscroll = function() {scrollFunction()};
