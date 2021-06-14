@@ -439,11 +439,12 @@
       </main>
       <aside include-html="aside.html"></aside>
   	</div>
-    <footer>
-      <a href="http://geochem.hu" target="_blank">Copyright 2021 CSFK ©</a>
-    </footer>
+    <footer include-html="footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="script/scroll.js"></script>
     <script>
-      includeHTML();
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
     </script>
   </div>
 </body>

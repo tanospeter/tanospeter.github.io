@@ -5,34 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css" media="all">
   <script src="script/includeHTML.js"></script>
-  <script src="script/headGen.js"></script>
-  <script>    
-    generateHead()
+  <script src="script/headGen.js"></script>   
+  <script>        
+    generateHead();
   </script>
+  
 </head>
-<body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  <script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script> 
+<body>   
   <div class="wrapper">
     <header>
       <img src="pics/headers/heading_w.png" alt="">      
@@ -40,6 +19,7 @@
     <div class="content">
       <nav include-html="nav.html"></nav>
       <main>
+        
         
         <!--
         <div class="title">
@@ -515,12 +495,13 @@
       </main>
       <aside include-html="aside.html"></aside>
   	</div>
-    <footer>
-      <a href="http://geochem.hu" target="_blank">Copyright 2021 CSFK ©</a>
-    </footer>
+    <footer include-html="footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="script/scroll.js"></script>
     <script>
-      includeHTML();
-    </script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>    
   </div>
 </body>
 </html>
