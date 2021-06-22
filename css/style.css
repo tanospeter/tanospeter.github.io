@@ -556,7 +556,7 @@ footer a{
 .title2{
 	margin: 0 0 2px;
 	overflow: hidden;
-	background: url('../pics/bg-title.gif') repeat-x 0 50%;
+	/*background: url('../pics/bg-title.gif') repeat-x 0 50%;*/
 }
 
 .title3 {
