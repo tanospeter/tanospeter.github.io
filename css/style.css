@@ -392,10 +392,12 @@ aside a:hover {
 	color: rgb(4, 58, 83);
 }
 
+/*
 .rg-btn{
   margin: 5px 40px;
   max-width: 17%;
 }
+*/
 
 .mtmt-btn {
   margin: 4px 17px 0;
@@ -509,10 +511,10 @@ footer a{
   background: #fff;  
   */
   color:  rgba(255, 255, 255, 0.7);  
-  font-weight: 700;
-  font-size:18px;  
+  font-weight: 700;  
   letter-spacing: 2px;  
-  padding: 0px 15px 15px 15px;
+  font-size: 22px;
+  padding: 0px 15px 0px 15px;
 }
 
 .worker-h3 {   
@@ -542,17 +544,32 @@ footer a{
 .worker-content-no-marker ul {  
   margin: 5px 0;
   list-style: none;  
-  padding: 0px 40px;
+  padding: 0px 15px;
   line-height: 18px; 
   font-weight: 400;     
   font-size: 16px;  
   letter-spacing: normal;  
 }
 
+
+
 .worker-content-no-marker img{
-  max-width: 40%;
+  max-width: 33%;
 }
 
+.buttons {
+  line-height: 25px;
+  margin: 0 15px 0 15px;
+}
+
+.buttons a{
+  text-decoration: none;
+  margin-right: 0px;
+}
+
+.buttons a img{
+  max-width: 22%;
+}
 .title2{
 	margin: 0 0 2px;
 	overflow: hidden;

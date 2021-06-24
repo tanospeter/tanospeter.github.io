@@ -50,16 +50,50 @@
                 <li class="icon-home">309. szoba </li>                
               </ul>
 
-              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-                bekapcsoláshoz: <div> 
-                kikapcssoláshoz: <div class="hidden">
-                  
-                Amennyiben a gombot bekapcsoljuk a linket meg kell adnunk!
-                pl. "https://www.researchgate.net/profile/Attila-Demeny"
-              -->
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+  bekapcsoláshoz: <div class="buttons"> 
+  kikapcssoláshoz: <div class="buttons hidden">
+    
+  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+  bekapcsoláshoz: <a class="">  
+  kikapcssoláshoz: <a class="hidden">  
+
+  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+  pl. "https://www.researchgate.net/profile/Attila-Demeny"
+-->
+<div class="buttons">
+  <!--mtmt
+    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+  -->
+   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
+    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+  </a>
+  <!--researchgate-->
+  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+    <img class=rg-btn src="/pics/rg-btn.png" alt="">
+  </a>   
+  <!--google scolar-->             
+  <a class="hidden" href="https://scholar.google.com/" target="_blank">
+    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+  </a>
+  <!--orcid-->
+  <a class="hidden" href="https://orcid.org/" target="_blank">
+    <img src="/pics/orcid-btn.png" alt="orcid">
+  </a>
+  <!--linkedin-->
+  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+  </a>
+  <!--saját hinlap linkje-->
+  <a class="hidden" href="" target="_blank">
+    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+  </a>             
+</div>
               <div>
                 <a href="https://www.researchgate.net/profile/Terez-Poka" target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn2.png" alt="">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
                 </a>
               </div>
             </div>
@@ -387,7 +421,7 @@
             <div class="worker-content-no-marker">
 
               <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-                bekapcsoláshoz: <div> 
+                bekapcsoláshoz: <div>
                 kikapcssoláshoz: <div class="hidden"> 
 
                 Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
