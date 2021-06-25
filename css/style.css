@@ -66,6 +66,10 @@ h4 {
   border-top: 3px solid rgba(22, 68, 105, 1);
 }
 
+.worker-content ul .list-level-2{
+  list-style-type: circle;
+}
+
 main p {
   line-height: 27px;
 }
@@ -449,6 +453,21 @@ aside ul {
   }
 aside li {
   border-bottom: 0px
+}
+
+.obituary {
+  background-color: rgba(0,0,0,.9);
+  border-radius: 5px;
+  padding: 0 0 13px 0px;
+  margin-top: 25px;
+}
+
+.obituary .aside-title{
+  color: rgb(187, 200, 206);
+}
+
+.obituary p{
+  color: rgb(187, 200, 206);
 }
 
 .language-selector-box{
