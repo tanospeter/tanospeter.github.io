@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead()
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w_en.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav_en.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">KELE SÁNDOR</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">PhD</div>          
+              <div class="worker-h2">senior research fellow</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/people/kele/kele.JPG" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Contacts</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone">+36 1 309 2600 / 1371 mellék</li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">keles at csfk.org</li>  
+                <li class="icon-home">222. szoba </li>                
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
+
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10014662" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+                </a>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Sandor-Kele" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="" href="https://scholar.google.com/citations?user=DwEpYdgAAAAJ&hl=en" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="" href="https://orcid.org/0000-0002-8607-7636" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Place and date of birth...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Place and date of birth</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Nagykanizsa, 1979</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Qualifications...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Qualifications</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>2009, PhD Eötvös Loránd Tudományegyetem, Budapest.</li>
+                <li>2003, MSc diploma, geológus, Eötvös Loránd Tudományegyetem, Budapest.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Employment...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Employment</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li>2014- : Földtani és Geokémiai Intézet, Csillagászati és Földtudományi Kutatóközpont, MTA, Budapest, Hungary</li>
+                <li>2013-2014: ETH Zürich, Zürich, Switzerland (SCIEX posztdoktori ösztöndíj)</li>
+                <li>2005-2013: Geokémiai Kutatóintézet, MTA, Budapest, Hungary</li>
+                <li>2004-2005: SCK·CEN (Belgian Nuclear Research Centre), MOL, Belgium (MÖB ösztöndíj)</li>
+                <li>2003-2004: Geokémiai Kutatólaboratórium, Földtudományi Kutató Központ, MTA, Budapest, Hungary</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Language knowledge...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Language knowledge</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>angol, középfok</li>
+                <li>német, középfo</li>
+                <li>olasz, alapfok</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Main fields of research...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Main fields of research</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Stabil- és "clumped izotóp" geokémia</li>
+                <li>Termál- és karsztforrások recens karbonátkiválásainak (travertínók, mésztufák) vizsgálata</li>
+                <li>Kalcit-víz és aragonit-víz oxigénizotóp frakcionáció vizsgálata, paleotermometriai kalibrációja</li>
+                <li>Paleoklimatológia (travertínók, tufák és cseppkövek geokémiai vizsgálata alapján)</li>
+                <li>Dolomitok, talajkarbonátok és faévgyűrűk geokémiai vizsgálata</li>               
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Research projects...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Research projects</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>KH-125584 (NKFI) (2017-2019) Paleohőmérséklet rekonstrukció édesvízi karbonátok stabil- és clumped izotóp geokémiai vizsgálata alapján (Projektvezető: Kele Sándor)</li>
+                <li>Travertine Reservoir Analogue Studies ( TraRAS ), (2014-2017). Projektvezető: Rudy Swennen, KU Leuven, Belgium; magyar koordinátor: Kele Sándor)</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Outstanding results...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Outstanding results</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Study trips...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Study trips</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2008 A Magyar Tudományos Akadémia ösztöndíja, (National Taiwan University, Taipei, Taiwan, 6 hét)</li> 
+                <li>2004-2005 A Magyar Ösztöndíj Bizottság ösztöndíja (10 hónap, SCK?CEN, Belgian Nuclear Research Centre, MOL, Belgium)</li> 
+                <li>2002 Erasmus ösztöndíj (5 hónap, University of Florence, Italy)</li> 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Membership of scientific and professional organizations...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Membership of scientific and professional organizations</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>Tudományos szervezeti tagság:</li>
+                 <ul class="ll2">
+                    <li>Geokémiai, Ásvány- és Kőzettani Tudományos Bizottság (MTA, X. osztály) (2018-)</li>
+                    <li>World Alliance for Research and Conservation of Travertine/Tufa Natural Heritage (WAT), titkár (2021-)</li>
+                    <li>International Association of Sedimentologists (2014-) </li>
+                    <li>European Association of Geochemistry (2011-) </li>
+                    <li>Magyar Tudományos Akadémia, köztestületi tag (2011-) </li>
+                    <li>Magyar Hidrológiai Társaság (2010-) </li>
+                    <li>European Geosciences Union (2008-) </li>
+                    <li>Society for Sedimentary Geology (2005-) </li>
+                    <li>European Society for Isotope Research (2004-) </li>
+                    <li>Magyarhoni Földtani Társulat (1997-)</li>
+                 </ul>
+                <li>Szerkesztői tevékenység:</li>
+                <ul class="ll2">
+                  <li>Sedimentary Geology,  folyóirat szerkesztőbizottsági tagság (2018-)</li>
+                  <li>Bulletin of the Mineral Research and Exploration (Turkey) (2020-)</li>
+                  <li>Geo-Science Education Journal (Kraków, Poland), Editorial Scientific Board (2016-)</li>
+                  <li>Tourism and Cultural Heritage (Suchy Las, Poland) (2016-)</li>
+                </ul>
+                <li>Lektori tevékenység:</li>
+                <ul class="ll2">
+                  <li>Nature Scientific Reports, Science Advances, Geochimica et Cosmochimica Acta, Chemical Geology, Sedimentology, Sedimentary Geology, Quaternary International, Quaternarie, International Journal of Earth Sciences, Journal of African Earth Sciences, Central European Geology, Earth Sciences Research Journal, Central European Journal of Geosciences, ERC grants</li>
+                </ul>                 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Conference organization...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Conference organization</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Research grants, scholarships...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Research grants, scholarships</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2013-2016 A Magyar Tudományos Akadémia Bolyai János Kutatási Ösztöndíja</li>
+                <li>2013-2014 SCIEX posztdoktori ösztöndíj (ClumpIT, Sciex-Nr:13.071-2, ETH Zürich , Svájc)</li>
+                <li>2002/2003 Pro Renovanda Culturae, Diákok a Tudományért Alapítvány ösztöndíja</li>                
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Awards...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Awards</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2018 Kiváló CSFK Kutató, MTA CSFK</li> 
+                <li>2012 Szádeczky-Kardoss Elemér Díj</li> 
+                <li>2010 Central European Geology, Best Paper Award for Young Researchers</li> 
+                <li>2009 A Magyar Tudományos Akadémia Ifjúsági Díja</li>
+                <li>2005 European Society for Isotope Research (ESIR) VIII. Workshop: 1. helyezés a fiatal kutatói poszter szekcióban</li>
+                <li>2004 XXXV. Ifjú Szakemberek Ankétja (ISZA): 3. helyezés a poszter szekcióban</li>
+                <li>2002/2003 ELTE-TTK, Geológus szak, Kar Kiváló Hallgatója</li>
+                <li>2002 Erasmus ösztöndíj (5 hónap, University of Florence, Italy)</li>                
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Prizes won at scientific competitions...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Prizes won at scientific competitions</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2003 XXVI. Országos Tudományos Diákköri Konferencia</li>
+                <ul class="ll2">
+                  <li>Földtan-Üledékkőzettan szekció   1. helyezés és a zsűri különdíja</li>
+                  <li>Őslénytan szekció 1. helyezés</li>
+                </ul>
+                <li>2002 Kari Tudományos Diákköri Konferencia, 2. helyezés</li>
+                <li>2001 3. helyezés a 4. Magyar Őslénytani Vándorgyűlés poszter szekciójában</li>                
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teaching...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Teaching</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...International connections...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">International connections</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Michael Rogerson (Northumbria University, Newcastle, UK)</li> 
+                <li>Stefano Bernasconi (ETH Zürich, Switzerland) </li> 
+                <li>Rudy Swennen (KU Leuven, Belgium) </li> 
+                <li>Chuan-Chou Shen (National Taiwan University, Taipei, Taiwan) </li> 
+                <li>Enrico Capezzuoli (University of Perugia, Italy) </li> 
+                <li>Andrea Brogi (University of Bari, Italy)</li> 
+                <li>Paolat Francesca Matera (University of Bari, Italy)</li> 
+                <li>Emad S. Sallam (Benha University, Benha, Egyiptom)</li> 
+                <li>Hamdalla Wanas (Menoufiya University, Egyiptom)</li> 
+                <li>Kate W. Huntigton (University of Washington, Seattle, USA)</li> 
+                <li>Hannes Claes (Achen University, Germany)</li> 
+                <li>Lukoczki Georgina (Oklahoma State University, Stillwater, USA)</li> 
+                <li>Fall András (The University of Texas at Austin, USA)</li> 
+                <li>Noah Anderson (Massachusetts Institute of Technology, Cambridge, USA)</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publications</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10014662" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Selected publications of the last 5 years...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3">Selected publications of the last 5 years</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>Anderson, N., Kelson, J.R., Kele, S., Daeron, M., Bonifacie, M., Horita, J., Mackey, T.J., John, C.M., Kluge, T., Petsching, P., Jost, A.B., Huntington, K.W., Bernasconi, S.M., Bergmann, K.D. (2021) A unified clumped isotope thermometer calibration (0.5-1100°C) using carbonate-based standardization. Geophysical Research Letters, 48, e2020GL092069. <a href="https://doi.org/10.1029/2020GL092069">DOI</a></li>
+                <li>Kele, S., Sallam, E.S., Capezzuoli, E., Rogerson, M., Wanas, H., Shen, C.-C., Ahmad Lone, M., Yu, T.-L., Schauer, A., Huntington, K.W. (2021) Were springline carbonates in the Kurkur-Dungul area (Southern Egypt) deposited during glacial periods? Journal of the Geological Society, <a href="https://doi.org/10.1144/jgs2020-147">DOI</a></li>
+                <li>Matera, P.F., Ventruti, G., Zucchi, M., Brogi, A., Capezzuoli, E., Liotta, D., Yu, T.-L., Shen, C.-C., Huntington, K.W., Rinyu, L., Kele, S. (2021) Geothermal fluid variation recorded by banded Ca-carbonate veins in a fault-related, fissure ridge-type travertine depositional system (Iano, southern Tuscany, Italy). Geofluids, <a href="https://doi.org/10.1155/2021/8817487">DOI</a></li>
+                <li>Brogi, A., Liotta, D., Capezzuoli, E., Matera, P.F., Kele, S., Soligo, M., Tuccimei, P., Ruggieri, G. Yu, T.-L., Shen, C.-C., Huntington, K.W. (2020) Travertine deposits constraining transfer zone neotectonics in geothermal areas: An example from the inner Northern Apennines (Bagno Vignoni-Val d’Orcia area, Italy). Geothermics 85 (2020) 101763</li>                
+                <li>Lukoczki, G., Haas, J., Gregg, J.M., Machel, H.G., Kele, S., John, C.M. (2020) Early dolomitization and partial burial recrystallization: a case study of Middle Triassic peritidal dolomites in the Villány Hills (SW Hungary) using petrography, carbon, oxygen, strontium and clumped isotope data. International Journal of Earth Sciences 109, 1051-1070 <a href="https://doi.org/10.1007/s00531-020-01851-7">DOI</a></li>
+                <li>Claes, H., Török, Á., Soete, J., Mohammadi, Z., Vassilieva, E., Hamaekers, H., Erthal, M.M., Aratman, C., Cheng, H., Lawrence Edwards, R., Shen, C.-C., Özkul, M., Kele, S., Mindszenty, A., Swennen, R. (2020) U/Th dating and open system behaviour of travertine. Quaternaire 31:2, 117-132. Special Issue on "Multiproxy studies on continental carbonates: palaeoclimates and palaeoenvironments” </li>
+                <li>Lukoczki, G., Haas, J., Gregg, J.M., Machel, H.G., Kele, S., John, C.M. (2019) Multi-phase dolomitization and recrystallization of Middle Triassic shallow marine–peritidal carbonates from the Mecsek Mts. (SW Hungary), as inferred from petrography, carbon, oxygen, strontium and clumped isotope data. Marine and Petroleum Geology 101, pp. 440-458. </li>
+                <li>Petersen, S.V., Defliese, W.F., Saenger, C., Daëron, M., John, C.M., Huntington, K.W., Kelson, J.R., Bernasconi, S.M., Colman, A.S., Kluge, T., Olack, G.A., Schauer, A.J., Bajnai D., Bonifacie, M., Breitenbach, S.F.M., Fiebig, J., Fernandez, A.B., Henkes, G.A., Hodell, D., Katz, A., Kele, S., Lohmann, K.C., Passey, B.H., Petrizzo, D.A., Rosenheim, B.E., Tripati, A.E., Venturelli, R., Young, E.D., Wacker, U. and Winkelstern, I.Z. (2019) Effects of Improved 17O Correction on Inter-Laboratory Agreement in Clumped Isotope Calibrations, Estimates of Mineral-Specific Offsets, and Acid Fractionation Factors. Geochemistry, Geophysics, Geosystems, DOI: 10.1029/2018GC008127 </li>
+                <li>Török, Á., Claes, H., Brogi, A., Liotta, D., Tóth, Á., Mindszenty, A., Kudó, I., Kele, S., Huntington, K.W., Shen, C.-C., Swennen, R. (2019) A multi–methodological approach to reconstruct a dismantled travertine fissure ridge: the case of the Cukor quarry (Süttő, Gerecse Hills, Hungary).  Geomorphology 345, 106836 </li>
+                <li>Újvári, G., Kele, S., Bernasconi, S.M., Haszpra, L., Novothny, Á., Bradák, B. (2019) Clumped isotope paleotemperatures from MIS 5 stage soil carbonates in southern Hungary. Palaeogeography, Palaeoclimatology, Palaeoecology 518, 72-81.</li>
+                <li>Kluge, T., John, C.M., Boch, R., Kele, S. (2018) Assessment of factors controlling clumped isotopes and 18O values of hydrothermal calcites. Geochemistry, Geophysics, Geosystems, DOI: 10.1029/2017GC006969</li>
+                <li>Kele, S., Bajnai, D. (2017) Kapcsolt izotópok (clumped isotopes) a földtudományi kutatásokban. Földtani Közlöny, 147/2, 177-194.</li>
+                <li>Haas, J., Hips, K., Budai, T., Győri, O., Lukoczki, G., Kele, S., Demény, A., Poros, Zs. (2017) Processes and controlling factors of polygenetic dolomite formation in the Transdanubian Range, Hungary ‒ a synopsis. International Journal of Earth Sciences, 106 (3), 991-1021. </li>
+                <li>Claes, H., Degros, M., Soete, J., Claes, S., Kele, S., Mindszenty, A., Török, Á., El Desouky, H., Vanhaecke, F., Swennen, R. (2017) Geobody architecture, genesis and petrophysical characteristics of the Budakalász continental spring-related carbonates, Buda Hills (Hungary). Quaternary International, 437:(part A), 107-128. </li>
+                <li>Török, Á., Mindszenty, A., Claes, H., Kele, S., Fodor, L., Swennen, R. (2017) Sedimentological study and tentative reservoir characterization of the "Gazda" travertine quarry (Süttő, Gerecse Hills, Hungary). Quaternary International, 437:(part a), 164-185.</li>
+                <li>Brogi, A., Capezzuoli, E., Kele, S., Baykara, M.O., Shen, C.-C. (2017) Key tectofacies for neotectonics and palaeoseismicity reconstruction in travertine deposits as effects of hydrothermal overpressure fluids injection. Journal of the Geological Society, 174 (4), 679-699. </li>
+                <li>Billi, A., Berardi, G., Gratier, J.P., Rossetti, F., Vignaroli, G., Baykara, M.O., Bernasconi, S.M., Kele, S., Soligo, M, De Filippis, L., Shen, C.-C. (2017) First records of syn-diagenetic non-tectonic folding in quaternary thermogene travertines caused by hydrothermal incremental veining. Tectonophysics, 700-701, 60-79.</li>
+                <li>Billi, A., Berardi, G., Gratier, J.P., Rossetti, F., Vignaroli, G., Baykara, M.O., Bernasconi, S.M., Kele, S., Soligo, M, De Filippis, L., Shen, C.-C. (2017) Reply to the comment on ”First records of syn-diagenetic non-tectonic folding in quaternary thermogene travertines caused by hydrothermal incremental veining” by Bili et alii. Tectonophysics, 721, 501-512. </li>
+                <li>Koltai, G., Spötl, C., Shen, C.-C., Z. Rao, Wu., Palcsu, L., Kele, S., Surányi, G., Bárány-Kevei, I. (2017) A penultimate glacial climate record from southern Hungary. Journal of Quaternary Science, 32 (7), 946-956. </li>
+                <li>De Boever, E., Brasier, A.T., Foubert, A., Kele, S. (2017) What do we really know about early diagenesis of non-marine carbonates? Sedimentary Geology, 361, 25-41. (invited review)</li>
+                <li>Della Porta, G., Croci, A., Marini, M., Kele, S. (2017) Depositional architecture, facies character and geochemical signature of the Tivoli travertines (Pleistocene, Acque Albule Basin, Central Italy). Rivista Italiana di Paleontologia e Stratigrafia, 123:(3), 487-540. </li>
+                <li>Vignaroli, G., Berardi, G., Billi, A., Kele, S., Rossetti, F., Soligo, M., Bernasconi, S.M (2016) Tectonics, hydrothermalism, and paleoclimate recorded by Quaternary travertines and their spatio-temporal distribution in the Albegna basin, Italy: implications for the Tyrrhenian margin neotectonics. Litosphere, 8:(4) 335-358.  </li>
+                <li>Berardi, G., Vignaroli, G., Billi, A., Rossetti, F., Soligo, M., Kele, S., Baykara, M.O., Bernasconi, S.M., Castorina, F., Tecce, F., Shen, C.-C. (2016) Growth of a Pleistocene giant carbonate vein and nearby thermogene travertine deposits at Semproniano, southern Tuscany, Italy. Tectonophysics, 690, 219-239. </li>
+                <li>Kele, S., Breitenbach, S.F.M., Capezzuoli, E., Meckler, A.N., Ziegler, M., Millan, I.M., Kluge T., Deák, J., Hanselmann, K., John, C.M., Yan, H., Liu, Z., Bernasconi, S.M. (2015) Temperature dependence of oxygen- and clumped isotope fractionation in carbonates: A study of travertines and tufas in the 6-95°C temperature range. Geochimica et Cosmochimica Acta, 168, 172-192.</li>
+                <li>Soete, J., Kleipool, L.M., Claes, H., Claes, S., Hamaekers, H., Kele, S., Özkul, M., Foubert, A., Reijmer, J.J.G., Swennen, R. (2015) Acoustic properties in travertines and their relation to porosity and pore types. Marine and Petroleum Geology, 59, 320-335.</li>
+                <li>Toker, E., Kayseri-Özeri, M.S., Özkul, M., Kele, S. (2015) Depositional system and palaeoclimatic interpretations of Middle-Late Pleistocene travertines: Kocabas, Denizli, Sw-Turkey. Sedimentology, 62 (5), 1360-1383.</li>
+                <li>Hips, K., Haas, J., Poros, Zs., Kele, S., Budai, T. (2015) Dolomitization of triassic microbial mat deposits (Hungary): origin of microcrystalline dolomite. Sedimentary Geology, 318, 113-129. </li>
+                <li>Çolak Erol, S., Özkul, M., Aksoy, E., Kele, S., Ghaleb, B. (2015) Travertine occurrences along major strike-slip fault zones: Structural, depositional and geochemical constraints from the Eastern Anatolian fault System (EAFS), Turkey. Geodinamica Acta, 27, 155-174.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Last update 2021.06.16.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside_en.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>

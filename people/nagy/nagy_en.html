@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead()
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w_en.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav_en.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">NAGY GÉZA</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">egyetemi dr</div>          
+              <div class="worker-h2">nyugdíjas research fellow</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/people/nagy/nagyg.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Contacts</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone"> +36 1 309 2600 / 1106</li>
+                <li class="icon-fax"> +36 1 319 3137</li>
+                <li class="icon-mail">gnagy at csfk.org</li>  
+                <li class="icon-home">309. szoba </li>                
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+  bekapcsoláshoz: <div class="buttons"> 
+  kikapcssoláshoz: <div class="buttons hidden">
+    
+  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+  bekapcsoláshoz: <a class="">  
+  kikapcssoláshoz: <a class="hidden">  
+
+  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+  pl. "https://www.researchgate.net/profile/Attila-Demeny"
+-->
+<div class="buttons">
+  <!--mtmt
+    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+  -->
+   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
+    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+  </a>
+  <!--researchgate-->
+  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+    <img class=rg-btn src="/pics/rg-btn.png" alt="">
+  </a>   
+  <!--google scolar-->             
+  <a class="hidden" href="https://scholar.google.com/" target="_blank">
+    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+  </a>
+  <!--orcid-->
+  <a class="hidden" href="https://orcid.org/" target="_blank">
+    <img src="/pics/orcid-btn.png" alt="orcid">
+  </a>
+  <!--linkedin-->
+  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+  </a>
+  <!--saját honlap linkje-->
+  <a class="hidden" href="" target="_blank">
+    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+  </a>             
+</div>
+              <div class="hidden">
+                <a href="https://www.researchgate.net/profile/..." target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Place and date of birth...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Place and date of birth</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Kolozsvár, 1941</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Qualifications...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Qualifications</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>1964 okleveles fizikus Kossuth Lajos Tudományegyetem, Debrecen</li>
+                <li>1976 Dr. univ. (kőzettan-geokémia) Kossuth Lajos Tudományegyetem, Debrecen. A disszertáció címe: "Magmás folyamatok hőmérséklet-meghatározása koegzisztens ásványpárok összetétele alapján"</li>             				
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Employment...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Employment</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li>1969-től: MTA Földtudományi Kutatóközpont Geokémiai Kutatólaboratóriuma, Budapest</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Language knowledge...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Language knowledge</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>..., ...</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Main fields of research...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Main fields of research</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>elektronmikroszondás ásványelemzés és alkalmazásai</li>
+                <li>ritkaföldfém-ásványok</li>
+                <li>anyagtudomány (híradástechnikai anyagok; fejlett technikájú kerámiák)</li>
+                <li>kőzettani adatbázisok</li>               
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Research projects...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Research projects</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Outstanding results...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Outstanding results</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Study trips...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Study trips</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Membership of scientific and professional organizations...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Membership of scientific and professional organizations</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>Magyarhoni Földtani Társulat tagja</li>
+                <li>IUGS Kőzettani Adatbázis Albizottságának titkára 1993-tól</li> 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Conference organization...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Conference organization</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Research grants, scholarships...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Research grants, scholarships</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Awards...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Awards</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Prizes won at scientific competitions...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Prizes won at scientific competitions</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teaching...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Teaching</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publications</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10014651" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Selected publications of the last 5 years...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3 hidden">Selected publications of the last 5 years</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>Nagy Géza(1970): Mennyiségi elemzés elektron-mikroszondával. - Földtani Kutatás XIII., No. 2. p. 27-38.</li>
+                <li>  Kormány T.; Nagy G. (1972): Híradástechnikai anyagok és eszközök elektron-mikro- szondás vizsgálata. - Híradástechnika XXIII. No. 3. p. 83-88.  (1973-ban Virág-Pollák díjat kapott.) </li>                  
+                <li>Kormány, T.; Nagy, G. (1972): Electron-probe: Tool for failure analysis of semiconductor devices. - Vacuum 22 No. 11. p. 561-562. </li>                  
+                <li>Bácsy, E.; Szalay, K.; Pantó, Gy.; Nagy, G. (1973): Distribution of potassium in rat adrenal zones studied by electron probe X-ray microanalyser. - Experientia 29 p. 485-487. </li>                  
+                <li>Kormány, T.; Nagy, G. (1973): Die Lösung von Halbleiterproblemen mit der Elektronenstrahl-mikrosonde. - Kristall u.  Technik 8 No. 11. p. 1201-1208. </li>                  
+                <li>Szalay, K.; Bácsy, E.; Pantó, Gy.; Nagy, G. (1973): Electron-probe microanalysis of intracellular potassium in rat adrenal cortex. - Acta Endocr.  Kobenhaven Suppl. 177 p. 376. </li>                  
+                <li>Nagy, G. (1975): Temperature determination of igneous processes on the basis of the composition of coexistent mineral pairs. - A. Geol.  Acad.  Sci. Hung. 19 p. 43-58. </li>                  
+                <li>Árkai, P.; Nagy, G.; Pantó, Gy. (1975): Types of composition zoning in the garnets of the polymetamorphic rocks and their genetic significance. - A. Geol.  Acad.  Sci. Hung. 19 p. 17-42. </li>                  
+                <li>Árkai P.; Nagy G.; Pantó Gy. (1975): A ciklusos folyamatok szuperpozíciója (polimetamorfózis) és azok ásványtani kimutatása. - MTA X. Oszt.  Közl. 8 p. 383-387. </li>                  
+                <li>Nagy, G. (1983): Electron microprobe investigations of iron-containing spinels. - Mikroskopie (Wien), 40 p. 152-153. </li>                  
+                <li>Nagy, G. (1983): Cooling history of young Hungarian basalts based on zoning of olivine phenocrysts. - A. Geol.  Hung. 26 p. 321-339. </li>                  
+                <li>Pantó Gy.; Nagy G. (1985): Az elektronmikroszonda (EPMA) és néhány alkalmazása. - ATOMKI Közl. 27 No. 1. p. 74-78. </li>                  
+                <li>Árkai, P.; Nagy, G.; Dobosi, G. (1985): Polymetamorphic evolution of the South Hungarian crystalline basement, Pannonian basin: geothermometric and geobarometric data. - A. Geol.  Hung. 28 p. 165-190. </li>                  
+                <li>András, P.; Cano, F.; Nagy, G.; Druza, O. (1988): Gold-bearing arsenopyrite of the Pezinok antimonite deposit. - Geol.  Zbor.  Geol.  Carpath. 39 No. 1. p. 87-98. </li>                  
+                <li>Nagy G. (1990): Elektron-mikroszondás mennyiségi elemzés: Módszerek és alkalmazások a Geokémiai Kutatólaboratóriumban. - Izotóptechnika, diagnosztika 33 No. 1/2, p. 133-139. </li>                  
+                <li>András, P.; Jelen, S.; Nagy, G.; Svecová, L. (1993),: Rydzi antimón na lozisku Pezinok-Kolársky vrch. - Mineralia slovaca, 25 p. 282-284. </li>                  
+                <li>Casillas, R.; Nagy, G.; Brandle, J.L.; Pantó, G.; Fórizs, I. (1993),: Neoformación de fases minerales secundarias ricas en tierras raras en los granitos de la Sierra de Guadarrama: Bastnaesita-(CE).  Geogaceta 14 p. 132-135. </li>                  
+                <li>Sadek Ghabrial, D,; Árkai P.; Nagy G. (1994): Magmatic features and metamorphism of plagiogranite associated with Jurassic MORB-like basic-ultrabasic complex, Bükk Mountains, Hungary. - Acta Mineral.- Petrogr.  Szeged, XXV p. 41-69. </li>                  
+                <li> Dunkl I.; Árkai P.; Balogh K.; Csontos L.; Nagy G. (1994): A hőtörténet model- lezése a fission track adatok felhasználásával - a Bükk-hegység kiemelkedéstörténete. - Földtani Közlöny 124 p. 1-24. </li>                  
+                <li>Brandle, J.L. & Nagy, G. (1995): The state of the 5th version of IGBA: Igneous petrological data base. - Comput.  Geosci. 21 no. 3. p. 425-432. </li>                  
+                <li>Buda, Gy.; Nagy, G. (1995): Some REE-bearing accessory minerals in two types of Variscan granitoids, Hungary. - Geol.  Carpath. 46 p. 67-78. </li>                  
+                <li>Casillas, R.; Nagy, G.; Pantó, Gy.; Brandle, J.L.; Fórizs, I. (1995),: Occurrence of Th, U, Y, Zr, and REE-bearing accessory minerals in late-Variscan granitic rocks from the Sierra de Guadarrama and their petrogenetic significance - Eur. J. Mineral. 7, p. 989-1006. </li>                  
+                <li>Brandle, J. L. & Nagy, G. (1995): Igneous data base accessible on the Internet. - Episodes 18, p. 129. </li>                  
+                <li>András, P.; Wagner, F.; Ragan, M.; Friedl, J.; Marcoux, E.; Cano, F.; Nagy, G. (1995): Gold in arsenopyrites from the Pezinok deposit (Western Carpathians, Slovakia). - Geol.  Carpath. 46 p. 335-342. </li>                  
+                <li>Árkai, P.; Nagy, G. (1994): Tectonic and magmatic effect on amphibole chemistry in mylonitized amphibolites and amphibolite-bearing enclaves associated with granitoid rocks, Mecsek Mts., Hungary - Acta Geol.  Hung. 37 p. 235-268. </li>                  
+                <li>Árkai, P.; Lantai, Cs.; Nagy, G.; Lelkes-Felvári, Gy. (1995): Biotite in a Paleozoic metagreywacke complex, Mecsek Mountains, Hungary: Conditions of low-T metamorphism deduced from illite and chlorite crystallinity, coal rank, white mica geobarometric and microstructural data. - Acta Geol.  Hung. 38 p. 293-318. </li>                  
+                <li>Sadek Ghabrial, D.,; Árkai P.; Nagy G. (1996): Alpine polyphase metemorphism of the ophiolitic Szarvaskő complex, Bükk Mountains, Hungary. - Acta Mineral.-Petrogr., Szeged, XXXVII p. 99-128. </li>                  
+                <li>Demény A., Harangi Sz., Fórizs I., Nagy G. (1997),: Primary and secondary features of analcimes formed in carbonate-zeolite ocelli of alkaline basalts (Mecsek Mts., Hungary): textures, chemical and oxygen isotope compositions. - Geochem.  J. 31 p. 37-47. </li>                  
+                <li>Demény A., Vennemann, T.W., Ahijado, A., Casillas, R., Nagy, G., Gutierrez, M., Szabó, Cs. (1998): Low-delta-18-O and -delta-D megacrysts in alkaline basalts of an oceanic island system, Canary Islands, Spain. - RMZ-Materials and Geoenvironment, 45 No. 1-2, pp. 22-25. </li>                  
+                <li>Póka T.; Zelenka T.; Szakács A.; Seghedi I.; Nagy G. (1998): Petrology and geochemistry of the Miocene acidic explosive volcanism of the Bükk Forland; Pannonian Basin, Hungary. - Acta Geol Hung. 41 p. 437-466. </li>                  
+                <li>Nagy G., Árkai P. (1999): Monacit a Soproni-hegység metamorf képződményeiben. - Földtani Közlöny 129, No. 2. p. 267-303. </li>                  
+                <li>Nagy, G.; Draganits, E. (1999): Occurrence and mineral-chemistry of monazite and rhabdophane in the basement of the sopron Hills, Eastern Alps (Austria). - Mitt.  Ges. Geol.  Bergbaustud. Österr. 42 pp. 21-36. </li>                  
+                <li>Pantó Gy.; Nagy G.; Árkai P. (1999): REE minerals in Sopron Hill, E-Alps, W-Hungary, with geochemical aspects. - Bull.  Acad.  Serbe Sci. Arts, CXIX No. 39, pp. 225-245. </li>                  
+                <li>Prelevic, D.; Pantó Gy.; Nagy G.; Jovanovic, M. (1999): Phlogopite from some lamprophyres and semilamprophyres from Serbia, Yugoslavia. - Bull.  Acad.  Serbe Sci. Arts, CXIX No. 39, pp. 247-264. </li>                 
+                <li>Árkai, P., Horváth, P.; Nagy, G. (1999): A clockwise P-T path from the Variscan basement of the Tisza Unit, Pannonian Basin, Hungary. - Geologia Croatica, 52 No. 2, pp. 109-117. </li>                  
+                <li>Lelkes-Felvári, Gy., Árkai, P., Frank, W., Nagy, G. (2000): Late Variscan ultramylonite from the Mórágy Hills, SE Mecsek Mts., Hungary. Acta Geol.  Hung., 43 No. 1, pp. 65-84. </li>                  
+                <li>Árkai P., Balogh K., Demény A., Fórizs I., Nagy G., Máthé Z.: Composition, diagenetic and post-diagenetic alterations of a possible radioactive waste repository site: the Boda Albitic Claystone Formation, southern Hungary. A. Geol. Hung. 43 (2000), pp. 351-378.</li>                  
+                <li>Árkai P, Fenninger A, Nagy G: Effects of lithology and bulk chemistry on phyllosilicate reaction progress in the low-T metamorphic Graz Paleozoic, Eastern Alps, Austria. Eur. J. Mineral. 14 (2002), pp. 673-686.</li>                  
+                <li>Bajnóczi B., Maeda K., Wennemann, T., Molnár F., Nagy G.: Mineralogy and genesis of primary alunites from epithermal systems of Hungary.  Acta Geol. Hung. 45 (2002). No. 1, pp. 101-118.</li>                  
+                <li>Nagy G., Draganits E., Demény A., Pantó Gy., Árkai P.: Genesis and transformations of monazite, florencite and rhabdophane during medium grade metamorphism: examples from the Sopron Hills, Eastern Alps. Chemical Geology, 191 (2002) pp. 25-46.</li>                  
+                <li>Pantó Gy., Nagy G. (2003): Monazite Th-U-total Pb ages of "bostonite" and granite in the Mecsek and Velence Hills. Acta Geol. Hung. 63, No. 3 pp. 255-267.                  </li>
+                <li>Fórizs I., Nagy G. Karikával díszített késo"középkori egri üvegkehely mu"szeres analitikai vizsgálata. In: Agria XXXIX (Szerk.: Petercsák T., Veres G.). A Dobó István Vármúzeum kiadása, Eger, 2003, pp. 215-224.</li>                  
+                <li>Demény A, Vennemann TW, Hegner E, Ahijado A, Casillas R, Nagy G, Homonnay Z, Gutierrez M, Szabó Cs (2004) H, O, Sr, Nd, and Pb isotopic evidence for recycled oceanic crust in the Transitional Volcanic Group of Fuerteventura, Canary Islands, Spain. Chemical Geology 205, pp. 37-54.</li>                  
+                <li>Demeny A, Vennemann TW, Hegner E, Nagy G, Milton JA, Embey-Isztin A, Homonnay Z, Dobosi G (2004): Trace element and C-O-Sr-Nd isotope evidence for subduction-related carbonate-silicate melts in mantle xenoliths (Pannonian Basin, Hungary) LITHOS 75 (1-2): 89-113.</li>                  
+                <li>Bajnóczi B, Seres-Hartai É, Nagy G (2004) Phosphate-bearing minerals in the advanced argillitic alteration zones of high-sulphidation type ore deposits in the Carpatho-Pannonian region. Acta Mineralogica-Petrographica, Szeged, 45/1, pp. 81-92.</li>                  
+                <li>Zajzon N, Szentpéteri K, Nagy G (2004) Plumbogummite from Szu"zvár Mine, Pátka, (Velence Mountains, Hungary): first occurrence in Hungary. Acta Mineralogica-Petrographica, Szeged, 45/1, pp. 107-112. (megjelent 2005-ben)</li>                  
+                <li>Demény A, Vennemann TW, Homonnay Z, Milton A, Embey-Isztin A, Nagy G (2005): Origin of amphibole megactysts in the Pliocene-Pleistocene basalts of the Carpathian-Pannonian region. Geologica Carpathica 56/2:179-189.</li>                  
+                <li>Broska I, C. Williams CT, Janák M, Nagy G Formation, alteration and breakdown of xenotime-(Y) and monazite-(Ce) in granitic rocks of the Western Carpathians, Slovakia. Lithos 82:71-83, 2005.</li>                  
+                <li>Ahijado A, Casillas R, Nagy G, Fernández C: Sr-rich minerals in a carbonatite skarn, Fuerteventura, Canary Islands (Spain). Mineralogy and Petrology 84 (1-2):107-127, 2005.</li>                                    
+                <li>Pantó Gy., Nagy G. (1979): Az elektron-mikroszonda és alkalmazása a földtani anyagvizsgálatban. - Korszerű ásványtani-geokémiai anyagvizsgáló módszerek (Magyarhoni Földtani Társulat kiadv.)  Bp. 1979, p. 13-25. </li>                  
+                <li>Pécsiné-Donáth É.; Nagy G. (1987): Ioncsere vagy szorpció?  (A Tokaj-hegységi zeolitos kőzetek Sr(II)ion szorpciójáról). - in: Hazai természetes zeolitok kutatása és felhasználása II. (Szerk: Hlavay J.; Pataki K.) MTA VEAB Veszprém, 1987. p. 61-72. </li>                  
+                <li>Pécsi-Donáth, É.; Nagy, G. (1988): Co(III)ion sorption of zeolitic rocks and minerals from the Tokaj hill (Hungary). - In: Occurence, properties and utilization of natural zeolites.  Eds.: D. Kalló, H. S. Sherry.  Akad.  Kiadó, Bp. 1988. ,p. 291-308. </li>                  
+                <li>Beregi, E.; Fetter, L.; Nagy, G.; Pál, E.; Sramek, J. (1990): Inhomogenities and the spurious modes in GaYIG. - in: Adv. in Ferrites, Rice Univ.  Press, Houston, 1990. p. 943. </li>                  
+                <li>Nagy, G.; Nágel, F. (1991): Crystalline phases appearing in Al-Ca-Y-Sr oxydes. - In: Materials Science Monographs, Vol. 66D: Ceramics Today - Tomorrow's Ceramics.  Ed.: P. Vincenzini. - Elsevier, Amsterdam 1991, p. 2335-2342. </li>                  
+                <li>Beregi, E.; Nagy, G,; Hartmann, E.; Fetter, L. (1991): Influence of inhomogeneities of the spurious modes in In-CVB garnets. - In: Materials Science Monographs, Vol. 66D: Ceramics Today - Tomorrow's Ceramics.  Ed.: P. Vincenzini. - Elsevier, Amsterdam 1991, p. 2437-2441. </li>                  
+                <li>Chayes, F.; Nagy, G. (1994): Recognition and correction of errors in igneous database (IGBA) - in: Subbarao, K.V. (Ed.): Volcanism.  Wiley Eastern Ltd, New Delhi, 1994, p. 147-165. </li>                  
+                <li>Fórizs I.; Pásztor A.; Tóth M.; Nagy G.: Avar kori üveggyöngyök röntgendiffrakciós és elektron-mikroszondás vizsgálata. (Alapadatok az üveg- gyöngyök genetikájához I.) - A Népvándorláskor Fiatal Kutatóinak VII. Összejövetele, Pécs, 1996. szept. 27-29. Pécs, 2001, pp. 49-68.</li>                  
+                <li>Fórizs I., Tóth M., Nagy G., Pásztor A. (1999): Avar kori üveggyöngyök röntgen- diffrakciós és elektronmikroszondás vizsgálata.  Alapadatok az üveg- gyöngyök genetikájához.  Vörös opak üvegek. - A népvándorláskor fiatal kutatói 8. országos találkozójának előadásai, (Veszprém, 1997. nov. 28-30.)  Szerk.: S Perémi Ágota.  Veszprém, 1999, pp.87-110. </li>                  
+                <li>Maksimovic, Z., Pantó, Gy., Nagy, G., Popovic, R.: Metamorphosed Paleozoic serpentinites with metamorphosed weathering crust and reworked Ni-Fe ore in Radocelo Mt., Serbia. - Proc. Geology and Metallogeny of the Dinarides and the Vardar Zone, (eds.: Karamata, S., Jankovic, S.), Banja Luka, 2000, pp. 313-321.</li>                  
+                <li>Fórizs I., Pásztor A., Nagy G., Tóth M.: Avar kori üveggyöngyök röntgendiffrakciós és elektron-mikroszondás vizsgálata. Alapadatok az üveggyöngyök genetikájához IV. Miből és hogyan? - in: Hadak Útján. A népvándorlás kor fiatal kutatóinak 10. konferenciája, Domaszék, 1999. szept. 27-30.  Szerk.: Bende L., Lőrinczy G., Szalontai Cs., Szeged, 2000, pp. 321-340,                  </li>
+                <li>Fórizs I., Pásztor A., Tóth M., Nagy G.: Avar kori üveggyöngyök röntgendiffrakciós és elektron-mikroszondás vizsgálata. Alapadatok az üveggyöngyök genetikájához III. Az üveggyöngyök zárványai - in: Heves Megyei Régészeti Közlemények 2. A népvándorlás kor fiatal kutatóinak kilencedik konferenciája, Eger, 1998. szept. 18-20.  Szerk.: Petercsák T., Váradi A., Eger, 2000, pp. 147-173.                  </li>
+                <li>Fórizs I.; Pásztor A.; Nagy G.; Tóth M.: Avar és szarmata gyöngyök Csongrád megyéből. Az anyaguk is különbözik vagy csak a típusuk? - in: Hadak útján XII. A népvándorlás kor fiatal kutatói konferenciájának előadásai, Simontornya, 2001. szept. 3-5. A Wosinsky Mór Múzeum Évkönyve XXIII, szerk.: Gaál A., Szekszárd, 2001, pp. 81-89.                  </li>
+                <li>Maksimovic Z, Pantó Gy, Nagy G. (2002): Iron-rich reevesite from the Ni-Fe ores of Mt. Radocelo, Serbia, a possible new member of the hydrotalcite subgroup. – Acta Geol. Hung. 45. No. 4. pp. 373-383.                  </li>
+                <li>Demény A, Nagy G. (2002): Comments on the paper "Multiple fluid migration events in the Sopron Gneisses during the Alpine high-pressure metamorphism, as recorded by bulk-rock and mineral chemistry and fluid inclusions" by Kálmán Török (N. Jb. Miner. Abh., 2001, vol. 177,1-36). – N. Jb. Miner. Abh., 178  No.1, pp. 93-98.                  </li>
+                <li>Árkai P, Fenninger A, Nagy G. (2003): Chemical and structural evolution off chlorites and white K-micas in various lithologies of the low-grade Graz Paleozoic (Eastern Alps, Austria). Jahrbuch der Geologischen Bundesanstalt (Jb. Geol. B-A.) 143, p. 23-38                  </li>
+                <li>Pantó Gy., Nagy G. (2003): Monazite Th-U-total Pb ages of "bostonite" and granite in the Mecsek and Velence Hills. Acta Geol. Hung. 63, No. 3 pp. 255-267.                  </li>
+                <li>Fórizs I., Nagy G. (2003) Karikával díszített késõközépkori egri üvegkehely mûszeres analitikai vizsgálata. In: Agria XXXIX (Szerk.: Petercsák T., Veres G.). A Dobó István Vármúzeum kiadása, Eger, pp. 215-224.                  </li>
+                <li>Demény A, Vennemann TW, Hegner E, Ahijado A, Casillas R, Nagy G, Homonnay Z, Gutierrez M, Szabó Cs (2004) H, O, Sr, Nd, and Pb isotopic evidence for recycled oceanic crust in the Transitional Volcanic Group of Fuerteventura, Canary Islands, Spain. Chemical Geology 205, pp. 37-54.     </li>             
+                <li>Demeny A, Vennemann TW, Hegner E, Nagy G, Milton JA, Embey-Isztin A, Homonnay Z, Dobosi G (2004): Trace element and C-O-Sr-Nd isotope evidence for subduction-related carbonate-silicate melts in mantle xenoliths (Pannonian Basin, Hungary) LITHOS 75 (1-2): 89-113.                  </li>
+                <li>Kormány, T.; Nagy, G.(1974): Failure-analysis of microwave devices by electron- microprobe. - Proc. 5th Colloquium on Microwave Communication, Budapest, 24-30 June, 1974.  SM 211-230.                   </li>
+                <li>Sterk, E.; Nagy,G. (1974): Determination of foreign phases in garnet materials by means of the raster system of the electron microprobe analyzer. - u. ott, SM 311-318.</li>                   
+                <li>Nagy, G. (1977): Electron probe microanalysis of minerals to establish their genetic conditions. - Proc.  XX CSI and 7th ICAS, Prague, 1977, p.                   </li>
+                <li>Kormány, T.; Nagy, G.; Szalay, O.; Krémer, P. (1977): Application of EMMA in thick film IC research. - Proc.  XV. Int. Conf. on Electron Microscopy, Prague, 1977, p. 45-46.                   </li>
+                <li>Nagy G. (1979): Hogyan szabályozhatunk be egy elállítódott hullámhosszdiszperziv röntgenspektrométert?  How can a wavelength-dispersive spectrometer be readjusted?  - XI. Magyar Elektronmikroszkópos és Mikroanalízis Konferencia, Szeged, 1979, p. 50-53.  (Angolul is.)                   </li>
+                <li>Kormány T.; Nagy G.; Petrikovits L. (1979): Az elektronsugaras mikroanalízis alkalmazása többrétegű kondenzátorok hibaanalízisében. - u. ott, p. 66-69.                   </li>
+                <li>Kormány, T.; Nagy, G. (1980): Electron microprobe investigations of thin films on ceramic substrates. - Electron Microscopy 1980 (Proc.  EUREM'80, 7th European Congress on Electron Microscopy, The Hague), Leiden, Vol. 3. p. 50-51.                   </li>
+                <li>Nagy G. (1982): Bazaltban levő vastartalmú spinellek elektron-mikroszondás vizsgálata. - XII. Magyar Elektronmikroszkópos és Mikroanalízis Konferencia, Eger, 1982. - kiadv. p 51-52.                   </li>
+                <li>Nagy G. (1982): Ritkaföldfém ásványok elektron-mikroszondás elemzése. Electron microprobe analysis of rare earth element containing minerals - XXV. Magyar Színképelemző Vándorgyűlés, Sopron, 1982. - kiadv. p. 268-269.  (angolul is)                   </li>
+                <li>Kormány T.; Marton D.; Nagy G.; Nagy I.; Nagy L.; Rajki I.; Zárai Gy. (1982): Spektroszkópos módszerek együttes alkalmazása vékonyréteg technológia ellenőrzésére - NiCr. - u.ott, p.370-371.   </li>                
+                <li>Nagy G. (1984): Továbblépés az elektron-mikroszondás ritkaföldfém elemzés területén.  XXVII.  Magyar Színképelemző Vándorgyűlés, Szombathely, 1984. - kiadv. p. 231-232.                   </li>
+                <li>Nagy, G. (1984): Computer programs for quantitative electron microprobe analysis developed for geological applications. - Electron Microscopy 1984 (EUREM'84), Bp. p. 1041-1042.                   </li>
+                <li>Fetter , L.; Kormány, T.; Nagy, G.; Molnár, P. (1984): Investigation on thick film resistors by electron probe microanalysis. -u.ott, p.1001-1002.                   </li>
+                <li>Nagy G.; Fórizs I. (1986): Tapasztalatok EDS-sel végzett elektronmikroszondás mennyiségi elemzésről. - XXIX.  Magyar Színképelemző Vándorgyűlés, Keszthely, 1986. - kiadv. p. 257-261.    </li>               
+                <li>Nagy G. (1988): Az elektronmikroszondás elemzés pontossága. - XXXI.  Magyar Színképelemzű Vándorgyűlés, Szolnok 1988. jún. 27-30. - kiadv. p. 355-358.                   </li>
+                <li>Beregi, E.; Nagy, G.; Fetter, L.; Hartman, E. (1988): Neodnorodnosti sostava i parazitnye piki FMR v granatakh CVB. - 9th Internat.  Conf. on Microwave Ferrites ICMF'88, Esztergom, 1988. szept. 19-23. - kiadv., p. 197-201.                   </li>
+                <li>Nagy G.; Velledits L. (1991): Festmények mikroanalízise. - A XXXIV.  Magyar Színképelemző Vándorgyűlés előadásai, Nyíregyháza, 1991.  GTE kiadv. p. 149-152.                   </li>
+                <li>Nagy G.; Velledits L. (1991): Microanalysis of paintings of Mihály Munkácsy. - 3rd Hungarian-Austrian Joint Conference on Electron Microscopy, Balatonalmádi, 19-21 Sept. 1991, abstracts. - Optik, 88 (1991) Suppl 5, p.21. - Eur. J. Cell Biol. 55 (1991) Suppl.34. p. 21.                   </li>
+                <li>Nagy, G. (1993): "Quick" method for REE mineral analysis by EPMA.  Int. Conf. on Rare Earth Minerals, London, 1-2 April 1993, p. 94-96.                   </li>
+                <li>Nagy, G.; Horváth, Z. A. (1994): Microanalysis of paints of monuments and pictures to be restored. - European Conference on Energy Dispersive X-Ray Spectrometry, Budapest, 30 May-3 June, 1994, abstracts, p. 33.                   </li>
+                <li>Árkai P.; Lelkes-Felvári Gy.; Lantai Cs.; Nagy G.; Tóth M.: (1994) Formation of biotite in a metagreywacke complex, Mecsek Mts., Hungary: Conditions of low-T metamorphism based on illite and chlorite "crystallinity", coal rank, white mica b~o^ -geobarometric and microstructural data. - IMA 16th General Meeting, 4-9 Sept. 1994, Pisa, Italy -abstracts, p. 16-17.                   </li>
+                <li>Brandle, J. L. and Nagy, G. (1994): Applying chemical classification (TAS) diagrams to the 5th version of IGBADAT. - IAVCEI, 12-16 Sept. 1994, Ankara, Turkey - abstracts.                   </li>
+                <li>Nagy G.; Ivancsics J. (1995): Florencite from Sopron area (W-Hungary) re- examinated by EMPA.  Romanian J. Mineral. 77 (1995) Suppl.  No. 1.  Abstract Vol., Third Symposium on Mineralogy, 25-29 Aug. 1995, Baia Mare, p. 31-32.                   </li>
+                <li>Nagy, G. (1996): Data base for rare earth minerals (preliminary version). - 30th International Geological Congress, Beijing, China, 4-14 Aug. 1996, Abstracts, Vol. 2. p. 515.                   </li>
+                <li>Brandle, J.L., Nishiwaki, N., Nagy, G., Nan, J. (1997): Global database for petrology under Internet environment. - Proc. of the IAMG'97, ed.: Pawlowsky-Glahn, V., CIMNE, Barcelona, 1997, p. 1027-1032.                   </li>
+                <li>Nagy, G. (1997): REE-phosphate minerals in Sopron Hills, Eastern Alps: differences in occurrence and compositions and their possible causes. - CBGA Commission on Metamorphism, Meeting in Budapest 6.11.97 - 7.11.97, p. 22-24.           </li>        
+                <li>Draganits, E.; Nagy, G. (1998): Monazite and rhabdophane in the Sopron Hills, Eastern Alps (W-Austria). - Carpathian-Balkan Geological Association XVI. Congress, Aug. 30-Sept. 2, 1998, Vienna, Abstracts, p. 140.                   </li>
+                <li>Jovanovic, M.; Prevelic, D.; Pantó, Gy.; Nagy, G. (1998): Coexistence of phlogopite and biotite in subvolcanic rocks from Beli Kamen, Rudnik Mt., Serbia, as evidence for magma mixing and mingling. - Carpathian- Balkan Geological Association XVI. Congress, Aug. 30-Sept. 2, 1998, Vienna, Abstracts, p. 254.                   </li>
+                <li>Nagy, G.; Simonits, A. (1998): Accessory rare earth minerals in Sopron Hills, W-Hungary. - Carpathian-Balkan Geological Association XVI. Congress, Aug. 30-Sept. 2, 1998, Vienna, Abstracts, p. 411.                   </li>
+                <li>Póka, T.; Zelenka, T.; Szakács, A.; Pécskay, Z.; Márton, E.; Nagy, G. (1998): Identifying and distinguishing between the acidic explosive sequences of the Bükk Foreland (Pannonian Basin, Hungary) using petrographic and petrochemical criteria. - Carpathian-Balkan Geological Associa- tion XVI. Congress, Aug. 30-Sept. 2, 1998, Vienna, Abstracts, p. 480.                   </li>
+                <li>Prelevic, D.; Pantó, Gy.; Nagy, G.; Jovanovic, M. (1998): Phlogopites from lamprophyres, semilamprophyres and some basalts from Serbia, Yugoslavia. - 17th General Meeting of the IMA, Aug. 9-14, 1998, Toronto, Abstracts, p.  A112                   </li>
+                <li>Brandle, J.L., Nishiwaki, N., Nagy, G. (1998): Linkage between petrology and mathematics, with special reference to Prof.  Felix Chayes. - Proc. of IAMG '98 Eds.: Buccanti, A,; Nardi, G.; Potenza, R., De Frede Editore, Napoli, 1998. p. 54-64.                   </li>
+                <li>Fórizs I., Tóth M., Nagy G., Pásztor A.: Avar kori üveggyöngyök röntgen- diffrakciós és elektron-mikroszondás vizsgálata; Alapadatok az üveggyöngyök genetikájához; Az üveggyöngyök zárványai.  A nép- vándorláskor kutatóinak kilencedik konferenciája. Rezümék.  Eger, 1998. szept. 18-20, 1998, pp. 7-8                   </li>
+                <li>Fórizs I., Nagy G., Tóth M., Pásztor A. (1999): Mineralogical investigations of archaeological glass objects: Results and interpretations. - Berichte der Deutschen Mineralogischen Gesellschaft, No.1, 1999, p. 74.                   </li>
+                <li>Nagy, G., Draganits, E. (1999): REE minerals in the mmetamorphic rocks of the Sopron Hills, Eastern Alps. - Berichte der Deutschen Mineralogischen Gesellschaft, No.1, 1999, p. 163.                   </li>
+                <li>Árkai, P.; Balogh, K.; Demény, A.; Fórizs, I.; Máthé, Z.; Nagy, G. (1999): Study of composition, diagenetic and post-diagenetic alterations of the Boda Albitic Claystone Formation.  The Geology of Today for Tomorrow Hungarian Geological Society - A Satellite Conference of the World Conference on Science; 1999 Jun 21-22 ; Budapest.  Budapest: Hungarian Geological Society, Programme and Abstracts, pp. 34.                   </li>
+                <li>Nagy G.: Monazite, rhabdophane and florencite in the metamorphic complex of Sopron Hills, eastern Alps. EUG XI, 8-12 April 2001, Strasbourg. J. Conf. Abs. 6 (2001), p.682-683.                  </li>
+                <li>Árkai P, Fenninger A, Nagy G: Chemical and structural evolution of phyllosilicates in associated low-T metamorphic pelites and basic magmatites: a case study from the Graz Paleozoic, eastern Alps, Austria. EUG XI, 8-12 April 2001, Strasbourg. J. Conf. Abs. 6 (2001), p. 237.                  </li>
+                <li>Fehér B, Szakáll S, Nagy G. (2003): Kamphaugite, a rare hydrous Ca-Y-carbonate mineral from Szarvaskő, Bükk Mountains, Hungary. – A. Mineral.-Petrogr. Abstr. Ser., Szeged,  p. 30.                  </li>
+                <li>Nagy G. (2003): Nacareniobsite in phonolites in the Mecsek Mts. (Hungary) – Second occurrence in the world? – u. ott, p. 75.                  </li>
+                <li>Nagy G. (2003a): Problems of monazite dating by EMPA. – u.ott, p. 76.                  </li>
+                <li>Szakáll S, Nagy G, Sajó I.E. (2003): Synchisite-(Ce) from the Komló coal deposit, Mecsek Mts. – u.ott, p. 100.                  </li>
+                <li>Bajnóczi, B., Seres-Hartai, É. & Nagy, G. (2003): Woodhouseite in the advanced argillic alteration zones of some high-sulphidation epithermal deposits from the Carpatho-Pannonian region. In: Eliopoulos, D. G. et al. (eds): Mineral exploration and sustainable development. Proceedings of the 7th Biennial SGA Meeting, Athens, August 24-28, 2003; Millpress Science Publishers, Rotterdam, pp. 437-440.                  </li>
+                <li>sNagy G. (2003): Rare earth element mineral analysis by electron microprobe. 17th International Congress on X-Ray Optics and Microanalysis, Chamonix, 22-26 Sept. 2003, Programme and Abstracts p. 128.</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Last update 2021.06.16.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside_en.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>
