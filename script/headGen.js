@@ -1,11 +1,17 @@
-var generateHead = function (){
+var generateHead = function (lang){
   var headID = document.getElementsByTagName('head')[0];
   for (const i of links) {
     link = linkLoader(i);
     headID.appendChild(link);
   }
   var title = document.createElement("title");
-  title.innerHTML = 'Földtani és Geokémiai Kutatóintézet';
+  
+  if (lang == "en"){
+    title.innerHTML = 'Istitute of Geological an Geochemical Research';
+  }
+  else{
+    title.innerHTML = 'Földtani és Geokémiai Kutatóintézet';
+  }
   headID.appendChild(title)
 }
 
