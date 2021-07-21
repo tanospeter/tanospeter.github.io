@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -26,7 +26,7 @@
           <div class="worker-header">
             <div class="worker-header-left">
               <!-- név szerkeszthető -->
-              <div class="worker-h1">Lukács Réka (Haranginé Lukács Réka)</div>
+              <div class="worker-h1">Réka Lukács (Réka Haranginé Lukács)</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
               <div class="worker-h2">PhD</div>          
               <div class="worker-h2">senior research fellow</div>		            
@@ -44,60 +44,55 @@
                 <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
                 <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
                 <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
-                <li class="icon-phone"> +36 1 ...</li>
-                <li class="icon-fax"> +36 1 ...</li>
-                <li class="icon-mail"> ... at csfk.org</li>  
-                <li class="icon-home"> ... szoba </li>                
+                <li class="icon-phone hidden"> +36 1 ...</li>
+                <li class="icon-fax hidden"> +36 1 ...</li>
+                <li class="icon-mail">lukacs.reka at csfk.org</li>  
+                <li class="icon-home">312. szoba </li>                
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-  bekapcsoláshoz: <div class="buttons"> 
-  kikapcssoláshoz: <div class="buttons hidden">
-    
-  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
-  bekapcsoláshoz: <a class="">  
-  kikapcssoláshoz: <a class="hidden">  
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
 
-  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
-  pl. "https://www.researchgate.net/profile/Attila-Demeny"
--->
-<div class="buttons">
-  <!--mtmt
-    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
-    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
-    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
-  -->
-   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
-  </a>
-  <!--researchgate-->
-  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
-    <img class=rg-btn src="/pics/rg-btn.png" alt="">
-  </a>   
-  <!--google scolar-->             
-  <a class="hidden" href="https://scholar.google.com/" target="_blank">
-    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
-  </a>
-  <!--orcid-->
-  <a class="hidden" href="https://orcid.org/" target="_blank">
-    <img src="/pics/orcid-btn.png" alt="orcid">
-  </a>
-  <!--linkedin-->
-  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
-    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
-  </a>
-  <!--saját honlap linkje-->
-  <a class="hidden" href="" target="_blank">
-    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
-  </a>             
-</div>
-              <div>
-                <a href="https://www.researchgate.net/profile/..." target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10016373" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
-              </div>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Reka-Lukacs-2" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="" href="https://scholar.google.com/citations?hl=hu&user=dbAWD84AAAAJ" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="" href="https://orcid.org/0000-0002-2338-4209" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
             </div>
-          </div>          
+          </div>         
 
           <!-- ...Place and date of birth...
             A szakasz ki- és bekapcsolható!
@@ -111,7 +106,7 @@
             <div class="worker-content-no-marker">
               <!-- Szerkessze az <ul> cimkék közötti részt -->
               <!-- formátum pl. Budapest, 1980 -->
-              <ul>..., ...</ul>
+              <ul>Budapest, 1978.05.19.</ul>
             </div>
           </div>        
           
@@ -129,9 +124,9 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
-                <li>...</li>
-                <li>...</li>   
-                <li>...</li>             				
+                <li>2002 MSc in Geology (Eötvös Loránd University, Faculty of Science)</li>
+                <li>2001 Hungarian-English Translator of Geology (Eötvös Loránd University, Faculty of Science)</li>
+                <li>2010 PhD in Earth Sciences (Eötvös Loránd University, Faculty of Science) Title: Petrogenesis of the Miocene Si-rich pyroclastic rocks of the Bükkalja: magma reservoir processes</li>             				
               </ul>
             </div>
           </div>
@@ -148,7 +143,9 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
-                <li>...</li>
+                <li>2013 - MTA-ELTE Volcanology Research Group, Budapest, Hungary, researcher</li>
+                <li>2012-2013 Secretariat of the Hungarian Academy of Sciences</li>
+                <li>2004-2012 Maternity leave</li>
               </ul>
             </div>
           </div>
@@ -166,7 +163,8 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
-                <li>..., ...</li>
+                <li>English, C2 level</li>
+                <li>German, Basic level</li>
               </ul>
             </div>
           </div>
@@ -184,9 +182,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>               
+                <li>zircon geochronology and chemistry, igneous geochemistry, petrogenesis, tephrochronology, Si-rich volcanic rocks</li>               
               </ul>
             </div>
           </div>
@@ -203,9 +199,15 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li> 
-                <li>...</li> 
+                <li>2020-2024 - NKFIH K 135179 project, senior researcher; Title: From crystal mush to volcanic eruption (PI: Harangi Szabolcs)</li> 
+                <li>2019-2023 - NKFIH FK 131869 project,  principal investigator. Title: Silicic volcanism in the Pannonian Basin from source to surface: geochronological, volcanological and petrogenetic characteristics</li> 
+                <li>2017-2018 - OMAA 98öu12 project,  principal investigator. Title: Korrelation miozäner Vulkanite aus Ungarn mit vulkanischen Ablagerungen in Österreich und Tschechien</li> 
+                <li>2016-2019 - OTKA 116528 project, senior researcher, Title: Consortional main: REvPAMS: an integrated REsearch of a volcano with Potentially Active Magma Storage, the youngest volcano (Ciomadul, E Carpathians) of the Carpathian-Pannonian Region</li> 
+                <li>2016-2019 - Postdoctoral Excellence Program (PD_16; 121048), principal investigator. Title: Understanding the magma evolution and eruption chronology based on combined U-Pb dating, Hf isotope and trace element characteristics of zircons in silicic volcanic rocks of the Carpathian-Pannonian Region</li> 
+                <li>2015-2018 - OTKA PD 112584 project, principal investigator. Title: Origin and evolution of the Miocene silicic magmatism in the Pannonian basin primarily based on textural and compositional characteristics of zircon from the Bükkalja ignimbrites</li> 
+                <li>2014-2017 - Magyary Z. Postdoctoral Fellowship (University of Szeged, Department of Mineralogy, Geochemistry and Petrology; MTA-ELTE Volcanology Research Group).</li> 
+                <li>2012-2014 - OTKA K81530 project, researcher. Title: Miocene-Pliocene deformation and sedimentation of the Pannonian Basin: constraints from structural, sedimentological and geochronological studies</li> 
+                <li>2003-2004 - Marie Curie Fellowship, University of Vienna (Institute of Mineralogy and Crystallography, HPMT-GH-00-00138-05)</li> 
               </ul>
             </div>
           </div>
@@ -217,7 +219,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Outstanding results</div>          
             <div class="worker-content">
               <ul>
@@ -236,7 +238,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Study trips</div>
             <div class="worker-content">
               <ul>
@@ -262,10 +264,15 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>2021-2026 - member of the Hungarian Young Academy</li>
+                <li>2020 - president of the Magmatic and Metamorphic Subcommission of Stratigraphic Commission of Hungary</li>
+                <li>2018-2021 - board member of the Community Education Section of Hungarian Geological Society</li>
+                <li>2017-2020 - secretary of the Petrology Subgcommittee of Geochemistry, Mineralogy and Petrology Committee of the Hungarian Academy of Sciences</li>
+                <li>2015-2018 - board member of the Community Education Section of Hungarian Geological Society</li>
+                <li>2007-2012 - secretary of the Stratigraphic Commission of Hungary, Magmatic Subcommission</li>
+                <li>2009-2011 - secretary of the Youth Committee of Hungarian Geological Society</li>
+                <li>2006-2009 - member of the advisory board, secretary of the Youth Foundation of Hungarian Geological Society</li>
+                <li>1997- Member of the Hungarian Geological Society</li> 
               </ul>
             </div>
           </div>
@@ -282,10 +289,9 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>2019 - X. Kőzettani és Geokémiai Vándorgyűlés (Assembly of Petrology and Geochemistry), Chief organizer</li>
+                <li>2014 - V. Kőzettani és Geokémiai Vándorgyűlés (Assembly of Petrology and Geochemistry), Chief organizer</li>
+                <li>2010 - I. Kőzettani és Geokémiai Vándorgyűlés (Assembly of Petrology and Geochemistry), Chief organizer</li> 
               </ul>
             </div>
           </div>
@@ -302,10 +308,12 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>2020-2021 - ÚNKP Bolyai+ Fellowship</li>
+                <li>2020-2023 - Bolyai János Research Fellowship</li>
+                <li>2016-2019 - Postdoctoral Excellence Program (PD_16)</li>
+                <li>2014-2017 - Bolyai János Research Fellowship</li>
+                <li>2013-2014 - Magyary Zoltán Postdoctoral Fellowship</li>
+                <li>2003-2004 - Marie Curie Fellowship (HPMT-GH-00-00138-05)</li>
               </ul>
             </div>
           </div>
@@ -322,10 +330,13 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>2018 - Szádeczky-Kardoss Elemér Award</li>
+                <li>2006 - Szádeczky-Kardoss Elemér Award, II. grade</li>
+                <li>2001, 2002 - Award as Outstanding Student of the Faculty of Science (ELTE TTK)</li>
+                <li>2001 - Award of the Geological Institute of Hungary</li>
+                <li>2001 - Award of the Foundation for the Higher Education and Research of Hungary</li>
+                <li>2001 - II. Award of the Environmental Ministry of Hungary</li>
+                <li>2000, 2001 - Grant of the Hungarian Republic</li> 
               </ul>
             </div>
           </div>
@@ -342,10 +353,8 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>2001 - I. award, XXV. Hungarian Student Scientific Conference (Pécs, Hungary)</li>
+                <li>2000 - I. award, Eötvös University, Faculty of Science Student Scientific Conference</li>
               </ul>
             </div>
           </div>
@@ -362,9 +371,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Eötvös Loránd University: Geochemistry practice (BSc), Geoparks and geotourism (BSc), Geochemical calculations (MSc), Isotope geochronology (MSc), Advances in isotope geochronology (PhD), in English and Hungarian</li> 
               </ul>
             </div>
           </div>
@@ -381,7 +388,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
+                <li>Magmatic Petrology and Volcanology Group, Department of Earth Sciences, ETH, Zürich</li> 
               </ul>
             </div>
           </div>
@@ -408,7 +415,7 @@
                 
               -->
               <div>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=12345678" target="_blank">
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10016373" target="_blank">
                   <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
                 </a>               
               </div>
@@ -427,10 +434,11 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Lukács, R.; Guillong, M.; Bachmann, O.; Fodor, L.; Harangi, Sz. : Tephrostratigraphy and Magma Evolution Based on Combined Zircon Trace Element and U-Pb Age Data: Fingerprinting Miocene Silicic Pyroclastic Rocks in the Pannonian Basin FRONTIERS IN EARTH SCIENCE (2296-6463): 9, pp 1-20. (2021) </li>
+                <li>Lukács R., Caricchi L., Schmitt A.K., Bachmann O., Karakas O., Guillong M., Molnár K., Seghedi I., Harangi Sz.: Zircon geochronology suggests a long-living and active magmatic system beneath the Ciomadul volcanic dome field (eastern-central Europe) Earth and Planetary Science Letters Volume 565, 1 July 2021, 116965 (2021)</li>
+                <li>Molnár, K., Lukács, R., Dunkl, I., Schmitt, A.K., Kiss, B., Seghedi, I., Szepesi, J. and Harangi, S.: Episodes of dormancy and eruption of the Late Pleistocene Ciomadul volcanic complex (Eastern Carpathians, Romania) constrained by zircon geochronology Journal of Volcanology and Geothermal Research, 373: 133-147. (2019)</li>
+                <li>Szepesi, J., Lukács, R., Soós, I., Benkó, Zs., Pécskay, Z., Ésik, Zs., Kozák, M., Capua D., A., Groppelli, G., Norini, G., Sulpizio, R., Harangi, Sz.: Telkibánya lava domes: Lithofacies architecture of a Miocene rhyolite field (Tokaj Mountains, Carpathian-Pannonian region, Hungary) Journal of Volcanology and Geothermal Research, Volume 385, 179-197 (2019)</li>
+                <li>Lukács Réka, Harangi Szabolcs, Guillong Marcel, Bachmann Olivier, Fodor László, Buret Yannick, Dunkl István, Sliwinski Jakub, von Quadt Albrecht, Peytcheva Irena, Zimmerer Matthew: Early to Mid-Miocene synextensional massive silicic volcanism in the Pannonian Basin (East-Central Europe): Eruption chronology, correlation potential and geodynamic implications EARTH-SCIENCE REVIEWS 179: pp. 1-19. (2018)</li>  
               </ul>
             </div>
           </div>
