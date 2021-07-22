@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -26,9 +26,9 @@
           <div class="worker-header">
             <div class="worker-header-left">
               <!-- név szerkeszthető -->
-              <div class="worker-h1">POLGÁRI MÁRTA Piroska</div>
+              <div class="worker-h1">MÁRTA Piroska POLGÁRI</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-              <div class="worker-h2">az MTA doktora</div>          
+              <div class="worker-h2">DSc</div>          
               <div class="worker-h2">scientific advisor</div>		            
             </div>
             <div class="worker-header-right">
@@ -44,10 +44,11 @@
                 <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
                 <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
                 <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
-                <li class="icon-phone"> +36 1 ...</li>
-                <li class="icon-fax"> +36 1 ...</li>
-                <li class="icon-mail"> ... at csfk.org</li>  
-                <li class="icon-home"> ... szoba </li>                
+                <li class="icon-phone"> +36 1 309 2600 / 1258 </li>
+                <li class="icon-fax"> +36 1 319-3137</li>
+                <li class="icon-mail"> polgari at csfk.org</li>
+                <li class="icon-mail"> rodokrozit at gmail.com</li>  
+                <li class="icon-home">217. room</li>                
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
@@ -67,11 +68,11 @@
                   A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
                   A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
                 -->
-                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001351" target="_blank">
                   <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
                 <!--researchgate-->
-                <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+                <a class="" href="https://www.researchgate.net/profile/Marta-Polgari" target="_blank">
                   <img class=rg-btn src="/pics/rg-btn.png" alt="">
                 </a>   
                 <!--google scolar-->             
@@ -90,12 +91,7 @@
                 <a class="hidden" href="" target="_blank">
                   <img src="/pics/sajatlink-btn.png" alt="sajatlink">
                 </a>             
-              </div>
-              <div>
-                <a href="https://www.researchgate.net/profile/..." target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
-                </a>
-              </div>
+              </div>             
             </div>
           </div>
 
@@ -119,7 +115,7 @@
             <div class="worker-content-no-marker">
               <!-- Szerkessze az <ul> cimkék közötti részt -->
               <!-- formátum pl. Budapest, 1980 -->
-              <ul>..., ...</ul>
+              <ul>Budapest, 1956</ul>
             </div>
           </div>        
           
@@ -137,9 +133,10 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
-                <li>...</li>
-                <li>...</li>   
-                <li>...</li>             				
+                <li>2010 doctor of the Hungarian Academy of Sciences (D.Sc.): Hungarian Academy of Sciences, Budapest.</li>
+                <li>1992 "candidate of geosciences" (C.Sc.): Hungarian Academy of Sciences TMB, Budapest.</li>
+                <li>1983 Dr. univ. (geochemistry): József Attila Universit, Szeged.</li>   
+                <li>1980 diploma in geology ELTE TTK</li>             				
               </ul>
             </div>
           </div>
@@ -156,7 +153,8 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
-                <li>...</li>
+                <li>2021- Eszterházy Károly Katolikus Egyetem</li>
+                <li>1980- Institute for Geological and Geochemical Research, Research Centre for Astronomy and Earth Sciences, Hungarian Academy of Sciences</li>
               </ul>
             </div>
           </div>
@@ -174,7 +172,8 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
-                <li>..., ...</li>
+                <li>English, B2</li>
+                <li>Russina, B1</li>
               </ul>
             </div>
           </div>
@@ -192,9 +191,21 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>               
+                <li>during university years:</li>
+                <ul class="ll2">
+                  <li>sedimentary petrology</li>                  
+                  <li>laser spectroscopy of minerals</li>                  
+                  <li>canning electron microscopy of minerals</li>                  
+                </ul>
+                <li>in the Laboratory for Geochemical Research:</li>                  
+                <ul class="ll2">
+                  <li>electron microprobe studies on various ores (manganese ores, bauxites, etc.)</li>                  
+                  <li>geochemistry of sedimentary manganese ore deposits</li>                  
+                  <li>black shales</li>                  
+                  <li>natural zeolites</li>                  
+                  <li>geomicrobiology</li>                  
+                  <li>cathodoluminescence methods</li>               
+                </ul>
               </ul>
             </div>
           </div>
@@ -211,9 +222,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li> 
-                <li>...</li> 
+                <li>2017-2021 OTKA</li> 
               </ul>
             </div>
           </div>
@@ -230,9 +239,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li> 
-                <li>...</li> 
+                <li style="list-style:none"><a href="http://geochem.hu/people/polgari/Kiemelkedo_Kut_Eredmenyek.pdf" target="_blank">Read more...</a></li>                  
               </ul>
             </div>
           </div>
@@ -244,7 +251,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Study trips</div>
             <div class="worker-content">
               <ul>
@@ -270,10 +277,12 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>1980- member of the Hungarian Geological Society</li>
+                <li>1994-2000 secretary of the Hungarian National Committee of IGCP (International Geological Correlation Programme)</li>                
+                <li>2005- IAGOD (International Association of Geology of Ore Deposits)</li>                
+                <li>2008- IAGC (International Association of Geo-Chemistry)</li>                
+                <li>2008- secretary of Scientific Committee „Geonomy” of Hungarian Academy of Sciences</li>                
+                <li>2014- Editor on field of geomicrobiology, Open Geology</li> 
               </ul>
             </div>
           </div>
@@ -290,10 +299,9 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>International workshop, Úrkút 1989 (IGCP 226 keretében)</li>
+                <li>Úrkút Ankét (1, 2, 3) 2003, 2006, 2008</li>                  
+                <li>International short course, Úrkút 2009 (Manganese in the XXI. century)</li>  
               </ul>
             </div>
           </div>
@@ -305,7 +313,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Research grants, scholarships</div>
             <div class="worker-content">
               <ul>
@@ -330,10 +338,10 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li> 1982 Hungarian Geological Society Ifjúsági Díj</li>
+                <li> 1991-1992 A Magyar Hitel Bank „Magyar Tudományért” lapítvány ösztöndíja</li>                  
+                <li> 1992 Szádeczky-Kardoss Elemér Alapítvány I. díja</li>                  
+                <li> Az MTA Természettudományi Kutató-laboratóriumai Ifjúsági Díja, 1982, 1985, 1992</li>  
               </ul>
             </div>
           </div>
@@ -345,15 +353,12 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Prizes won at scientific competitions</div>
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li></li> 
               </ul>
             </div>
           </div>
@@ -370,9 +375,24 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>2017-2021 BSc supervisor (8)</li>
+                <li>2017-2021 MSc supervisor (3)</li>
+                <li>2016 BSc supervisor (2)</li>
+                <li>2015-16 MSc supervisor (1)</li>                  
+                <li>2015 TDK supervisor (4<sup>th</sup> place, ELTE)</li>                  
+                <li>2015 BSc supervisor (4)</li>                  
+                <li>2013- University of Pécs - geochemistry</li>
+                <li>2013- Eszterházy Károly University</li>                  
+                <li>2011- University of Szegedi</li>                  
+                <li>2009 OTDK section vice chairman</li>                  
+                <li>2008, PhD consultant (2)</li>                  
+                <li>2008 TDK supervisor (2<sup>nd</sup> place, ELTE, TTK; 1<sup>st</sup> place, SzTE)</li>                  
+                <li>2007 OTDK 1<sup>st</sup> place (supervisor)</li>                  
+                <li>2005 OTDK jury member</li>                  
+                <li>2005 OKTV 2<sup>nd</sup> place (supervisor)</li>                  
+                <li>2003 OTDK 2<sup>nd</sup> place (supervisor)</li>                  
+                <li>2005 OTDK jury member</li>                  
+                <li>ELTE special college</li> 
               </ul>
             </div>
           </div>
@@ -400,8 +420,8 @@
                 
               -->
               <div>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=12345678" target="_blank">
-                  <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001351" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt-btn.png" alt="">
                 </a>               
               </div>
             </div>
@@ -419,10 +439,13 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Polgári, M., Gyollai, I. (2021). Geochemical constraints on the element enrichments of microbially mediated manganese and iron ores – An overview. Ore Geology Reviews, 136, Paper: 104203.</li>
+                <li>Yu, W., Polgári, M., Fintor, K., Gyollai, I., Szabó, M., Velledits, F., Liu, Z., Du, Y. (2021). Contribution of microbial processes to the enrichment of Middle Permian manganese deposits in northern Guizhou, South China. Ore Geology Reviews, 136, Paper: 104259.</li>                  
+                <li>Yu, W., Polgári, M., Gyollai, I., Fintor, K., Huang, H., Szabó, M., Du, Y. (2021). Microbial metallogenesis of early Carboniferous manganese deposit in central Guangxi, South China. Ore Geology Reviews, 136, Paper: 104251.</li>                  
+                <li>Gál, P., Polgári, M., Józsa, S., Gyollai, I., Kovács, I., Szabó, M., & Fintor, K. (2020). Contribution to the origin of Mn-U-Be-HREE-enrichment in phosphorite, near Bükkszentkereszt, NE Hungary. Ore Geology Reviews, 125, 103665.</li>                  
+                <li>Biondi, J. C., Polgári, M., Gyollai, I., Fintor, K., Kovács, I., Fekete, J., & Mojzsis, S. J. (2020). Biogenesis of the Neoproterozoic kremydilite manganese ores from Urucum (Brazil)–A new manganese ore type. Precambrian Research, 340, 105624.</li>                  
+                <li>Polgári, M., Gyollai, I., Fintor, K., Horváth, H., Pál-Molnár, E, Biondi, J.C. (2019). Microbially Mediated Ore-Forming Processes and Cell Mineralization. Frontiers in Microbiology, 10, Paper: 2731.</li>                  
+                <li>Polgári, M., Bérczi, Sz., Horiuchi, K.., Matsuzaki, H., Kovács, K., Józsa, J., Bendő, Zs., Fintor, K., Fekete, J., Homonnay, Z., Kuzmann, E., Gucsik, A., Gyollai, I., Kovács, J., Dódony, I. (2017)  Characterization and 10Be content of iron carbonate concretions for genetic aspects - Weathering, desert varnish or burning: rim effects in iron carbonate concretions. Journal of Environmental Radioactivity,  173: pp. 58-69.</li>  
               </ul>
             </div>
           </div>
