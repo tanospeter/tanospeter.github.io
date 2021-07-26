@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -26,10 +26,10 @@
           <div class="worker-header">
             <div class="worker-header-left">
               <!-- név szerkeszthető -->
-              <div class="worker-h1">TOPÁL DÁNIEL</div>
+              <div class="worker-h1">DÁNIEL TOPÁL</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-              <div class="worker-h2">PhD hallgató</div>          
-              <div class="worker-h2">tudományos segédmunkatárs</div>		            
+              <div class="worker-h2">PhD student</div>          
+              <div class="worker-h2">junior research fellow</div>		            
             </div>
             <div class="worker-header-right">
               <img class="worker-img" src="/people/topal/topal.png" alt="">
@@ -44,58 +44,54 @@
                 <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
                 <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
                 <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
-                <li class="icon-phone"> +36 1 ...</li>
-                <li class="icon-fax"> +36 1 ...</li>
-                <li class="icon-mail"> ... at csfk.org</li>  
-                <li class="icon-home"> ... szoba </li>                
+                <li class="icon-phone">+36 1 319 2600 / 1353</li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">topal.daniel at csfk.org</li> 
+                <li class="icon-mail">topal@ucsb.edu</li> 
+                <li class="icon-home">313. szoba</li>                
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-  bekapcsoláshoz: <div class="buttons"> 
-  kikapcssoláshoz: <div class="buttons hidden">
-    
-  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
-  bekapcsoláshoz: <a class="">  
-  kikapcssoláshoz: <a class="hidden">  
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
 
-  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
-  pl. "https://www.researchgate.net/profile/Attila-Demeny"
--->
-<div class="buttons">
-  <!--mtmt
-    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
-    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
-    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
-  -->
-   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
-  </a>
-  <!--researchgate-->
-  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
-    <img class=rg-btn src="/pics/rg-btn.png" alt="">
-  </a>   
-  <!--google scolar-->             
-  <a class="hidden" href="https://scholar.google.com/" target="_blank">
-    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
-  </a>
-  <!--orcid-->
-  <a class="hidden" href="https://orcid.org/" target="_blank">
-    <img src="/pics/orcid-btn.png" alt="orcid">
-  </a>
-  <!--linkedin-->
-  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
-    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
-  </a>
-  <!--saját honlap linkje-->
-  <a class="hidden" href="" target="_blank">
-    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
-  </a>             
-</div>
-              <div>
-                <a href="https://www.researchgate.net/profile/..." target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10052649" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
-              </div>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Daniel-Topal" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google-->             
+                <a class="" href="https://scholar.google.com/citations?hl=hu&user=S0xiSssAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="" href="https://topal9.wixsite.com/danieltopal" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
             </div>
           </div>
 
@@ -114,7 +110,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Place and date of birth</div>
             <div class="worker-content-no-marker">
               <!-- Szerkessze az <ul> cimkék közötti részt -->
@@ -137,9 +133,9 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
-                <li>...</li>
-                <li>...</li>   
-                <li>...</li>             				
+                <li>2019-2023 Eötvös University, Budapest, Hungary, Environmental Physics Doctoral Program</li>
+                <li>2017-2019 Eötvös University, Budapest, Hungary, Meteorologist</li>                  
+                <li>2014-2019 Saint Ignatius Jesuit Collage for Advanced Studies</li>             				
               </ul>
             </div>
           </div>
@@ -156,7 +152,9 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
-                <li>...</li>
+                <li>2019-2023: IGGR, RCAES, junior research fellow, <a href="http://www.geochem.hu/gp/main.html">Geochemistry and Paleoclimate Research Group</a></li>
+                <li>2018- University of California-Santa Barbara, Earth Research Institute, affiliated researcher</li>
+                <li>2018 Central European University: IMPRESSIONS FP7 EU project Hungarian case study</li>
               </ul>
             </div>
           </div>
@@ -192,9 +190,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>               
+                <li>Climate dynamics, Arctic sea ice, climate modelling</li>               
               </ul>
             </div>
           </div>
@@ -206,7 +202,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Research projects</div>          
             <div class="worker-content">
               <ul>
@@ -225,7 +221,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Outstanding results</div>          
             <div class="worker-content">
               <ul>
@@ -244,15 +240,14 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Study trips</div>
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>University of California Santa Barbara, Santa Barbara, CA, USA, 2018-2019</li>
+                <li>University of California Los Angeles, Los Angeles, CA, USA, 2018</li>                  
+                <li>International Arctic Research Center, Fairbanks, AK, USA, 2016</li>  
               </ul>            
             </div>
           </div>
@@ -270,10 +265,8 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>American Meteorological Society</li>
+                <li>Hungarian Meteorological Society</li> 
               </ul>
             </div>
           </div>
@@ -285,7 +278,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Conference organization</div>
             <div class="worker-content">
               <ul>
@@ -310,10 +303,11 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>2020 National Talent Program: Mentoring students</li>
+                <li>2019 Fulbright Association: Visiting Student Researcher 2021</li>                  
+                <li>2019 Student Travel Allowance: American Meteorological Society</li>                  
+                <li>2019 New National Excellence Program</li>
+                <li>2018 Dr. László Sólyom (former President of Hungary) research grant</li>                
               </ul>
             </div>
           </div>
@@ -325,7 +319,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Awards</div>
             <div class="worker-content">
               <ul>
@@ -345,7 +339,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Prizes won at scientific competitions</div>
             <div class="worker-content">
               <ul>
@@ -365,7 +359,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Teaching</div>
             <div class="worker-content">
               <ul>
@@ -400,7 +394,7 @@
                 
               -->
               <div>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=12345678" target="_blank">
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10052649" target="_blank">
                   <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
                 </a>               
               </div>
@@ -419,10 +413,10 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Topál, D. et al. 2020: Journal of Climate, Accepted</li>
+                <li>Haszpra, T. et al. 2020: Journal of Climate, <a href="https://doi.org/10.1175/JCLI-D-19-0004.1">DOI</a></li>                  
+                <li>Baxter, I. et al. 2019: Journal of Climate, <a href="https://doi.org/10.1175/JCLI-D-18-0783.1">DOI</a></li>                  
+                <li>Topál, D. et al. 2016: Open Geosciences, <a href="https://doi.org/10.1515/geo-2016-0009">DOI</a></li>  
               </ul>
             </div>
           </div>
