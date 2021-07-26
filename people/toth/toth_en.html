@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -26,10 +26,10 @@
           <div class="worker-header">
             <div class="worker-header-left">
               <!-- név szerkeszthető -->
-              <div class="worker-h1">Tóth Mária &#x2020</div>
+              <div class="worker-h1">Mária Tóth</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-              <div class="worker-h2"></div>          
-              <div class="worker-h2">nyugdíjas research fellow</div>		            
+              <div class="worker-h2">(1946-2021)</div>          
+              <div class="worker-h2"></div>		            
             </div>
             <div class="worker-header-right">
               <img class="worker-img" src="/people/toth/totyi.jpg" alt="">
@@ -37,7 +37,7 @@
           </div>
 
 
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Contacts</div>
             <div class="worker-content-no-marker">
               <ul>
@@ -51,55 +51,49 @@
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-  bekapcsoláshoz: <div class="buttons"> 
-  kikapcssoláshoz: <div class="buttons hidden">
-    
-  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
-  bekapcsoláshoz: <a class="">  
-  kikapcssoláshoz: <a class="hidden">  
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
 
-  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
-  pl. "https://www.researchgate.net/profile/Attila-Demeny"
--->
-<div class="buttons">
-  <!--mtmt
-    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
-    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
-    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
-  -->
-   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
-  </a>
-  <!--researchgate-->
-  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
-    <img class=rg-btn src="/pics/rg-btn.png" alt="">
-  </a>   
-  <!--google scolar-->             
-  <a class="hidden" href="https://scholar.google.com/" target="_blank">
-    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
-  </a>
-  <!--orcid-->
-  <a class="hidden" href="https://orcid.org/" target="_blank">
-    <img src="/pics/orcid-btn.png" alt="orcid">
-  </a>
-  <!--linkedin-->
-  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
-    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
-  </a>
-  <!--saját honlap linkje-->
-  <a class="hidden" href="" target="_blank">
-    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
-  </a>             
-</div>
-              <div>
-                <a href="https://www.researchgate.net/profile/..." target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
+                <!--researchgate-->
+                <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="hidden" href="https://scholar.google.com/" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
               </div>
             </div>
           </div>
-
-
+              
           <!--
           <div class="worker-h3 title2">Jelenlegi beosztás</div>
           <div class="worker-content">
@@ -114,7 +108,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Place and date of birth</div>
             <div class="worker-content-no-marker">
               <!-- Szerkessze az <ul> cimkék közötti részt -->
@@ -131,7 +125,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Qualifications</div>
             <div class="worker-content">
               <ul>
@@ -151,7 +145,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Employment</div>
             <div class="worker-content">            
               <ul>
@@ -168,7 +162,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Language knowledge</div>
             <div class="worker-content">            
               <ul>
@@ -187,7 +181,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Main fields of research</div>
             <div class="worker-content">
               <ul>
@@ -206,7 +200,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Research projects</div>          
             <div class="worker-content">
               <ul>
@@ -225,7 +219,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Outstanding results</div>          
             <div class="worker-content">
               <ul>
@@ -244,7 +238,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Study trips</div>
             <div class="worker-content">
               <ul>
@@ -264,7 +258,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Membership of scientific and professional organizations</div>
             <div class="worker-content">
               <ul>
@@ -285,7 +279,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Conference organization</div>
             <div class="worker-content">
               <ul>
@@ -305,7 +299,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Research grants, scholarships</div>
             <div class="worker-content">
               <ul>
@@ -325,7 +319,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Awards</div>
             <div class="worker-content">
               <ul>
@@ -345,7 +339,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Prizes won at scientific competitions</div>
             <div class="worker-content">
               <ul>
@@ -365,7 +359,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title2">Teaching</div>
             <div class="worker-content">
               <ul>
@@ -400,7 +394,7 @@
                 
               -->
               <div>
-                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=12345678" target="_blank">
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10014650" target="_blank">
                   <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
                 </a>               
               </div>
@@ -414,7 +408,7 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3">
+          <div class="worker-h3 hidden">
             <div class="title3">Selected publications of the last 5 years</div>
             <div class="worker-content">
               <ul>
