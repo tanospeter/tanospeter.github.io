@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead("en")
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w_en.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav_en.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">GYÖRGY PANTÓ</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">full member of the HAS</div>          
+              <div class="worker-h2">former director</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/staff/panto/panto.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3 hidden">
+            <div class="title2">Contacts</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone"> +36 1 ...</li>
+                <li class="icon-fax"> +36 1 ...</li>
+                <li class="icon-mail"> ... at csfk.org</li>  
+                <li class="icon-home"> ... szoba </li>                
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
+
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000933" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+                </a>
+                <!--researchgate-->
+                <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="hidden" href="https://scholar.google.com/" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Place and date of birth...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Place and date of birth</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>1936, Budapest</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Qualifications...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Qualifications</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>Candidate of Science (C.Sc) 1966 (Tertiary volcanism of the Northern Börzsöny Mountains</li>
+                <li>Doctor of Science (D.Sc.) 1981 (Geochemistry of the REE and its application in geology)</li>                  
+                <li>Corresponding member of the Hungarian Academy of Sciences 1990 (Evolution of the upper mantle and the origin of cenozoic volcanism in the Carpatho - Pannonian area)</li>                  
+                <li>Full member of the Hungarian Academy of Sciences 1995 (REE in the karstic bauxites of the Mediterranean Region).</li>                
+            </div>
+          </div>
+
+          <!-- ...Employment...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Employment</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li>1959-1962 Pestvidéki Mineral Mining Co. (mine geologist)</li>
+                <li>1962-1965 postgraduate student of HAS</li>                  
+                <li>1965-1966 Hungarian Mineral and Ore Mines (mine geologist)</li>                  
+                <li>1966- Laboratory for Geochemical Research of the Hungarian Academy of Sciences (from senior research fellow to director)</li>                  
+                <li>1998- Research Centre for Earth Sciences (director-gerenal 1998-2005)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Language knowledge...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Language knowledge</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>..., ...</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Main fields of research...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Main fields of research</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Geochemistry, mineralogy, petrology. In details:</li>
+                <ul class="ll2">
+                  <li>study of calc-alkaline volcanism and related mineralization of Hungary</li>
+                  <li>genetic interpretation and REE mineralogy of granite magmatism</li>                    
+                  <li>REE mineralogy and geochemistry</li>                    
+                  <li>isotope geochemistry</li>                    
+                  <li>electron-probe investigation of karstic bauxites with special consideration to their rare earth element geochemistry</li>                    
+                  <li>geochemistry of bioessential trace elements</li>               
+                </ul>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Research projects...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Research projects</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Outstanding results...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Outstanding results</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Study trips...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Study trips</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Membership of scientific and professional organizations...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Membership of scientific and professional organizations</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>Hungarian Geological Society (from 1954)</li>
+                <li>Foreign member of the Serbian Academy of Sciences and Arts</li>                  
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Conference organization...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Conference organization</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Research grants, scholarships...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Research grants, scholarships</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Awards...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Awards</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Eminent Worker of the Geological Research 1976 (Central Geological Office)</li>
+                <li>Vendl Mária Medal 1986 (Hungarian Geological Society)</li>
+                <li>Széchenyi-prize (2000)</li>
+                <li>Order of Merit of the Hungarian Republic, Commander's Cross (2006)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Prizes won at scientific competitions...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Prizes won at scientific competitions</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teaching...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Teaching</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publications</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000933" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Selected publications of the last 5 years...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3 hidden">Selected publications of the last 5 years</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>Pantó, Gy.: Volcanism and petrochemical character of the Northern Börzsöny Mountains. Acta Geol. 12. 1-4. p. 31-50. 1968.</li>  
+                <li>Pantó, Gy.: Textural, mineralogical and alteration characteristics of the Börzsöny Mountains volcanic rocks. Acta Geol. 13. p. 277-302. 1969.</li>
+                <li>Kubovics, I. - Pantó, Gy.: Vulkanológiai vizsgálatok a Mátrában és a Börzsönyben. Akad. Kiadó, Budapest 1970.</li>
+                <li>Bárdossy, Gy. - Pantó, Gy.: Bauxitok vizsgálata elektron-mikroszondával. Bányászati Lapok 103. 12. p. 825-837. 1970.</li>
+                <li>Bárdossy, Gy. - Pantó, Gy.: Investigation of bauxites with the help of electron-probe Tschermaks. Min. Petr. Mitt. 15. p. 165-184. 1971.</li>
+                <li>Pantó, G. - Pantó, Gy.: Electron-probe check of Fe-distribution in sphalerite grains of the Nagybörzsöny hydrothermal ore deposits, Hungary. Mineral. Deposita 7. p. 126-140. 1972.</li>
+                <li>Pantó, Gy.: Trace minerals of the granitic rocks of the Velence- and Mecsek Mountains. Acta Geol. XIX. 1-2. p. 59-93. 1975.   </li>                 
+                <li>Pantó, Gy.: 20 éves az MTA Geokémiai Kutatólaboratóriuma. MTA X. Oszt. Közl. 10. 3-4. p. 257-264. 1977.                    </li>
+                <li>Pantó, Gy.: Genetic significance of rare earth elements in the granitiod rocks of Hungary. Acta Geol. 21. 1-3. p. 105-113. 1977.</li>                    
+                <li>Maksimović, Z. - Pantó, Gy.: Bastnasite- (La) and monacite- (Nd) from Marmara bauxite deposit (Greece). Bull. Acad. Serbe Sc. I. LXXII. No. 20.p. 35-42. 1980.                    </li>
+                <li>Pantó, Gy.: Ritkaföldfémek geokémiája és néhány alkalmazási területe I-II. Doktori értekezés. Budapest, 1980.                    </li>
+                <li>Pantó, Gy.: Rare earth element geochemical pattern of the Cenozoic volcanism in Hungary. Earth Evolution Sciences, Vol. 3/4.p. 249-256. 1981.                    </li>
+                <li>Maksimović, Z. - Pantó, Gy.: Synchisite- (Nd) from Grebnik bauxite deposit (Yugoslavia) Acta Geol. 24. 2-4. p. 217-222. 1981.                    </li>
+                <li>Vogl, M. - Pantó, Gy.: Geochemistry of the young alkaline basaltic volcanism in Hungary.                    </li>
+                <li>From: The significance of trace element in solving petrogenetic problems and controversies. p. 233-256. Theophrastus Publications S.A. Athens, 1983.                    </li>
+                <li>Maksimović, Z. - Pantó, Gy.: Neodymian goyazite in the bauxite deposit of Vlasenica, Yugoslavia. TMPM Tschermaks Min. Petr. Mitt. Vol. 34. No. 2. p. 159-165. 1985.                    </li>
+                <li>Maksimović, Z. - Pantó, Gy.: Hydroxyl-bastnaesite-(Nd), a new mineral from Montenegro, Yugoslavia. Min. Magaz. 1985. Dec. Vol. 49. p. 717-720. 1985.                    </li>
+                <li>Salters, V.J.M. - Hart, S.R. - Pantó, Gy.: Origin of Late Cenozoic volcanic rocks of the Carpathian arc, Hungary. AAPG Memoir 45. The Pannonian Basin. Chapter 19. p. 279-292. 1988.                    </li>
+                <li>Grasselly, Gy. - Pantó, Gy.: Rare aerth elements in the manganese deposit of Urkút (Bakony Mountains, Hungary). Ore Geol. Rev. 4. p. 115-124. 1988.                    </li>
+                <li>Pantó, Gy. - Póka, T. - Gondi, F.: Geochemical cycling and environmental role of certain bioessential trace elements. Kertészeti és Élelmiszeripari Egyetem Házinyomdája. Szerkesztő: I. Pajzs. 187-205. 1989.                    </li>
+                <li>Pantó, Gy. - Downes, H. - Árkai, P. - Thirwall, M.F.: Petrology and geochemistry of Mesosoic igneous rocks, Bükk Mountains, Hungary. Lithos. 24. k. p. 201-215. 1990.                    </li>
+                <li>Maksimović, Z. - Pantó, Gy.: Contribution to the geochemistry of the rare earth elements in the karst-bauxite deposits of Yugoslavia and Greece. Geoderma. 51. p. 93-109. 1991.               </li>     
+                <li>Maksimović, Z. - Pantó, Gy. - Mindszenty, A.: Contribution to the geochemistry of Hungarian karst bauxites and the allochthony autochthony problem. Acta Geol. Hung. Vol. 34/4. p. 317-334. 1991.                    </li>
+                <li>Pantó, Gy.: A felső köpeny fejlődése és a kainozoos vulkanizmus eredete a Kárpát - Pannon területen. Akadémiai székfoglaló. 1991.                    </li>
+                <li>Gondi, F.-Pantó, Gy. -Fehér, J. -Bogye, G. -Alfthan, G.: Selenium in Hungary. The rock - soil - human system. Biological Trace Element Research. Vol. 35/3. p. 299-306. 1992.                    </li>
+                <li>Maksimović, Z. - Skarpelis, N. - Pantó, Gy.: Mineralogy and geochemistry of the rare earth elements in the karstic nickel deposit of Lokris area, Greece. Acta Geol. Hung. Vol. 36/3. pp.331-342. 1993.                    </li>
+                <li>Pantó, Gy. - Póka, T.: The role of Elemér Szádeczky-Kardoss in the evolution of earth sciences in Hungary. Acta Mineralogica-Petrographica, Szeged.XXXV,p.7-11, 1994.                    </li>
+                <li>Casillas Ruiz, R. - Nagy, G. - Pantó, Gy. - Brändle Matesanz, I. - Fórizs, I.: Occurence of Th, U, Y, Zr and REE bearing accessory minerals in the Late-Variscan granitic rocks from the Sierra de Guadarrama (Spain). European Journal of Mineralogy. 7, p.989-1006, 1995.                    </li>
+                <li>Pantó, Gy. - Póka, T.: Hungarian National Report. on IAVCEI. 1991-1994. Acta Geod. Geoph.Hung. Vol.30. No.1. p.81-94. 1995.                    </li>
+                <li>Downes,H., Pantó,Gy., Póka,T., Mattey,D.P., and Greenwood,P.B.: Calc-alkaline volcanics of the Inner Carpathian arc, Northern Hungary: new geochemical and oxygen isotopic results. Acta Vulcanologica. 7, (2) p.29-41. 1995.                    </li>
+                <li>Maksimović, Z.-. Pantó, Gy.: Authigenic rare earth minerals in karst-bauxites and karstic nickel deposits. In Rare Earth Minerals; Chemistry, origin and ore deposits. The Mineralogical Society Series. Chapman & Hill. Chapter 10. p.257-279. 1996. </li>                  
+                <li>Pantó Gy., Ritkaföldfémek a mediterrán térség karsztbauxitjaiban. Akadémiai székfoglaló. 1996.                    </li>
+                <li>Pantó, Gy. - Demény, A. - Polgári, M.: Genesis of secondary Mn-oxide ores in the Úrkút deposit (Hungary): An oxygen isotope study. Mineralium Deposita. 31, p.238-241. 1996.                    </li>
+                <li>Pantó,Gy., Demény,A., Nagy,B.: Fluid mixing in the Mátra and the Börzsöny ore deposits: A stable C-O-H isotope study.Acta Geologica Hungarica, Vol. 41/2. p. 211-222. 1998.                    </li>
+                <li>Pantó,Gy., Árkai P.: Ásványtan, kőzettan és geokémia: a hazai kutatás helyzetképe. Földtani Közlöny 128/1, p. 65-70. 1998.                    </li>
+                <li>Pantó Gy., Demény A., Nagy B., Krouse R.: Delta 34S systematics in polymetallic ore deposits in the Mátra and Börzsöny Mts, Inner Carpathian volcanic arc. Acta Geologica. Hungarica. Vol. 42/4. pp. 413-426. 1999.                    </li>
+                <li>Pantó Gy, Polgári M, Tomschey O.: Bioesszenciális elemek körforgalmának geokémiai alapjai. Földtudományi kutatások a hazai környezet megismerése és megóvása érdekében. MTA. Kutatási program keretében. Megjelenés alatt. 1999.            </li>        
+                <li>Pantó Gy., Maksimović Z.: Two new rare earth minerals in an unusual mineralilzation of the Nissi bauxite deposit, Grecee. Acta Geologica Hungarica, Vol. 44/1. pp. 81-93. 2001.</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Last update 2021.05.16.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside_en.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead()
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">NÉMETH TIBOR</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">PhD</div>          
+              <div class="worker-h2">tudományos főmunkatárs</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/staff/nemeth/Tibi.JPGjav.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Elérhetőségek</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone">+36 1 319 2600 / 1104 </li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">ntibi at csfk.org</li>  
+                <li class="icon-home">210. szoba</li>                
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
+
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10012073" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+                </a>
+                <!--researchgate-->
+                <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="hidden" href="https://scholar.google.com/" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Születési hely és idő...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Születési hely és idő</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Kaposvár, 1973</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Képesítés és fokozat...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Képesítés és fokozat</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>2004 PhD Eötvös Loránd Tudományegyetem, Budapest. A disszertáció címe: „Montmorillonitok fémion-adszorpciójának kristályszerkezeti, kristálykémiai és ásványtani vonatkozásai”, témavezető: Árkai Péter</li>             
+                <li>1998 okleveles geológus, Eötvös Loránd Tudományegyetem, Budapest. A diplomamunka címe: "A Róka-hegyi metacinnabarit ásványtani és genetikai vizsgálata", témavezető: Dódony István</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Munkahelyek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Munkahelyek</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li>2010- Eötvös Loránd Tudományegyetem, Ásványtani Tanszék, előbb fél- jelenleg főállású adjunktus</li>
+                <li>1998- a jelenlegi MTA CSFK Földtani és Geokémiai Intézet, Budapest</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Nyelvtudás...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Nyelvtudás</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>..., ...</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Fontosabb kutatási területek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Fontosabb kutatási területek</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Agyagásványok átalakulásának hatása az agyagok, talajok fizikai, kémiai tulajdonságaira</li>
+                <li>Duzzadó agyagásványok fémion-adszorpciója</li>                  
+                <li>Agyagásványok jellemzése és képződése talajban, paleotalajban</li>                  
+                <li>Agyagásványok a nukleárishulladék-elhelyezésben</li>               
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Kutatási projektek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Kutatási projektek</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2012–2016: OTKA K100181 „Táji mintázatok hatása vizes élőhelyek vasháztartására”</li>
+                <li>2006–2008: OTKA F62760 „Fémion-adszorbeált duzzadó agyagásványok vizsgálata nedvesítési-kiszáradási ciklusokban”</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Kiemelt kutatási eredmények...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Kiemelt kutatási eredmények</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Fontosabb tanulmányutak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Fontosabb tanulmányutak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Szakmai közéleti tevékenység...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Szakmai közéleti tevékenység</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>Magyarhoni Földtani Társulat Agyagásványtani Szakosztály titkára 1999–2012 között, vezetőségi tag</li> 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Konferenciaszervezés...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Konferenciaszervezés</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Kutatási pályázatok, ösztöndíjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Kutatási pályázatok, ösztöndíjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2014-2017 Bolyai János Kutatási Ösztöndíj</li>
+                <li>2013-2014 KIH Nemzeti Kiválósági Program Magyary Zoltán posztdoktori ösztöndíj</li>
+                <li>2006-2007 Spanyolország, Jaén-i Egyetem, Földtani Tanszék, Jaén. A Spanyol Oktatási és Tudományos Minisztérium kilenc hónapos ösztöndíjával.</li>               
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Elnyert díjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Elnyert díjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2005: Szádeczky-Kardoss Elemér Díj 2. fokozata</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Tudományos versenyeken elért helyezések...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Tudományos versenyeken elért helyezések</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Oktatási tevékenység...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Oktatási tevékenység</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publikációk</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10012073" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Az utolsó 5 év fontosabb publikációi...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3">Az utolsó 5 év fontosabb publikációi</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>Kovács Kis V, Czigány Z, Németh T (2017): Nanostructuraé investigation of slightly altered rhyolitic volcanic glass. Materials Characterization 127: 121-128.</li>
+                <li>Dódony I, Németh T, Kovács Kis V (2016): Report on the natural occurence of a silica-clay nanocomposite. Resolution and Discovery 2016: 1-6.</li>
+                <li>Németh T, Máthé Z, Pekker P, Dódony I, Kovács Kis V, Sipos P, Cora I, Kovács I (2016): Clay mineralogy of the Boda Claystone Formation (Mecsek Mts., SW Hungary). Open Geosciences 8: 259-274.</li>
+                <li>Árkai P, Abad I, Nieto F, Németh T, Horváth P, Kovács-Kis V, Judik K, Jiménez-Millán J (2012): retrograde alterations of phyllosilicates in low-grade metapelite: a case study from the Szendrő Paleozoic, NE-Hungary. Swiss Journal of Geoscience</li>
+                <li>Németh T, Jiménez-Millán J, Sipos P, Abad I, Jiménez-Espinosa R, Szalai Z (2011): Effect of pedogenic clay minerals ont he sorption of copper in a Luvisol B horizon. Geoderma 160: 509-516.</li>
+                <li>Sipos P, Németh T, Máthé Z (2010): Preliminary results on the Co, Sr and Cs sorption properties of the analcime-containing rock type of Boda Sitstone Formation. Central European Geology 53, 67–78.</li>
+                <li>Németh T, Sipos P, Balázs R, Szalai Z, Mészáros E, Di Gléria M (2010): Adsorption of copper on the illuviation and accumulation horizons of a Luvisol. Carpathian Journal of Earth and Environmental Sciences 5: 19-24.</li>
+                <li>Szalai Z, Jakab G, Németh T, Sipos P, Mészáros E, di Gléria M, Madarász B, Varga I, Horváth-Szabó K (2010): Dynamics of organic carbon and dissolved iron in relation to landscape diversity. Hungarian Geographical Bulletin 59: 17-33.</li>
+                <li>Sipos P, Németh T, Kovács Kis V, Mohai I (2009) Association of individual soil mineral constituents and heavy metals as studied by sorption experiments and analytical electron microscopy analyses. Journal of Hazardous Materials 168: 1512-1520.</li>
+                <li>Szalai Z., Németh T. (2008): Elemi táji mintázatok hatása talajkémiai paraméterekre. Földrajzi Értesítő LVII. Évf. 1–2. füzet, 135–146.</li>
+                <li>Sipos P., Németh T., Kovács Kis V., Mohai I. (2008): Sorption of copper, zinc and lead on soil mineral phases. Chemosphere 73. 461-469.</li>
+                <li>Németh T., Sipos P. (2008): Ásványos összetétel és agyagásványos karakter jelentősége talajok komplex környezetgeokémiai vizsgálatában. Talajvédelem (Különszám, Talajtani Vándorgyűlés, Nyíregyháza) 301–310.</li>
+                <li>Németh T., Sipos P., Tóth M., Mohai I. (2006): Cu-, Pb- és Cd-adszorpció hatása a talajmontmorillonit kristályszerkezetére és szerkezeti duzzadására. Agrokémia és Talajtan 55, 381–394.</li>
+                <li>Németh T., Mohai I., Tóth M. (2005): Adsorption of copper and zinc ions on various montmorillonites: an XRD study. Acta Mineralogica-Petrographica 46, 29–36.</li>
+                <li>Németh T. és Sipos P. (2006): Characterization of clay minerals in brown forest soil profiles (Luvisols) of the Cserhát Mountains (North Hungary). Agrokémia és Talajtan (Agrochemistry and Soil Science) 55 (1), 39–48.</li>
+                <li>Sipos P., Németh T., Mohai I. (2005): Distribution and possible immobilization of lead in a forest soil (Luvisol) profile. Environmental Geochemistry and Health, 27, 1–10. IF=0,471</li>
+                <li>Sipos P., Németh T., Mohai I., Dódony I. (2005): Effect of soil composition on adsorption of lead as reflected by a study on a natural forest soil profile. Geoderma 124, 363–374. IF=1,773</li>
+                <li>Berényi Üveges J., Horváth Z., Micheli E., Mindszenty A., Németh T. (2003): Reconstructing Quaternary pedogenesis in a paleosol sequence in Hungary. Quaternary International 106, 61-71, 2003. IF=1,422</li>
+                <li>Berényi Üveges J., Németh T., Michéli E., Tóth M. (2002): Mátrai vörösagyagok szerepe a visontai paleotalajok képződésében az ásványtani és geokémiai vizsgálatok tükrében. Földtani Közlöny 132, 283-291.</li>
+                <li>Németh T., Berényi Üveges J., Michéli E., Tóth M. (1999): Clay minerals in paleosols at Visonta. Acta Mineralogica-Petrographica 40, 11-19.</li>
+                <li>Hála J., Németh T., Terbócs A. (1998): Zay Sámuel élete és munkássága. Földtani Közlöny 128/4, 629-646.</li>                
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Utolsó frissítés 2021.06.16.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>

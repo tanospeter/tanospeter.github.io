@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead()
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">Bodor Emese Réka</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">PhD</div>          
+              <div class="worker-h2">tudományos munkatárs</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/staff/bodor/bodor.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Elérhetőségek</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- elérhetőségek, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone"> +36 1 319 2600</li>
+                <li class="icon-fax"> +36 1 319 3137</li>
+                <li class="icon-mail">bodor.emeseat csfk.org</li>  
+                <li class="icon-home hidden"> ??? szoba </li><!-- a hidden törlésével megjeleníthető a szobaszám-->              
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
+
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10029482" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+                </a>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Emese-Bodor" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="" href="https://scholar.google.com/citations?user=6JYBikQAAAAJ&hl=hu" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="" href="https://orcid.org/0000-0003-3894-2506" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Születési hely és idő...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Születési hely és idő</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Budapest, 1985.02.04.</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Képesítés és fokozat...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Képesítés és fokozat</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>2016 PhD Eötvös Loránd Tudományegyetem, Budapest. A disszertáció címe: Növényi reproduktív képletek a Mecseki Kőszén Formációból</li>
+                <li>2010 okleveles geológus, Eötvös Loránd Tudományegyetem, Budapest</li>                                   
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Munkahelyek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Munkahelyek</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li>2018- Csillagászati és Földtani Kutatóközpont, Földtani és Geokémiai Intézet
+                <li>2017-2018 Magyar Bányászati és Földtani Szolgálat</li>  
+                <li>2017-2020 Eötvös Loránd Tudományegyetem, Őslénytani Tanszék</li>
+                <li>2012-2017 Magyar Földtani és Geofizikai Intézet</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Nyelvtudás...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Nyelvtudás</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>angol, középfok</li>
+                <li>német, középfok</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Fontosabb kutatási területek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Fontosabb kutatási területek</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Paleobotanika</li>
+                <li>Őskörnyezet rekonstrukció</li>
+                <li>Biostatisztika</li>               
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Kutatási projektek...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Kutatási projektek</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2017-2021 (Projektvezető) NKFIH OTKA FK 130190 és PD 130627A bakonyi késő-kréta dinoszauruszok világának őskörnyezetrekonstrukciója növényi mezofosszíliák alapján</li> 
+                <li>2012 – 2016 (Projektvezető) MFGI 11.1 Őslénytani vizsgálatok</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Kiemelt kutatási eredmények...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Kiemelt kutatási eredmények</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Fontosabb tanulmányutak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Fontosabb tanulmányutak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2015 Synthesys Program kutatói ösztöndíja (Naturhistoriska Riksmusee, Stockholm)</li> 
+                <li>2013 Aninai ősnövénytani gyűjtemény vizsgálata a Bukaresti Tudományegyetemen</li> 
+                <li>2012 Synthesys Program kutatói ösztöndíja (Naturhistoriska Riksmusee, Stockholm)</li> 
+                <li>2011 Hátszegi ősnövénytani gyűjtemény vizsgálata a Bukaresti Tudományegyetemen</li> 
+                <li>2008, 2010, 2011 A Hantken Miksa Alapítvány nemzetközi együttműködési támogatása(Prága, Cseh Nemzeti Múzeum)</li>                 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Szakmai közéleti tevékenység...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Szakmai közéleti tevékenység</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>2018- A Nemzetközi Paleobotanikai társaság (IOP) közép-európai ifjúsági képviselője</li> 
+                <li>2017- Magyar Tudományos Akadémia – Paleontológiai Tudományos Bizottságának titkára</li> 
+                <li>2018-2021 A Magyarhoni Földtani Társulat Ellenőrző Bizottságának tagja</li> 
+                <li>2017 A Magyarhoni Földtani Társulat Év ásványa és Év ősmaradványa programjának országos koordinátora</li> 
+                <li>2015-2018 A Magyarhoni Földtani Társulat Őslénytani és Rétegtani Bizottságának vezetőségi tagja</li> 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Konferenciaszervezés...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Konferenciaszervezés</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2015-2018 évente Magyar Őslénytani Vándorgyűlés</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Kutatási pályázatok, ösztöndíjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Kutatási pályázatok, ösztöndíjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Elnyert díjak...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Elnyert díjak</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2014 Semsey Andor Ifjúsági Emlékérem</li> 
+                <li>2012 Élet és Tudomány országos doktori cikkpályázat II. helyezés</li> 
+                <li>2009 10th Anniversary Conference of Czech, Polish and Slovak Palaeontologists, „Best Scientific Publication of 2008” III. helyezés</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Tudományos versenyeken elért helyezések...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Tudományos versenyeken elért helyezések</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2013 Őslénytani Vándorgyűlés, PhD hallgatói kategória III. helyezés</li>
+                <li>2012 Őslénytani Vándorgyűlés, PhD hallgatói előadás kategória I. helyezés</li>
+                <li>2012 A Hantken Miksa Alapítvány különdíja</li>
+                <li>2011 Őslénytani Vándorgyűlés, PhD hallgatói előadás I. helyezés</li>
+                <li>2010 ELTE TTK Kar Kiváló Hallgatója elismerés</li>
+                <li>2010 Őslénytani Vándorgyűlés, Hallgatói előadás kategória I. helyezés</li>
+                <li>2009 ISZA, Poszter kategória II. helyezés</li>
+                <li>2009 XXIV. OTDK II. helyezés</li>
+                <li>2009 Őslénytani Vándorgyűlés, Hallgatói előadás kategória II. helyezés</li>
+                <li>2008 Őslénytani Vándorgyűlés, Hallgatói poszter kategória II. helyezés</li>
+                <li>2008 ELTE Kari TDK, II. helyezés</li>
+                <li>2007 XXVIII. OTDK, a MÁFI különdíja</li>
+                <li>2005 XXVII. OTDK III. helyezés.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Oktatási tevékenység...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Oktatási tevékenység</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2015- Ősnövénytan előadás és gyakorlat ELTE, geológus MSc</li>
+                <li>2012- őslénytani adatelemzési módszerek bemutatása az ELTE földtudományi BSc, geológus MSc és földtudományi PhD képzéseinek keretein belül több tantárgyban</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Nemzetközi kapcsolatok...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Nemzetközi kapcsolatok</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Maria Barbacka: W. Szafer Institute of Botany, Polish Academy of Sciences</li> 
+                <li>Vivi Vajda, Steve McLoughlin, Else Marie Friis: Naturhistoriska Riskmuseet</li> 
+                <li>Zuzana Hermanová, Jiří Kvaček: National Museum, Czech Republic</li> 
+                <li>Kocsis Tibor Ádám: GeoZentrum Nordbayern, Department of Geography and Geosciences, Universität Erlangen-Nürnberg, Germany </li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publikációk</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10029482" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Az utolsó 5 év fontosabb publikációi...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3">Az utolsó 5 év fontosabb publikációi</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>
+                  Botfalvai, G ; Csiki-Sava, Z ✉ ; Kocsis, L ; Albert, G ; Magyar, J ; Bodor, ER. ; Ţabără, D ; Ulyanov, A ; Makádi, L
+                  ‘X’ marks the spot! Sedimentological, geochemical and palaeontological investigations of Upper Cretaceous (Maastrichtian) vertebrate fossil localities from the Vălioara valley (Densuş-Ciula Formation, Hațeg Basin, Romania)
+                  CRETACEOUS RESEARCH 123 Paper: 104781 (2021)
+                </li>
+                <li>
+                  Barbacka, M ✉ ; Pacyna, G ✉ ; Kocsis, Á ✉ ; Jarzynka, A ✉ ; Ziaja, J** ✉ ; Bodor, E ✉
+                  Changes in terrestrial floras at the Triassic-Jurassic Boundary in Europe
+                  PALAEOGEOGRAPHY PALAEOCLIMATOLOGY PALAEOECOLOGY 480 pp. 80-93. , 14 p. (2017)
+                </li>                
+                <li>
+                  Barbacka, M ; Popa, ME ; Mitka, J ; Bodor, E ; Püspöki, Z ; McIntosh, RW
+                  A quantitative approach for identifying plant ecogroups in the Romanian Early Jurassic terrestrial vegetation
+                  PALAEOGEOGRAPHY PALAEOCLIMATOLOGY PALAEOECOLOGY 446 pp. 44-54. , 11 p. (2016)
+                </li>
+                <li>
+                  Botfalvai, G ; Haas, J ; Bodor, ER ; Mindszenty, A ; Osi, A
+                  Facies architecture and palaeoenvironmental implications of the upper Cretaceous (Santonian) Csehbánya formation at the Iharkút vertebrate locality (Bakony Mountains, Northwestern Hungary)
+                  PALAEOGEOGRAPHY PALAEOCLIMATOLOGY PALAEOECOLOGY 441 : Part 4 pp. 659-678. , 20 p. (2016) 
+                </li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Utolsó frissítés 2021.07.06.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>

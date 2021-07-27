@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead("en")
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w_en.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav_en.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">ISTVÁN FÓRIZS</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">PhD</div>          
+              <div class="worker-h2">senior research fellow</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/staff/forizs/forizs.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Contacts</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone">+36 1 319 2600 / 1151</li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">forizs at csfk.org</li>  
+                <li class="icon-home">311. szoba</li>                
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
+
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10002552" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+                </a>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Istvan-Forizs" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="" href="https://scholar.google.com/citations?user=4inpNe8AAAAJ&hl=hu" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="" href="https://orcid.org/0000-0003-0813-6079" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink"> 
+                </a>            
+              </div>              
+            </div>
+          </div>
+
+
+          <!--
+          <div class="worker-h3 title2">Jelenlegi beosztás</div>
+          <div class="worker-content">
+            <ul>Igazgató</ul>
+          </div>
+          -->
+
+          <!-- ...Place and date of birth...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Place and date of birth</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Vasad, 1958</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Qualifications...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Qualifications</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>1996 PhD Isotope Hydrogeochemistry, Kossuth Lajos University, Debrecen. Title: Origin of groundwaters and determination of recent shallow groundwater component by stable isotope measurements (in Hungarian with English abstract)</li>
+                <li>1983 MSc physicist, Kossuth Lajos University, Debrecen</li>   
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Employment...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Employment</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li> Institute for Geological and Geochemical Research, Research Centre for Astronomy and Earth Sciences, Hungarian Academy of Sciences, since 1983</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Language knowledge...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Language knowledge</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>..., ...</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Main fields of research...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Main fields of research</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Isotope hydrogeochemistry:</li>
+                  <ul class="ll2">
+                    <li>The origin and mixing processes of groundwaters determined by environmental isotopes and chemical data</li>
+                    <li>Investigation of the origin of thermal waters in Hungary</li>                      
+                    <li>Study the dynamics of the bank filtered water resources of the Danube River by means of stable oxygen isotope measurements</li>                      
+                    <li>Stable isotope study of recent and fossil shells of alluvial molluscs in Hungary</li>                      
+                    <li>Vulnerability study of water resources in geologically vulnerable environment</li>
+                  </ul>
+                  <li>Archaeometry (archaeological geochemistry):</li>
+                    <ul class="ll2">
+                      <li>Provenance and making technology of glass objects from the Scythian, Celtic, Sarmatian, Avar and Hungarian Period; identification of the applied raw materials, colorants and decolorants</li>
+                    </ul>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Research projects...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Research projects</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>NKFI K128237; 2018-2023; investigator; The Late Roman fortress at Ságvár – Archaeological research 1971–1979 (archaeometric study of glass)</li>
+                <li>2020-2020; principal investigator; Archaeometric analysis of glass beads from the Ápádian age cemetry at Mesteri-Intapuszta. Part I</li>                  
+                <li>2014- ; co-principal investigator; Archaeometric study of the Seuso treasure, Hungary</li>                  
+                <li>RER/8/016; 2009-2011; scientific coordinator; Using Environmental Isotopes for Evaluation of Streamwater/ Groundwater Interactions in Selected Aquifers in the Danube Basin (International Atomic Energy Agency)</li>                  
+                <li>OTKA K 60921; 2006-2011; principal investigator; Origin of water and carbon dioxide of the thermal karst waters around Budapest</li>                  
+                <li>1998-2002; principal investigator; The origin and dynamics of the bank filtered water resources of the Danube River by means of environmental isotopes</li>                  
+                <li>OTKA T 035032; 2001-2004; principal investigator; Stable isotope study of recent and fossil shells of alluvial molluscs in Hungary</li>                  
+                <li>1997-2001; principal investigator; Study of water movements related to salinization on the area of Hortobágy (Hungary)</li>                  
+                <li>OTKA T 025119; 1997-2002; investigator; Provenance study of glass beads from the Avar Period (6th-7th c. AD)</li>                  
+                <li>1991-1995; PhD research; Stable isotope study of the origin of deep groundwater and its mixing with shallow groundwater</li>                
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Outstanding results...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Outstanding results</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Study trips...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Study trips</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Case Western Reserve University, Cleveland, Ohio, USA (1995)</li> 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Membership of scientific and professional organizations...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Membership of scientific and professional organizations</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>Member of Editorial Board: Isotopes for Environmental and Health Studies (Taylor and Frances)</li>
+                <li>Founder member of the European Society for Isotope Research (ESIR)</li>                 
+                <li>Chair of ESIR: 2009-2011; secretary of ESIR: 1994-1996. Now member of the Advisory Board.</li>                 
+                <li>Membership: Roland Eötvös Physical Society, Hungarian Geological Society, Hungarian Chemical Society, International Association of Hydrological Sciences, International Association of Hydrogeologists, International Association of Geochemistry and Cosmochemistry. </li> 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Conference organization...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Conference organization</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Research grants, scholarships...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Research grants, scholarships</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Fulbright Research Scholarship (Sept-Dec 1995, Cleveland, USA)</li>
+                <li>János Bolyai Research Scholarship (1998-2001, Hungarian Academy of Sciences)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Awards...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Awards</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>1992 Elemér Szádeczky-Kardoss Award (shared)</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Prizes won at scientific competitions...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Prizes won at scientific competitions</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teaching...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Teaching</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>1998- special courses (Eötvös University) "Stable isotope geochemistry" together with Attila Demény; and "Isotope hydrogeochemistry"</li> 
+                <li>MSc. and M.A. students:</li>
+                <ul class="ll2">
+                  <li>Five M.Sc. students at the Eötvös University: isotope hydrology</li>
+                  <li>One M.A. student at the Szeged University: archaeometry of glass beads</li>
+                </ul>
+                <li>PhD. students:</li> 
+                <ul class="ll2">
+                  <li>Tamás Berecz, 1997-2002, Eötvös University, Department of Applied and Environmental Geology</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publications</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10002552" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Selected publications of the last 5 years...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3">Selected publications of the last 5 years</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>Isotope geochemistry:</li>
+                <ul class="ll2">
+                  <li>Fórizs, I.; Zoltán Kern; József Csicsák; Gergely Csurgó; Gábor Földing; Zoltán Máthé; János Ország; Géza Szreda; Roland Vendégh (2020) Monthly data of stable isotopic composition (δ18O, δ2H) and tritium activity in precipitation from 2004 to 2017 in the Mecsek Hills, Hungary. Data in Brief 32:106206</li>
+                  <li>Kern Z., István Gábor Hatvani, György Czuppon, István Fórizs, Dániel Erdélyi, Tjaša Kanduč, László Palcsu, Polona Vreča (2020): Isotopic ‘altitude’ effect and ‘continental’ effect in modern precipitation across the Adriatic-Pannonian region. Water (MDPI) 2020, 12, 1797</li>                    
+                  <li>Kern Z., István Gábor Hatvani, Dániel Erdélyi, Polona Vreča, Ines Krajcar Bronić, Tjaša Kanduč, Marko Štrok, István Fórizs, László Palcsu, Miklós Süveges, György Czuppon, and Balázs Kohán (2020) Isoscape of amount-weighted annual mean precipitation tritium (3H) activity from 1976 to 2017 for the Adriatic-Pannonian region –AP3H_v1 database. Earth System Science Data 12:2061-2073</li>                    
+                  <li>Harmon, R.S., Wörner, G., Goldsmith, S.T., Harmon, B.A., Gardner, C.B., Lyons, W.B., Ogden, F.O., Pribil, M.J., Long, D.T., Kern, Z., Fórizs, I. (2016) Linking silicate weathering to riverine geochemistry - A case study from a mountainous tropical setting in west-central Panama. Geological Society of America Bulletin, 128(11/12);1780-1812</li>
+                </ul>
+                <li>Archaeometry</li> 
+                <ul class="ll2">
+                  <li>Fórizs István, Ferencz Eszter, Ilon Gábor (2020): A Mesteri-intapusztai Árpád-kori temető gyöngyeinek archeometriai vizsgálata I. (Archaeometric analysis of glass beads from the Arpadian Age cemetery at Mesteri-Intapuszta. Part I.) Archeometriai Műhely XVII(2):129-156</li>
+                  <li>Tubay T., Mozgai V., Fórizs I., Sipos Gy., Páll D. G., Filyó D., Tóth M. (2020) Korai székely írásos feliratok (Homoródkarácsonyfalva, Vargyas, Székelyderzs, Székelyudvarhely) archeometriai vizsgálata. Archeometriai Műhely XVII(2):171-198 </li>                    
+                  <li>Mozgai V., Bernadett Bajnóczi, István Fórizs, Zoltán May, István G. Hatvani, Marianna Dági, Zsolt Mráv, Mária Tóth (2017) Handheld XRF mapping of elemental composition of Roman silver artefacts: Preliminary results. In: Ignacio Montero-Ruiz and Alicia Perea (Eds) Archaeometallurgy in Europe IV, Bibliotheca Praehistorica Hispana, vol XXXIII. Editorial CSIC, Madrid, pp. 237-247</li>                    
+                  <li>Mozgai V., Fórizs I, Bajnóczi B (2016) Provenance determination of archaeological and historical metal objects with isotope geochemical method: Combined use of lead, silver and copper isotopes. Archeometriai Műhely XIII(4):273-290</li>
+                </ul> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Last update 2021.06.16.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside_en.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>

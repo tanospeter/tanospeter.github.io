@@ -58,6 +58,15 @@ h4 {
   padding: 10px 5px 0 0;
 }
 
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #194e6e;  
+  margin: 20px;
+  padding: 10px 5px 0 0;
+}
+
 .content {
 	display: flex;
 	flex-wrap: nowrap;

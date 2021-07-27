@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!-- CSAK a megjelölt sorokat szerkessze! -->
+<html lang="hu">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" media="all">
+  <script src="/script/includeHTML.js"></script>
+  <script src="/script/headGen.js"></script>
+  <script>    
+    generateHead("en")
+  </script>
+</head>
+<body>  
+  <div class="wrapper">
+    <header>
+      <img src="/pics/headers/heading_w_en.png" alt="">      
+    </header>  
+    <div class="content">
+      <nav include-html="/static/nav_en.html"></nav>
+      <main>
+        <!-- A oldal középső sávja
+        A következő sorok közül csak azokat szerkessze, amelyeknél ezt külön jelöljük! 
+        Továbbá csak a html cimkék közötti részt szerkessze, cimkéket NE! pl. <div class="worker-h1"> ... </div> -->
+        <div class="worker"> 
+          <div class="worker-header">
+            <div class="worker-header-left">
+              <!-- név szerkeszthető -->
+              <div class="worker-h1">Zsófia Ruszkiczay-Rüdiger</div>
+              <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
+              <div class="worker-h2">PhD</div>          
+              <div class="worker-h2">senior research fellow</div>		            
+            </div>
+            <div class="worker-header-right">
+              <img class="worker-img" src="/staff/ruszkiczay/ruszkiczay.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="worker-h3">
+            <div class="title2">Contacts</div>
+            <div class="worker-content-no-marker">
+              <ul>
+                <!-- Contacts, törölhető ami nem szükséges ill tovább is felvehető-->                
+                <!-- amennyiben az egyes sorokból többre van szükség a teljes sort duplikálja -->
+                <!-- telefonszám formátuma +36 körzetszám 123 4567 / mellék-->
+                <li class="icon-phone">+36 1 309 2600 / 1355</li>
+                <li class="icon-fax">+36 1 319 3137</li>
+                <li class="icon-mail">rrzsofi at geochem.hu</li>  
+                <li class="icon-home">315. szoba </li>                
+              </ul>
+
+              <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
+
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10026890" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
+                </a>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Zsofia-Ruszkiczay-Ruediger" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="" href="https://scholar.google.com/citations?user=ilw3MqIAAAAJ&hl=hu" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="" href="https://orcid.org/0000-0001-9454-732X" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
+            </div>
+          </div>           
+
+          <!-- ...Place and date of birth...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Place and date of birth</div>
+            <div class="worker-content-no-marker">
+              <!-- Szerkessze az <ul> cimkék közötti részt -->
+              <!-- formátum pl. Budapest, 1980 -->
+              <ul>Budapest, 1976</ul>
+            </div>
+          </div>        
+          
+
+          <!-- ...Qualifications...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Qualifications</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
+                <li>2007. PhD Faculty of Earth and Life Sciences, Vrije Universiteit, Amsterdam. Title of the thesis: Tectonic and climatic forcing in Quaternary landscape evolution in the Central Pannonian Basin: A quantitative, geomorphological, geochronological and structural analysis.</li>
+                <li>2000.  MSc, Institute of Geography and Earth Sciences, Eötvös University, Budapest, Hungary. Title of the thesis: Late Glacial – Holocene evolution of the southern part of the Sajó-Hernád alluvial fan, Hungary (in Hungarian).</li>                   
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Employment...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Employment</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
+                <li>...</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Language knowledge...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Language knowledge</div>
+            <div class="worker-content">            
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
+                <li>English, fluent (1994)</li>
+                <li>Spanish, fluent (1995)</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- ...Main fields of research...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Main fields of research</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>geomorphology; Quaternary research</li>
+                <li>geochronology: exposure age dating and erosion rate determination using in situ produced cosmogenic nuclides (<sup>3</sup>He, <sup>10</sup>Be, <sup>26</sup>Al)</li>
+                <li>structural geomorphology, neotectonics, relationship of tectonics and denudation processes and their role in the landscape evolution</li>               
+                <li><a href="/facilities/lab_en.html">Sample preparation laboratory for in-situ produced cosmogenic nuclides</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Research projects...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Research projects</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>Project leadership:</li>
+                <ul class="ll2">
+                  <li>OTKA PD 83610 (2011, 2013-2016) Cosmogenic 10Be dating of Danube terraces: tectonic and climatic influence on Quaternary river incision in Hungary (3 years)</li>
+                  <li>MTA-CNRS French-Hungarian bilateral project (NKM-96/2014 és NKM-31/2015) (2014-2015), between CEREGE and the Institute for Geological and Geochemical Research. „Chrolology of the Carpathian glaciations and Quaternary climate reconstruction using in-situ produced cosmogenic Be-10 and C-14 nuclides”</li>                  
+                  <li>Austrian-Hungarian bilateral project (OMAA 90öu17) (2015-2016) „Vergleich Labore fur Datierung mit kosmogenem Aluminium und Beryllium (Budapest und Wien)”</li>                  
+                  <li>NKFI FK 124807 (2017-2021) ” Geochronology of glacial landforms and cave sediments in Macedonia and implications for Quaternary landscape evolution in the Central Balkan Peninsula”</li>                  
+                  <li>Austrian-Hungarian bilateral project (OMAA 98öu17) (2018-2019) "Datierung von Terrassenschottern der Donau südlich des Flughafen Wiens mit kosmogenem <sup>26</sup>Al und <sup>10</sup>Be"</li>                  
+                  <li>19001687-ST "Suitability of cave ice deposits as an archive for past atmospheric 10Be deposition" Ionbeamcenters.eu / Radiate Transnational Access, 24 hours beamtime at Vienna Environmental Research Accelerator (2019)</li>                  
+                  <li>19001688-ST "Cosmogenic <sup>10</sup>Be exposure dating of glacial landforms and <sup>26</sup>Al / <sup>10</sup>Be burial dating of cave sediments in Macedonia" Ionbeamcenters.eu / Radiate Transnational Access, 144 hours beamtime at Vienna Environmental Research Accelerator (2019-2020)</li> 
+                </ul>
+                <li>Project participation:</li>
+                <ul class="ll2">
+                  <li>participant in Hungarian National Scientific Fund Project (OTKA) T 29798 (2000-2003) Project title: Late Miocene – Quaternary structural and landscape evolution in the Gödöllő Hills area</li>
+                  <li>participant in OTKA T 38297 (2002-2005), Project title: Tata-Porhanyó, a middle Palaeolithic archaeological site</li>
+                  <li>participant in the Topo-Europe, 4D Topography evolution in Europe program (2005-2007)</li>                    
+                  <li>participant in OTKA F 43715 (2003-2006), Project title: Role of neotectonics in the young morphostructural evolution of the Transdanubian Range</li>                    
+                  <li>participant in OTKA K 62478 (2005-2009), Project title: Effects of deflation on late Neogene to Quaternary sedimentation and landscape evolution in the Hungarian Mountain Range and its foreland.</li>                    
+                  <li>participant in OTKA K 68219 (2007-2011) Project title: Complex comparison study of the Quaternary formations of the Gödöllő Hills and the Danube terraces: a morphotectonic and paleoenvironmental reconstruction study.</li>                    
+                  <li>participant in the Balaton-TÉT French-Hungarian FR-32/2007 (Hungarian Science and Technological Foundation) bilateral cooperation (2008-2009), among CEREGE (Aix en Provence) MÁFI and ELTE (Budapest)</li>                    
+                  <li>participant in OTKA NK 83400 (2011-2015) SourceSink Hungary - Quantification of mass transfer from mountain ranges to active sedimentary basins of Hungary: integrated source-to-sink studies</li>
+                  <li>participant in the Balaton-TÉT French-Hungarian TÉT_11-2-2012-0005 (Hungarian Science and Technological Foundation) bilateral cooperation (2012-2013) Dating terrace horizons along the Danube valley in Hungary: a methodological study and data calibration using cosmogenic nuclides and optically stimulated luminescence</li>
+                  <li>participant in the NKFI K 119309 project (2016-2020) „Exploring Late Pleistocene and Holocene linkages between different geomorphological domains in the SE Carpathian Basin”</li>
+                  <li>participant in the Mecsekérc Környezetvédelmi Zrt. BAF-I-5/2016 project (2016-2017) ,,Geological survey of the Boda Claystone Formation (Agyagkő Formáció (BAF), surface study phase I/2"</li>
+                  <li>participant in the NKFIH K 116618 számú (2016-2020) „Stratigraphy of the Pannonian Stage in southern Transdanubia” project</li>
+                  <li>participant in the NKFIH K 134873 (2020-2024) „ From rifting to neotectonic differential motions: coupling of crustal deformation, denudation, sedimentation and deep lithospheric processes – case studies in the Pannonian Basin” project</li>
+                  <li>participant in the OMAA 105öu4 (2020-2021) „Entwicklung einer neuen Methode zur Überprüfung der Reinheit von Quarz für kosmogene Datierungsmethoden mittels Lumineszenz” project</li>
+                </ul> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Outstanding results...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Outstanding results</div>          
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li>
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Study trips...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Study trips</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2005. 17-18. March. TOPO-EUROPE: 4D Topography Evolution in Europe: Uplift, Subsidence and Sea Level Rise. Exploratory workshop, Budapest</li> 
+                <li>2006. 12-17. June. CRONUS-EU Summer School „Applications of Cosmogenic Nuclides to Earth Surface Sciences.” Harkány, Hungary</li>
+                <li>2014. International Conference Participation Award (INKP) for the participation at EGU-2014, Vienna</li> 
+              </ul>            
+            </div>
+          </div>
+          
+          <!-- ...Membership of scientific and professional organizations...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Membership of scientific and professional organizations</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
+                <li>HUNTEK (Hungarian Tectonic Working Group)</li>
+                <li>CETEG (Central European Tectonic Group)</li>                  
+                <li>Stratigraphic Committee of Hungary, Quaternary Subcommittee</li>                  
+                <li>Hungarian Geological Society</li>                  
+                <li>INQUA Hungarian national Committee</li>                  
+                <li>EGU (European Geosciences Union)</li>                  
+                <li>Georeview editorial board member</li>
+                <li>E&G Quaternary Science Journal editorial board member</li>
+                <li>NKFIH Geoext commitee member (2000- )</li> 
+              </ul>
+            </div>
+          </div>
+          
+          <!-- ...Conference organization...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Conference organization</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+           <!-- ...Research grants, scholarships...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Research grants, scholarships</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2000-2004. Hungarian State PhD Scholarship at the Department of Physical Geography, Eötvös University, Budapest (2+1 years)</li>
+                <li>2002-2003. Marie Curie Felowship in the Eurobasin Training Centre at the Department of Isotope Geochemistry, Vrije Universiteit, Amsterdam (9 months)</li>
+                <li>2005. Visitor Research Fellowship, Research Centre for Integrated Solid Earth Sciences /ISES/, Department of Isotope Geochemistry, Vrije Universiteit, Amsterdam (3 months)</li>
+                <li>2007. EGIDE French State Scholarship at the Cosmogenic Nuclide Laboratory of CEREGE, CRNS, Aix en Provence, France (1 month)</li>
+                <li>2008. EGIDE French State Scholarship at the Cosmogenic Nuclide Laboratory of CEREGE, CRNS, Aix en Provence, France (1.5 months)</li>
+                <li>2009. EGIDE French State Scholarship at the Cosmogenic Nuclide Laboratory of CEREGE, CRNS, Aix en Provence, France (2 months)</li>
+                <li>2009-2010. Zoltán Magyary Postdoctoral Fellowship (12 months)</li>
+                <li>2010. EGIDE French State Scholarship at the Cosmogenic Nuclide Laboratory of CEREGE, CRNS, Aix en Provence, France (1 month)</li>
+                <li>2010-2011, 2013-2016 János Bolyai Research Scholarship (3 years)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Awards...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Awards</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2003. Best poster presentation, 4th Stephan Müller topical conference of the European Geosciences Union, Cheile Butii, Romania</li>
+                <li>2006. Elemér Szádeczky-Kardoss publication award of the Hungarian Academy of Sciences, 1st place</li>                  
+                <li>2015. Academic Youth Award</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Prizes won at scientific competitions...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">Prizes won at scientific competitions</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teaching...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Teaching</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>2000-2011 Eötvös University, Budapest</li>
+                <li>Lectures: Physical geography of the Carpathian Basin, Geomorphology, New methodologies of Quaternary Research, Field and laboratory methods in Quaternary Research, Student fieldworks</li>                  
+                <li>2013- Eötvös University, Budapest, Invited speaker in New methodologies of Quaternary research, Isotope geochronology and Quaternary geochronology courses</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...International connections...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3 hidden">
+            <div class="title2">International connections</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
+                <li>...</li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- ...Teljes publikációs lista...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title2">Publications</div>
+            <div class="worker-content-no-marker">
+
+              <!-- A gomb ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
+                bekapcsoláshoz: <div>
+                kikapcssoláshoz: <div class="hidden"> 
+
+                Amennyiben a gombot bekapcsoljuk a linket is meg kell adnunk!
+                pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                
+              -->
+              <div>
+                <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10026890" target="_blank">
+                  <img class="mtmt-btn" src="/pics/mtmt_en-btn.png" alt="">
+                </a>               
+              </div>
+            </div>
+          </div>
+
+          <!-- ...Selected publications of the last 5 years...
+            A szakasz ki- és bekapcsolható!
+            - Kiapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3 hidden">
+            - Bekapcsoláshoz a következő kódsort használja:
+              <div class="worker-h3">
+          -->
+          <div class="worker-h3">
+            <div class="title3">Selected publications of the last 5 years</div>
+            <div class="worker-content">
+              <ul>
+                <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Kern, Z., Urdea, P., Madarász, B., Braucher, R., ASTER Team
+                  2021. Limited glacial erosion during the last glaciation in mid-latitude cirques (Retezat Mts,
+                  Southern Carpathians, Romania). Geomorphology, 107719.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Z., Balázs, A., Csillag, G., Drijkoningen, G., & Fodor, L. 2020. Uplift
+                  of the Transdanubian Range, Pannonian Basin: How fast and why? Global and Planetary
+                  Change, 103263. 1-17.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Kern, Z., Temovski, M., Madarász, B., Milevski, I., Braucher, R.,
+                  ASTER Team. 2020. Last deglaciation in the central Balkan Peninsula: geochronological
+                  evidence from the Jablanica Mt. (North Macedonia). Geomorphology, 351. 106985.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Csillag, G., Fodor, L., Braucher, R., Novothny, Á., Thamó-Bozsó, E., Virág,
+                  A., Pazonyi, P., Timár, G., ASTER Team 2018. Integration of new and revised chronological data to
+                  constrain the terrace evolution of the Danube River (Gerecse Hills, Pannonian Basin). Quaternary
+                  Geochronology 48, 148-170.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Braucher, R., Novothny, Á., Csillag, G., Fodor, L., Molnár, G., Madarász,
+                  B., ASTER Team. 2016. Tectonic and climatic forcing on terrace formation: coupling in situ
+                  produced 10Be depth profiles and luminescence approach, Danube River, Hungary, Central Europe.
+                  Quaternary Science Reviews 131, 127-147.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Kern, Z. 2016. Permafrost or seasonal frost? - A review of paleoclimate
+                  proxies of the last glacial cycle in the East Central European lowlands. Quaternary International, 415.
+                  241-252.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Kern, Z., Urdea, P., Braucher, R., Madarász, B., Schimmelpfennig, I.,
+                  ASTER Team 2016. Revised deglaciation history of the Pietrele- Stânişoara glacial complex, Retezat
+                  Mts, Southern Carpathians, Romania. Quaternary International, 415, 216-229.
+                </li>
+                <li>
+                  Sebe, K., Csillag, G., Ruszkiczay-Rüdiger, Zs., Fodor, L., Thamó-Bozsó, E., Müller, P., Braucher, R.
+                  2011. Wind erosion under cold climate: A fossil periglacial mega-yardang system in Central Europe
+                  (Western Pannonian Basin, Hungary). Geomorphology, 134, pp. 470-482.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Braucher, R., Csillag, G., Fodor, L., Dunai, T.J., Bada, G., Bourlés, D.,
+                  Müller, P. 2011 Dating pleistocene aeolian landforms in Hungary, Central Europe, using in situ
+                  produced cosmogenic 10Be. Quaternary Geochronology, 6, pp. 515-529.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Fodor, L., Horváth, E., Telbisz, T. 2009. Discrimination of fluvial, eolian
+                  and neotectonic features in a low hilly landscape, a DEM-based morphotectonic analysis in the Central
+                  Pannonian Basin, Hungary. Geomorphology, 104, 3-4, pp. 203-217.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Fodor, L., Horváth, E. 2007. Neotectonic and landscape evolution of the
+                  Gödöllő Hills, Central Pannonian Basin. Global and Planetary Change 58, pp. 181-196.
+                </li>
+                <li>Karátson, D., Németh, K., Székely, B., Ruszkiczay-Rüdiger, Zs., Pécskay, Z. 2006. Incision of a river
+                  curvature due to exhumed Miocene volcanic landforms: Danube Bend, Hungary. Int. J. Earth Sci.
+                  (Geol. Rundsch) 95. (5.) pp. 929-944. 
+                </li>
+                <li>
+                  Fodor, L., Bada, G., Csillag, G., Horváth, E., Ruszkiczay-Rüdiger, Zs., Palotás, K., Síkhegyi, F., Timár,
+                  G., Cloetingh, S., Horváth, F. 2005. An outline of neotectonic structures and morphotectonics of the
+                  western and central Pannonian Basin. Tectonophysics 410. 1-4. pp. 15-41.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Dunai, T.J., Bada, G., Fodor, L., Horváth, E. 2005. Middle to late Pleistocene
+                  uplift rate of the Hungarian Mountain Range at the Danube Bend (Pannonian Basin) using in situ
+                  produced 3He. Tectonophysics, 410. 1-4. pp. 173-187.
+                </li>
+                <li>
+                  Ruszkiczay-Rüdiger, Zs., Fodor, L., Bada, G., Leél-Össy, Sz., Horváth, E., Dunai, T.J. 2005.
+                  Quantification of Quaternary vertical movements in the central Pannonian Basin: A review of
+                  chronologic data along the Danube River, Hungary. Tectonophysics, 410. 1-4. pp. 157-172. 
+                </li> 
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kérüjk adja meg a frissítés dátumát -->
+          <div class="worker-content">Last update 2021.06.16.</div>
+          
+          <!-- A további sorokat NE szerkessze! -->
+        </div>
+      </main>
+      <aside include-html="/static/aside_en.html"></aside>
+  	</div>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
+    <script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>
+  </div>
+</body>
+</html>
