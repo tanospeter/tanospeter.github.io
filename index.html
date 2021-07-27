@@ -58,13 +58,13 @@
       </main>      
       <aside include-html="/static/aside.html"></aside>
   	</div>
-    <footer>
-      <a href="www.geochem.hu" target="_blank">Copyright 2021 CSFK ©</a>      
-      <img src="https://hitwebcounter.com/counter/counter.php?page=7815444&style=0038&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter" style="display:none" />
-    </footer>
+    <footer include-html="/static/footer.html"></footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
+    <script src="/script/scroll.js"></script>
     <script>
-      includeHTML();
-    </script>
+      includeHTML();      
+      window.onscroll = function() {scrollFunction()};
+    </script>    
   </div>
 </body>
 </html>

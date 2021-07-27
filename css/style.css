@@ -49,6 +49,11 @@ h3 {
   padding: 10px 5px 0 0;
 }
 
+h3 a {
+  text-decoration: none;
+  color: #2874A6;
+}
+
 h4 {
   font-size: 16px;
   font-weight: 400;
@@ -125,6 +130,10 @@ nav ul {
 
 nav li {
 	border-bottom: 1px rgba(255,255,255,0.3)
+}
+
+#elkh{ 
+	padding: 0;
 }
 
 nav a {
@@ -261,6 +270,7 @@ main {
 	margin: 0px;
   padding: 0 20px;
   background-color:#fff;
+  text-align: justify;
 }
 
 .people {
@@ -513,6 +523,28 @@ footer {
 }
 
 footer a{  
+  margin: 0;
+  padding: 0px 20px;
+  color:rgb(206, 206, 206);  
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center 
+}
+
+#fl {
+  order: 1;
+}
+#fr {
+  order:2;
+  font-style: italic;
   margin: 0;
   padding: 0px 20px;
   color:rgb(206, 206, 206);  
