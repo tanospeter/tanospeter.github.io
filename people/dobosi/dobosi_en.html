@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -26,10 +26,10 @@
           <div class="worker-header">
             <div class="worker-header-left">
               <!-- név szerkeszthető -->
-              <div class="worker-h1">DOBOSI GÁBOR</div>
+              <div class="worker-h1">GÁBOR DOBOSI</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-              <div class="worker-h2">az MTA doktora</div>          
-              <div class="worker-h2">ny. scientific advisor, egyetemi tanár</div>		            
+              <div class="worker-h2">DSc</div>          
+              <div class="worker-h2">retired scientific advisor</div>		            
             </div>
             <div class="worker-header-right">
               <img class="worker-img" src="/people/dobosi/dobosi.jpg" alt="">
@@ -51,51 +51,46 @@
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-  bekapcsoláshoz: <div class="buttons"> 
-  kikapcssoláshoz: <div class="buttons hidden">
-    
-  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
-  bekapcsoláshoz: <a class="">  
-  kikapcssoláshoz: <a class="hidden">  
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
 
-  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
-  pl. "https://www.researchgate.net/profile/Attila-Demeny"
--->
-<div class="buttons">
-  <!--mtmt
-    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
-    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
-    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
-  -->
-   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
-  </a>
-  <!--researchgate-->
-  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
-    <img class=rg-btn src="/pics/rg-btn.png" alt="">
-  </a>   
-  <!--google scolar-->             
-  <a class="hidden" href="https://scholar.google.com/" target="_blank">
-    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
-  </a>
-  <!--orcid-->
-  <a class="hidden" href="https://orcid.org/" target="_blank">
-    <img src="/pics/orcid-btn.png" alt="orcid">
-  </a>
-  <!--linkedin-->
-  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
-    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
-  </a>
-  <!--saját honlap linkje-->
-  <a class="hidden" href="" target="_blank">
-    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
-  </a>             
-</div>
-              <div>
-                <a href="https://www.researchgate.net/profile/Gabor-Dobosi" target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001087" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
-              </div>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Gabor-Dobosi" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="hidden" href="https://scholar.google.com/" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
             </div>
           </div>
 
@@ -137,11 +132,11 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
-                <li>1975, Okleveles vegyész, Eötvös Loránd Tudományegyetem, Budapest</li>
-                <li>1979, Okleveles geológus, Eötvös Loránd Tudományegyetem, Budapest</li>
-                <li>1981, Dr. univ. (kőzettan), Kossuth Lajos Tudományegyetem, Debrecen. A disszertáció címe: "Harmadkori vulkáni kőzeteink biotit fenokristályainak geokémiai vizsgálata"</li>
-                <li>1994, A földtumány kandidátusa (C.Sc.), Tudományos Minősítő Bizottság, Budapest. A disszertáció címe: "Kőzetalkotó ásványok geokémiája magmás rendszerekben (alkalmazások néhány magyarországi példán)"</li>
-                <li>Az MTA doktora (D.Sc.), Magyar Tudományos Akadémia, Budapest, 2004. A disszertáció címe: "A felsőköpeny és az alsókéreg geokémiája a bázisos vulkanitok és xenolitjaik vizsgálata alapján - elsősorban a Kárpát-medence példáján"</li>                
+                <li>M.Sc. in chemistry, Eötvös Loránd University, Budapest, 1975</li>
+                <li>M Sc. in geology, Eötvös Loránd University, Budapest, 1979</li>
+                <li>Dr. univ., Kossuth Lajos University, Debrecen, 1981</li>
+                <li>Ph.D. (C. Sc.) Committee of Scientific Qualifications, Budapest, 1994</li>
+                <li>D.Sc. Hungarian Academy of Sciences, Budapest, 2004</li>                
               </ul>
             </div>
           </div>
@@ -158,7 +153,7 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
-                <li>1975-től: MTA Csillagászati és Földtudományi Kutatóközpont, Földtani és Geokémiai Intézet, Budapest</li>
+                <li>1975- Hungarian Academy of Sciences, Research Centre for Astronomy and Earth Sciences, Institute for Geological and Geochemical Research</li>
               </ul>
             </div>
           </div>
@@ -194,14 +189,12 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>Magmás kőzettan és geokémia</li>
-                <li>A Kárpát-Pannon terület felsőköpeny eredetű peridotit xenolitjainak kőzettani és geokémiai vizsgálata</li>
-                <li>A Dunántúli-középhegység bazaltjai alsókéreg eredetű granulit xenolitjainak nyomelem és izotópgeokémiai vizsgálata</li>
-                <li>A Pannon-medence fiatal alkáli bazaltjainak kőzettani és geokémiai vizsgálata</li>
-                <li>Kőzetalkotó ásványok kémiai összetételének és zónásságának vizsgálata magmafejlődési és termobarometriai problémák tisztázására</li>
-                <li>Polikristályos gyémánt (framesit, diamondit) és ezek szilikátásványainak (gránát, klinopiroxén) vizsgálata</li>
-                <li>Magyarország hidrotermális ércesedései szulfidásványainak vizsgálata</li>
-                <li>In situ elemzési módszerek, elsősorban az elektron-mikroszonda és a lézer-ablációs ICP-MS alkalmazása kőzettani és geokémiai problémák megoldásában</li>               
+                <li>Petrology and geochemistry of upper mantle and lower crustal xenoliths from the Carpathian-Pannonian Area</li>                  
+                <li>Petrology and geochemistry of the Plio- Pleistocene alkali basalts from the Pannonian Basin</li>                  
+                <li>Composition and zoning of rock forming silicates (mainly clinopyroxene) in igneous rocks and applicalitons to magma evolution and thermobarometry</li>                  
+                <li>Geochemical study of policrystalline diamonds (framesite, diamondite) and their silicate intergrowths</li>                  
+                <li>Mineralogy of hydrothermal ore mineralizations in Hungary</li>                  
+                <li>Application of in situ analytical methods (electron microprobe, laser ablation ICP-MS) in petrology and geochemistry</li>               
               </ul>
             </div>
           </div>
@@ -277,10 +270,10 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
-                <li>2002 - től: a Magyarhoni Földtani Társulat tagja</li>
-                <li>2005 - től: az MTA Ásvány-kőzettani és Geokémiai Bizottságának tagja</li>
-                <li>2008 - 2011: az OTKA Földtudomány I. zsűri tagja</li>
-                <li>2010 - től: A Central European Geology (korábban Acta Geologica Hungarica) szerkesztőbizottsági tagja</li>
+                <li>2002 - present Member of the Hungarian Geological Society</li>
+                <li>2005 - present Member of the Committee for Mineralogy-Petrography-Geochemistry of the Hungarian Academy of Sciences</li>
+                <li>2008 - 2011: Member of Earth Science 1 Panel, Hungarian Scientific Research Fund</li>
+                <li>2010 - present Member of Editorial Board of Central European Geology (formerly Acta Geologica Hungarica)</li>
               </ul>
             </div>
           </div>
@@ -317,9 +310,9 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>1996-1998. NATO Ösztöndíj, Department of Earth Sciences, Memorial University of Newfoundland, St. John's, Newfoundland, Canada</li>
-                <li>1993-1994. Fulbright Ösztöndíj, Department of Marine, Earth and Atmospheric Sciences, North Carolina State University, Raleigh, North Carolina, USA</li>
-                <li>1991. Széchenyi Ösztöndíj, Woods Hole Oceanographic Institution, Woods Hole, Massachusetts, USA</li>                
+                <li>1996-1998. NATO Fellowship, Department of Earth Sciences, Memorial University of Newfoundland, St. John's, Newfoundland, Canada</li>
+                <li>1993-1994. Fulbright Fellowship, Department of Marine, Earth and Atmospheric Sciences, North Carolina State University, Raleigh, North Carolina, USA</li>
+                <li>1991. Széchenyi Fellowship, Woods Hole Oceanographic Institution, Woods Hole, Massachusetts, USA</li>                
               </ul>
             </div>
           </div>
@@ -336,9 +329,9 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>Vendl Mária Emlékérem. Magyarhoni Földtani Társulat, 2006</li>  
-                <li>Szádeczky-Kardoss Elemér Alapítvány I. díj, 1987</li>
-                <li>Szádeczky-Kardoss Elemér Alapítvány I. díj, 1989</li>
+                <li>Vendl Mária Medal 2006 (Hungarian Geological Society)</li>  
+                <li>Szádeczky-Kardoss Elemér Award 1987</li>
+                <li>Szádeczky-Kardoss Elemér Award 1989</li>
               </ul>
             </div>
           </div>
@@ -420,7 +413,7 @@
               <div class="worker-h3">
           -->
           <div class="worker-h3">
-            <div class="title3 hidden">Selected publications of the last 5 years</div>
+            <div class="title3 hidden">Selected publications</div>
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                              
