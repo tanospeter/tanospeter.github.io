@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -28,8 +28,8 @@
               <!-- név szerkeszthető -->
               <div class="worker-h1">NAGY GÉZA</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-              <div class="worker-h2">egyetemi dr</div>          
-              <div class="worker-h2">nyugdíjas research fellow</div>		            
+              <div class="worker-h2">dr. univ.</div>          
+              <div class="worker-h2">retired research fellow</div>		            
             </div>
             <div class="worker-header-right">
               <img class="worker-img" src="/people/nagy/nagyg.jpg" alt="">
@@ -51,51 +51,46 @@
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-  bekapcsoláshoz: <div class="buttons"> 
-  kikapcssoláshoz: <div class="buttons hidden">
-    
-  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
-  bekapcsoláshoz: <a class="">  
-  kikapcssoláshoz: <a class="hidden">  
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
 
-  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
-  pl. "https://www.researchgate.net/profile/Attila-Demeny"
--->
-<div class="buttons">
-  <!--mtmt
-    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
-    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
-    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
-  -->
-   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
-  </a>
-  <!--researchgate-->
-  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
-    <img class=rg-btn src="/pics/rg-btn.png" alt="">
-  </a>   
-  <!--google scolar-->             
-  <a class="hidden" href="https://scholar.google.com/" target="_blank">
-    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
-  </a>
-  <!--orcid-->
-  <a class="hidden" href="https://orcid.org/" target="_blank">
-    <img src="/pics/orcid-btn.png" alt="orcid">
-  </a>
-  <!--linkedin-->
-  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
-    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
-  </a>
-  <!--saját honlap linkje-->
-  <a class="hidden" href="" target="_blank">
-    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
-  </a>             
-</div>
-              <div class="hidden">
-                <a href="https://www.researchgate.net/profile/..." target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10014651" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
-              </div>
+                <!--researchgate-->
+                <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="hidden" href="https://scholar.google.com/" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
             </div>
           </div>
 
@@ -137,8 +132,8 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
-                <li>1964 okleveles fizikus Kossuth Lajos Tudományegyetem, Debrecen</li>
-                <li>1976 Dr. univ. (kőzettan-geokémia) Kossuth Lajos Tudományegyetem, Debrecen. A disszertáció címe: "Magmás folyamatok hőmérséklet-meghatározása koegzisztens ásványpárok összetétele alapján"</li>             				
+                <li>M.Sc. in physics, Kossuth Lajos University, Debrecen 1964</li>
+                <li>Dr. univ., Kossuth Lajos University, Debrecen  1976. Title of the dissertation: "Temperature determination of igneous processes on the basis of the composition of coexistent mineral pairs"</li>             				
               </ul>
             </div>
           </div>
@@ -155,7 +150,7 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
-                <li>1969-től: MTA Földtudományi Kutatóközpont Geokémiai Kutatólaboratóriuma, Budapest</li>
+                <li>1969- Laboratory for Geochemical Research, Hungarian Academy of Sciences, Budapest</li>
               </ul>
             </div>
           </div>
@@ -191,10 +186,10 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>elektronmikroszondás ásványelemzés és alkalmazásai</li>
-                <li>ritkaföldfém-ásványok</li>
-                <li>anyagtudomány (híradástechnikai anyagok; fejlett technikájú kerámiák)</li>
-                <li>kőzettani adatbázisok</li>               
+                <li>electron microprobe mineral analysis and its applications</li>
+                <li>rare earth element minerals</li>
+                <li>material science (high-tech caramics)</li>
+                <li>petrological data bases</li>               
               </ul>
             </div>
           </div>
@@ -270,8 +265,8 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
-                <li>Magyarhoni Földtani Társulat tagja</li>
-                <li>IUGS Kőzettani Adatbázis Albizottságának titkára 1993-tól</li> 
+                <li>Member of the Hungarian Geological Society</li>
+                <li>secretary of Subcommission on Data Bases for Petrology of the IUGS (1993-present)</li> 
               </ul>
             </div>
           </div>
