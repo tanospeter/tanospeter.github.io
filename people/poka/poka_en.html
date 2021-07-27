@@ -8,7 +8,7 @@
   <script src="/script/includeHTML.js"></script>
   <script src="/script/headGen.js"></script>
   <script>    
-    generateHead()
+    generateHead("en")
   </script>
 </head>
 <body>  
@@ -26,10 +26,10 @@
           <div class="worker-header">
             <div class="worker-header-left">
               <!-- név szerkeszthető -->
-              <div class="worker-h1">PÓKA TERÉZ</div>
+              <div class="worker-h1">TERÉZ PÓKA</div>
               <!-- fokozat és beosztás, szerkeszthető. A fokozat törölhető, ha nem szükséges -->
-              <div class="worker-h2">a földtudomány kandidátusa</div>          
-              <div class="worker-h2">nyugdíjas senior research fellow</div>            
+              <div class="worker-h2">candidate of sciences</div>          
+              <div class="worker-h2">retired senior research fellow</div>            
             </div>
             <div class="worker-header-right">
               <img class="worker-img" src="/people/poka/poka.jpg" alt="">
@@ -51,51 +51,46 @@
               </ul>
 
               <!-- A gombmező ki és bekapcsolásához, szerkessze a komment utáni 1. sort!
-  bekapcsoláshoz: <div class="buttons"> 
-  kikapcssoláshoz: <div class="buttons hidden">
-    
-  Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
-  bekapcsoláshoz: <a class="">  
-  kikapcssoláshoz: <a class="hidden">  
+                bekapcsoláshoz: <div class="buttons"> 
+                kikapcssoláshoz: <div class="buttons hidden">
+                  
+                Amennyiben a gombmezőt bekapcsoljuk az <a> tag class értékével tudjuk be illetve kikapcsolni az egyes gombokat.
+                bekapcsoláshoz: <a class="">  
+                kikapcssoláshoz: <a class="hidden">  
 
-  Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
-  pl. "https://www.researchgate.net/profile/Attila-Demeny"
--->
-<div class="buttons">
-  <!--mtmt
-    pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
-    A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
-    A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
-  -->
-   <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314" target="_blank">
-    <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
-  </a>
-  <!--researchgate-->
-  <a class="hidden" href="https://www.researchgate.net/profile/" target="_blank">
-    <img class=rg-btn src="/pics/rg-btn.png" alt="">
-  </a>   
-  <!--google scolar-->             
-  <a class="hidden" href="https://scholar.google.com/" target="_blank">
-    <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
-  </a>
-  <!--orcid-->
-  <a class="hidden" href="https://orcid.org/" target="_blank">
-    <img src="/pics/orcid-btn.png" alt="orcid">
-  </a>
-  <!--linkedin-->
-  <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
-    <img src="/pics/linkedin-btn.png" alt="LinkedIn">
-  </a>
-  <!--saját honlap linkje-->
-  <a class="hidden" href="" target="_blank">
-    <img src="/pics/sajatlink-btn.png" alt="sajatlink">
-  </a>             
-</div>
-              <div>
-                <a href="https://www.researchgate.net/profile/Terez-Poka" target="_blank">
-                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                Minden bekapcsolt gombhoz meg kell adnunk a hozzátartozó linket!
+                pl. "https://www.researchgate.net/profile/Attila-Demeny"
+              -->
+              <div class="buttons">
+                <!--mtmt
+                  pl. "https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10000314"
+                  A fenti példa utolsó 8 az MTMT azonosító. CSAK ezt a 8 karaktert szükséges átírni!
+                  A saját MTMT azonosító a bejelentkezés után, Saját adatok gomb, Személyi adatlapon megtalálható.
+                -->
+                <a class="" href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10007585" target="_blank">
+                  <img class=rg-btn  src="/pics/mtmt2-btn.png" alt="mtmt">
                 </a>
-              </div>
+                <!--researchgate-->
+                <a class="" href="https://www.researchgate.net/profile/Terez-Poka" target="_blank">
+                  <img class=rg-btn src="/pics/rg-btn.png" alt="">
+                </a>   
+                <!--google scolar-->             
+                <a class="hidden" href="https://scholar.google.com/" target="_blank">
+                  <img src="/pics/google-scolar-btn.png" alt="Google Scolar">
+                </a>
+                <!--orcid-->
+                <a class="hidden" href="https://orcid.org/" target="_blank">
+                  <img src="/pics/orcid-btn.png" alt="orcid">
+                </a>
+                <!--linkedin-->
+                <a class="hidden" href="https://hu.linkedin.com/" target="_blank">
+                  <img src="/pics/linkedin-btn.png" alt="LinkedIn">
+                </a>
+                <!--saját honlap linkje-->
+                <a class="hidden" href="" target="_blank">
+                  <img src="/pics/sajatlink-btn.png" alt="sajatlink">
+                </a>             
+              </div>              
             </div>
           </div>
 
@@ -119,7 +114,7 @@
             <div class="worker-content-no-marker">
               <!-- Szerkessze az <ul> cimkék közötti részt -->
               <!-- formátum pl. Budapest, 1980 -->
-              <ul>Budpest, 1935. február 3.</ul>
+              <ul>Budpest, 1935</ul>
             </div>
           </div>        
           
@@ -137,10 +132,9 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: megszerzés_éve fokozat intézmény. A dolgozat címe:... -->
-                <li>1953-1958 ELTE TTK Geológus szak</li>
-                <li>1969-1970 ELTE TTK Szervező geológus szak</li>
-                <li>1964 Dr. Univ. ELTE. A disszertáció címe: A mellékkőzet szerepe az ÉNy Mátra szubvulkáni fácieseinek kialakulásában.</li>
-                <li>1981 a földtudomány kandidátusa, Budapest. A disszertáció címe: Kőzetkémia és szerkezetfejlődés (a Kárpát-medence harmad- és negyedidőszaki magmatizmusa példáján)</li>
+                <li>Geologist, ELTE, Budapest, 1953-1958</li>                
+                <li>Doctor of philosophy (ELTE, Budapest)(1964). Thesis: The role of the side rocks in the development of the subvulcanic formations of NW-Mátra</li>
+                <li>Candidate of Earth Science (1981). Thesis: Petrochemistry and development of Tectonical Structure (with an example of Neogene and Quaternary Magmatism of the Carpathian Basin)</li>
               </ul>
             </div>
           </div>
@@ -157,9 +151,15 @@
             <div class="worker-content">            
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->                
-                <li>1958-1959. ELTE TTK Kőzettan-geokémiai tanszék gyakornoka</li> 
-                <li>1959-től folyamatosan az MTA Geokémia Kutatólaboratóriuma ill. jogutódja: az MTA Geokémiai Kutatóintézete tud. segédmunkatársa (1959-1964), tud. munkatársa (1964-1981), tud. főmunkatársa ( 1981-1995), majd ny. tud. főmunkatársa(1995). Közben 1976-tól 1981-ig tud. csoportvezető, 1981-1995-ig tud. osztályvezető</li>
-                <li>1995-től nyugalmazott főmunkatárs</li>
+                <li>assistant of Department of Petrology and Geochemistry of University Eötvös Lóránd, Budapest (1958-1959)</li> 
+                <li>head of scientific departmen of LGR, HAS(1982-1995)</li>
+                <ul calss="ll2">
+                  <li>Scientific secretary of LRG, HAS (1965-1982)</li>
+                  <li>head of scientific team of LGR, HAS(1978-1982)</li>
+                  <li>researcher of LGR, HAS (1965-1978)</li>
+                  <li>junior researcher of LGR, HAS(1959-1965)</li>
+                </ul>                
+                <li>retired senior researcher of Laboratory for Geochemical Research (HAS) ( 1995- )</li>
               </ul>
             </div>
           </div>
@@ -177,9 +177,9 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- formátum: nyelv, fok; pl. angol, felsőfok, megszerzés éve (ha releváns) -->
-                <li>Német, felsőfok, 1962</li>
-                <li>Orosz, felsőfok, 1964</li>
-                <li>Angol, középfok, 1980</li>
+                <li>German (high degree,1961)</li>
+                <li>Russian (high degree,1963)</li>
+                <li>Englisch (medium degree, 1981)</li>
               </ul>
             </div>
           </div>
@@ -197,30 +197,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>Magmás kőzettan-vulkanológia-kőzetkémia</li>
-                <ul>
-                  <li>A Kárpát-medence Neogén magmatizmusa: Kőzetkémia és tektonika kapcsolata,</li>  
-                  <li>A Cserhát, a Mátra és a Bükkalja Neogén vulkáni összletei</li>
-                </ul>
-                <li>Szénhidrogén és kőszén geokémiája</li>
-                <ul>
-                  <li>Szénhidrogén geokémiai módszerek fejlesztése és integrált felhasználása</li>
-                  <li>Felszíni direkt szénhidrogén kutatási módszerek fejlesztése</li>
-                  <li>Barnakőszén kőzettan és geokémia</li>
-                  <li>Barna kőszén és feketekőszén átalakulások termokontakt hatásra</li>
-                </ul>  
-                <li>Környezetgeokémia</li>
-                <ul>
-                  <li>Magyarországi talajtípusok környezetgeokémiai jellemzése</li>
-                  <li>Bioesszenciális elemek eloszlása</li>
-                  <li>Talajok geokémiai és mágneses szuszceptibilitás tulajdonságai mérési módszerének fejlesztése</li>
-                </ul>
-                <li>Tudományelmélet</li>
-                <ul><li>A földtudományok tudományelméleti ismereteinek rendszerezése, a geonómia tudományelmélete</li></ul>
-                <li>Tudománytörténet</li>
-                <ul>
-                  <li>A magyarországi XIX. és XX. sz. geológiájának története</li>
-                  <li>Néhány kiemelkedő tudós ( Szabó József, Lóczy Lajos, Reichert Róbert, Szádeczky Gyula, Szádeczky-Kardoss Elemér, Vadász Elemér ) munkásságának értékelése.</li>
+                <li>Petrology of magmatic rocks, petrochemistry, volcanology, genetics and geochemistry of hydrocarbons and coals, environmental geochemistry</li>                
                 </ul>
               </ul>
             </div>
@@ -271,15 +248,12 @@
             - Bekapcsoláshoz a következő kódsort használja:
               <div class="worker-h3">
           -->
-          <div class="worker-h3 hidden">
+          <div class="worker-h3">
             <div class="title2">Study trips</div>
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Sovietunion (6), Armenia (1), Romania(6), Bolgaria(5), Chechoslovakia (6), Germany (4), Italy (1), Yugoslavia(2), Spain(1), Great Britain (1).</li>                
               </ul>            
             </div>
           </div>
@@ -297,16 +271,10 @@
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
                 <!-- társulati tagság, kamarai tagság, szerkesztőbizottsági tagság, szerkesztő, főszerkesztő, stb... -->
-                <li>1965-től 2005-ig folyamatosan: az MTA Geokémiai és Ásvány-kőzettani Tud. Bizottság tagja</li>
-                <li>1970-től folyamatosan: a fenti Bizottság Szerves geokémiai Tud. Albizottságának tagja</li>
-                <li>1973-tól folyamatosan az MTA Geonómiai Tud. Bizottságának tagja</li> 
-                <li>1973-tól 1995-ig a fenti Bizottság titkára</li>
-                <li>2002-től a fenti Bizottság Geonómiai Tudományos Albizottságának tagja</li>
-                <li>2006-tól az MTA Geonómiai Tud. Albizottság elnöke</li>
-                <li>1970-1978-ig az MTA Oktatásfejlesztési Bizottságának tagja</li>
-                <li>1958-tól a Magyarhoni Földtani Társulat tagja</li>
-                <li>1972-től folyamatosan a Magyarhoni Földtani Társulat Tudománytörténeti Szakosztálya vezetőségének választott tagja, 2003-tól elnöke</li>
-                <li>1975-től folyamatosan  Nemzetközi Geonómiai Unió Földtantörténeti Bizottságának választott ( INHIGEO) tagja</li>
+                <li>Member of the Scientific Committee for Geochemistry-Minaralogy and Petrology and its some Suibcommettees( 1965-2005)</li>
+                <li>Secretary of Scientific Committee for Geonomy of HAS (1973-1995), member of this Commettee after 1995-, continuously</li>                  
+                <li>Member of the Heading of the Section for History of Geology of the Hungarian Geological Assotiation ( 1972- continuously)</li>                  
+                <li>Member of the Commettee for History of Earth Sciences (INHIGEO) of the IUGS( 1975-continuously).</li>
               </ul>
             </div>
           </div>
@@ -363,8 +331,7 @@
             <div class="worker-content">
               <ul>
                 <!-- Szerkessze az <li> cimkék közötti részt, amennyiben továbbiakra van szükség használja a következő sablont <li>...</li> -->
-                <li>1978 Kiváló geológus, a Magyar Központi Földtani Hivatal kitüntetése</li>
-                <li>1982 A Munka Érdemrend ezüst fokozata</li> 
+                <li>"Eminent geologist " from Hungarian Central Geological Office (1978)</li>                
               </ul>
             </div>
           </div>
