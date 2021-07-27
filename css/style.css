@@ -528,6 +528,11 @@ footer a{
   color:rgb(206, 206, 206);  
   font-size: 16px;
   text-decoration: none;
+  text-align: center
+}
+
+footer img{
+  max-height: 28px;
 }
 
 .footer_container{
@@ -535,15 +540,23 @@ footer a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   align-content: center 
 }
 
 #fl {
   order: 1;
 }
+
+#fc {
+  order: 2;    
+}
+#fc a{
+  padding: 0
+}
+
 #fr {
-  order:2;
+  order:3;
   font-style: italic;
   margin: 0;
   padding: 0px 20px;
