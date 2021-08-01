@@ -20,8 +20,7 @@ img {
 }
 .title{
 	margin: 10px 0 10px 0;
-	overflow: hidden;
-	/*background: url('../pics/bg-title.gif') repeat-x 0 50%;*/
+	overflow: hidden;	
 }
 
 ul {
@@ -30,8 +29,7 @@ ul {
 	list-style: none;
 }
 
-h2 {
-  /*font-family: 'roboto slab', sans-serif;*/
+h2 {  
   font-weight: 700;
   font-size: 20px;
   color: #2874A6;
@@ -219,22 +217,6 @@ p {
   min-width: 250px;
   padding-bottom: 15px;
 }
-/*
-nav .has_submenu::after{
-  content:'🢒';
-  color: rgb(43, 56, 62);
-  position: absolute;
-  top: 6px;
-  right: 27px;
-  font-size: 25px;
-  font-weight: 700;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5)
-}
-
-nav .has_submenu:hover::after{
-  color: rgb(4, 58, 83);
-}
-*/
 
 nav .has_submenu:hover .submenu{
   display: block;
@@ -272,135 +254,6 @@ main {
   background-color:#fff;
   text-align: justify;
 }
-
-/*  3 kártyá/sor
-.people {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 10px;
-  justify-content: space-around;
-}
-.people-box {
-	flex: 1;
-	min-width: 250px;
-  max-width: 250px;
-	background: #fff;
-	border: 1px solid #ddd;	
-	margin: 0 10px 20px 10px;
-  padding: 0px 0 10px 0;
-  box-shadow: 2px 3px rgba(0,0,0,.1);
-  border-radius: 6px;
-}
-.people-box-header{
-  background: rgb(66, 69, 72);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding: 5px 1px;
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  max-height: 250px;
-  min-height: 250px;
-}
-.people-box-name{
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: .5px;
-  padding-top: 8px;
-}
-.people-contacts ul{
-  list-style:none;
-  padding: 10px 10px 0px 10px;
-  line-height: 20px;
-  color: rgb(66, 69, 72);
-}
-*/
-
-/*  4 kártyá/sor 
-.people {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 10px;
-  justify-content: flex-start;
-}
-.people-box {
-	flex: 1;
-	min-width: 199px;
-  max-width: 199px;
-	background: #fff;
-	border: 1px solid #ddd;	
-	margin: 0 7px 14px 7px;
-  padding: 0px 0 10px 0;
-  box-shadow: 2px 3px rgba(0,0,0,.1);
-  border-radius: 6px;
-}
-.people-box-header{
-  background: rgb(66, 69, 72);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding: 5px 1px;
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  max-height: 185px;
-  min-height: 185px;
-  font-size: 14px;
-}
-.people-box-name{
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: .5px;
-  padding-top: 8px;
-}
-.people-contacts ul{
-  list-style:none;
-  padding: 10px 10px 0px 10px;
-  line-height: 16px;
-  text-align: left;
-  color: rgb(66, 69, 72);
-  font-size: 14px;
-}
-/* //////////////////////////////////////// */
-
-
-/* kártyás elrendezéshez
-.people-box h2 {	
-	padding: 10px 20px 0 20px;
-	margin: 0;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0;
-}
-.people-box h3 {
-  font-style: italic;
-  margin: 0;
-  padding-left: 20px;
-  color: rgba(0,0,0,.7);
-  font-size: 16px;
-}
-
-.people-box a {
-  text-decoration:none;
-  
-}
-.people-box p {
-	margin: 0;
-	padding: 10px 20px;
-	font-size: 14px;
-	line-height: 19px
-}
-.people-box img{
-  min-width: 100px;
-  max-width: 100px;
-  max-height: 100px;
-  margin: auto;
-  display: block
-}
-*/
 
 .people {	
 	font-size:14px;
@@ -471,13 +324,6 @@ aside a:hover {
   background: rgba(68, 113, 156, 0.2);
 	color: rgb(4, 58, 83);
 }
-
-/*
-.rg-btn{
-  margin: 5px 40px;
-  max-width: 17%;
-}
-*/
 
 .mtmt-btn {
   margin: 4px 17px 0;
@@ -622,11 +468,7 @@ footer img{
   text-decoration: none;
 }
 
-.worker-h1 {
-  /*
-  color: rgba(22, 68, 105, 1); 
-  background: #fff; 
-  */  
+.worker-h1 {    
   color:  rgba(255, 255, 255, 0.8);
   font-weight: 700;
   font-size:32px;  
@@ -635,11 +477,7 @@ footer img{
   padding: 5px 15px;
 }
 
-.worker-h2 {
-  /*
-  color: rgba(22, 68, 105, 1);
-  background: #fff;  
-  */
+.worker-h2 {  
   color:  rgba(255, 255, 255, 0.7);  
   font-weight: 700;  
   letter-spacing: 2px;  
@@ -702,8 +540,7 @@ footer img{
 }
 .title2{
 	margin: 0 0 2px;
-	overflow: hidden;
-	/*background: url('../pics/bg-title.gif') repeat-x 0 50%;*/
+	overflow: hidden;	
 }
 
 .title3 {
@@ -791,11 +628,7 @@ footer img{
   margin: auto;  
 }
 
-.lab-h1 {
-  /*
-  color: rgba(22, 68, 105, 1); 
-  background: #fff; 
-  */  
+.lab-h1 {    
   color:  rgba(255, 255, 255, 0.8);
   font-weight: 700;
   font-size:32px;  
