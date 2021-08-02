@@ -674,6 +674,12 @@ table{
   border-collapse: collapse;
   width: 100%;
 }
+thead{
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
