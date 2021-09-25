@@ -1,69 +1,347 @@
 <!DOCTYPE html>
-<html lang="hu">
-<head>  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css" media="all">
-  <script src="/script/includeHTML.js"></script>
-  <script src="/script/headGen.js"></script>
-  <script>    
-    generateHead()
-  </script>
-</head>  
-<body>  
-  <div class="wrapper">
-    <header>
-      <img src="/pics/headers/heading_m.png" alt="">      
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CUSP - 2ka Paleoclimate</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="Flat-UI-master/dist/css/flat-ui.css">    
+    <link rel="stylesheet" type="text/css" href="css/speleotherm.css">
+    <script type="text/javascript" src="script/mod.js"></script>
+    <script type="text/javascript" src="script/helper.js"></script>
+    <script type="text/javascript" src="script/surface.js"></script>
+  </head>
+  <body>        
+    <header>      
+      <div class="logos" >
+        <div class="row">
+          <div class="col-xs-12 col-md-8">
+            <a href="https://paleoclimate2ka.hu/?lang=en" >
+              <img src="images/Paleoklima-2ka-logo.png" />
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-4 align-right"></divclass>
+            <a href="https://www.climate-risk-analysis.com/">
+              <img src="images/craMudelsee.png" />
+            </a>
+          </div>
+        </div>                
+      </div>
     </header>
-    <div class="content">      
-      <nav include-html="/static/nav.html"></nav>
-      <main>
-        <div class="title">
-          <h2>Tisztelt Látogató!</h2>
-        </div>        
-        <div>
-          <p>Köszöntjük a Csillagászati és Földtudományi Kutatóközpont, Földtani és Geokémiai Intézetének honlapján.</p>
-          <p>Az Intézet 2019. szeptember 1-től a Csillagászati és Földtudományi Kutatóközpontban, Földtani és Geokémiai Intézet néven működik. A korábbi osztályszerkezet megszűnt, jelenleg a laboratóriumok mint funkcionális egységek, valamint három kutatócsoport (Környezet-, víz- és biogeokémiai Kcs., Archeometriai Kcs. és  Geokémia & Paleoklíma Kcs.) alkotják az intézet vázát.</p>          
-          <p>Az Intézet feladatait tartalmazó Alapító Okirat <a href="http://www.geochem.hu/documents/CSFK_Alapito_okirat.pdf" target="_blank">itt megtekinthető.</a></p>          
-        </div>        
-        <div class="title">
-          <h3>Elérhetőségek</h3>
+    <div class="container">
+      <section>
+        <div class="jumbotron jumbotron-midnight text-centered col-md-8 offset-2"> 
+          <h2>Assessment of the robustness of spectral peaks in proxy records with chronological uncertainty</h2>
+          <br>
+          <h5>CUSP</h5>
+          <h5>Chronological Uncertainty & Spectral Peaks</h5>
         </div>
-        <div>
-          <ul>
-            <li class="icon-phone">+36 30 317 5323</li>                        
-            <li class="icon-location">1112 Budapest, Budaörsi út 45.</li>
-            <li class="icon-mail">farkas.csaba at csfk.org</li>  
-          </ul>
+        <div class="jumbotron jumbotron-midnight col-md-8 offset-2">                 
+          <p>
+            Developers: István Gábor Hatvani, Péter Tanos and Zoltán Kern
+          </p>
+          <p>            
+            Original publication describing the model: Hatvani, I.G., Tanos, P., Mudelsee, M. and Kern, Z., 2021. Robust periodic signals in proxy records with chronological uncertainty. Quaternary Science Reviews, in review.
+          </p>                  
         </div>
-        <div class="title">
-          <h3>Igazgató</h3>
+        <section class="scroll-panel">
+          <div class="jumbotron jumbotron-midnight text-centered">           
+            <h4>
+              Usage
+            </h4>          
+          </div>
+          <div class="jumbotron jumbotron-midnight col-md-8 offset-2">           
+            <p>Please input the required for the model to assess if the period sought for can indeed be robustly detected under the given chronological circumstances. 
+              Input the chronological uncertainty (Unc [time step]), mean sampling resolution (MSR [sample / time step]) and the period [time step] sought for. 
+              Please note that the values can either be in years (yrs) or 1000 years (kyrs), just make sure all the variables have the same measurement unit for time steps. 
+              For further details on the underlying model and real-life examples, the user is referred to the original study (Hatvani et al., 2021).</p>
+          </div>
+          <div class="jumbotron-midnight col-md-8 offset-2 text-centered">
+            <ul>
+              <li><a href="red.html">Click to open Fig: Gaussian red noise</a></li>
+              <li><a href="white.html">Click to open Fig: Gaussian white noise</a></li>              
+              <li><a href="együtt.html">Click to open Fig: Gaussian white and red noise combined</a></li>         
+            </ul>          
+          </div>
+          <div class="jumbotron jumbotron-midnight text-centered">
+            <div class="jumbotron-grey col-md-8 offset-2">
+              <div class="row">                
+                <div class="col-md-4">
+                  <label>Noise model:</label>
+                </div>
+                <div class="col-md-8">                  
+                  <form name="noiseModel">
+                    <div class="row">
+                      <div  class="col-md-6">
+                        <label class="radio" for="white">
+                          <input type="radio" name="noise" value="0" id="white" data-toggle="radio" class="custom-radio">
+                          <span class="icons">
+                            <span class="icon-unchecked"></span>
+                            <span class="icon-checked"></span>
+                          </span>
+                          Gaussian white noise
+                        </label>
+                      </div>
+                      <div  class="col-md-6">
+                        <label class="radio" for="red">
+                          <input type="radio" name="noise" value="1" id="red" data-toggle="radio" class="custom-radio" checked>
+                          <span class="icons">
+                            <span class="icon-unchecked"></span>
+                            <span class="icon-checked"></span>
+                          </span>
+                          Gaussian red noise
+                        </label>
+                      </div>                      
+                    </div>
+                  </form>                                      
+                </div>                                              
+              </div> 
+              <div class="row">                
+                <div class="col-md-4">
+                  <label>Timestep:</label>
+                </div>
+                <div class="col-md-8">                  
+                  <form name="timestepSelector">
+                    <div class="row">
+                      <div  class="col-md-4">
+                        <label class="radio" for="yr">
+                          <input type="radio" name="timestep" value="" id="yr" data-toggle="radio" class="custom-radio" checked>
+                          <span class="icons">
+                            <span class="icon-unchecked"></span>
+                            <span class="icon-checked"></span>
+                          </span>
+                          year
+                        </label>
+                      </div>
+                      <div  class="col-md-4">
+                        <label class="radio" for="10yrs">
+                          <input type="radio" name="timestep" value="" id="10yrs" data-toggle="radio" class="custom-radio" >
+                          <span class="icons">
+                            <span class="icon-unchecked"></span>
+                            <span class="icon-checked"></span>
+                          </span>
+                          10 years
+                        </label>
+                      </div>
+                      <div  class="col-md-4">
+                        <label class="radio" for="100yrs">
+                          <input type="radio" name="timestep" value="" id="100yrs" data-toggle="radio" class="custom-radio" >
+                          <span class="icons">
+                            <span class="icon-unchecked"></span>
+                            <span class="icon-checked"></span>
+                          </span>
+                          100 years
+                        </label>
+                      </div>           
+                      <div  class="col-md-4">
+                        <label class="radio" for="kyr">
+                          <input type="radio" name="timestep" value="" id="kyr" data-toggle="radio" class="custom-radio" >
+                            <span class="icons">
+                              <span class="icon-unchecked"></span>
+                              <span class="icon-checked"></span>
+                            </span>
+                          1000 years
+                        </label>
+                      </div>
+                    </div>
+                  </form>                                      
+                </div>                                              
+              </div>            
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="uncTextBox">                
+                    Chronological uncertainty:
+                  </label>
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control margin-bt-3" id="uncTextBox" placeholder="Unc"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="MSR">                
+                    Mean sampling resolution:
+                  </label>              
+                </div>
+                <div  class="col-md-4" >
+                  <label class="radio" for="timePerSample">
+                    <input type="radio" name="optionsRadios2" value="1" id="timePerSample" data-toggle="radio" class="custom-radio" disabled checked>
+                      <span class="icons">
+                        <span class="icon-unchecked"></span>
+                        <span class="icon-checked"></span>
+                      </span>
+                    timestep/sample
+                  </label>
+                </div>
+                <div  class="col-md-4">
+                  <label class="radio" for="samplePerTime">
+                    <input type="radio" name="optionsRadios2" value="0" id="samplePerTime" data-toggle="radio" class="custom-radio" disabled>
+                    <span class="icons">
+                      <span class="icon-unchecked"></span>
+                      <span class="icon-checked"></span>
+                    </span>
+                    sample/timestep
+                  </label>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="MSR">                
+                    
+                  </label>              
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control margin-bt-3" id="windowTextBox" placeholder="MSR">
+                </div>
+              </div>            
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="period">                
+                    Period:
+                  </label>              
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control margin-bt-3" id="periodTextBox" placeholder="Period">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                  <button class="btn btn-lg btn-primary btn-embossed pull-right full-width" onclick="runMod()">submit</button>
+                </div>
+              </div>            
+            </div>          
+          </div>
+          <div class="jumbotron-midnight col-md-8 offset-2 text-centered">                        
+            <h4>
+              Results
+            </h4>
+          </div>
+          <div class="jumbotron-midnight col-md-8 offset-2" id="teszt">            
+            <div class="row" style="display: none">
+              <div class= "col-md-4" style="padding: 2px">                
+                <div class="jumbotron-white" >                  
+                  <img src="images/check.png" style="position: absolute; top: 3%; right: 3%; max-width: 25%; max-height: 25%;">                                   
+                  <h6>#1</h6>
+                  <h7>Input:</h7>
+                  <div style="padding-left: 5px">                  
+                    <span>
+                      Unc: 10 [yr]
+                    </span>
+                    <span>
+                      MSR: 10 [yr/sample]
+                    </span>
+                    <span>
+                      period: 100 [yrs]
+                    </span>
+                  </div>
+                  <h7>Output:</h7>
+                  <div style="padding-left: 5px">
+                    <span>Treshold period for noisy data, AR(1): ...</span>
+                  </div>
+                  <div style="padding-left: 5px; font-weight: bold;">
+                    Thus, the period 100 yrs can be robustly detected.
+                  </div>
+                </div>
+              </div>
+              <div class= "col-md-4" style="padding: 2px">
+                <div class="jumbotron-white" >
+                  <img src="images/x.png" style="position: absolute; top: 3%; right: 3%; max-width: 25%; max-height: 25%;">
+                  <h6>#2</h6>
+                  <h7>Input:</h7>
+                  <div style="padding-left: 5px">                  
+                    <span>
+                      Unc: 10 [yr]
+                    </span>
+                    <span>
+                      MSR: 10 [yr/sample]
+                    </span>
+                    <span>
+                      period: 100 [yrs]
+                    </span>
+                  </div>
+                  <h7>Output:</h7>
+                  <div style="padding-left: 5px">
+                    <span>Treshold period for noisy data, AR(1): ...</span>
+                  </div>
+                  <div style="padding-left: 5px; font-weight: bold;">
+                    Thus, the period 100 yrs can be robustly detected.
+                  </div>
+                </div>
+              </div>
+              <div class= "col-md-4" style="padding: 2px">
+                <div class="jumbotron-white" >
+                  <img src="images/warning.png" style="position: absolute; top: 3%; right: 3%; max-width: 25%; max-height: 25%;">
+                  <h6>#3</h6>
+                  <h7>Input:</h7>
+                  <div style="padding-left: 5px">                  
+                    <span>
+                      Unc: 10 [yr]
+                    </span>
+                    <span>
+                      MSR: 10 [yr/sample]
+                    </span>
+                    <span>
+                      period: 100 [yrs]
+                    </span>
+                  </div>
+                  <h7>Output:</h7>
+                  <div style="padding-left: 5px">
+                    <span>Treshold period for noisy data, AR(1): ...</span>
+                  </div>
+                  <div style="padding-left: 5px; font-weight: bold;">
+                    Thus, the period 100 yrs can be likely robustly detected.
+                  </div>
+                </div>
+              </div>
+              <div class= "col-md-4" style="padding: 2px">
+                <div class="jumbotron-white" >
+                  <img src="images/check.png" style="position: absolute; top: 3%; right: 3%; max-width: 25%; max-height: 25%;">
+                  <h6>#4</h6>
+                  <h7>Input:</h7>
+                  <div style="padding-left: 5px">                  
+                    <span>
+                      Unc: 10 [yr]
+                    </span>
+                    <span>
+                      MSR: 10 [yr/sample]
+                    </span>
+                    <span>
+                      period: 100 [yrs]
+                    </span>
+                  </div>
+                  <h7>Output:</h7>
+                  <div style="padding-left: 5px">
+                    <span>Treshold period for noisy data, AR(1): ...</span>
+                  </div>
+                  <div style="padding-left: 5px; font-weight: bold;">
+                    Thus, the period 100 yrs can be robustly detected.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="results">
+            </div>            
+          </div>       
+        </section>      
+        <div class="jumbotron jumbotron-midnight text-centered col-md-8 offset-2" style="display: none;">           
+          <img src="images/fig.png">
         </div>
-        <div>          
-          <ul>
-            <li style="font-weight: 700;">
-              <a href="demeny_hu.html">Demény Attila</a>              
-            </li>                        
-            <li style="font-style: italic;">az MTA rendes tagja</li>
-            <li class="icon-mail">demeny.attila at csfk.org</li>  
-          </ul>         
-        </div>
-        <div class="title">
-          <h3>Közérdekű dokumentumok</h3>
-        </div>
-        <div>
-          <a href="http://geochem.hu/documents/FGI%202017.pdf" target="_blank">Beszámoló a 2017. évi tudományos tevékenységről</a>          
-        </div>
-      </main>      
-      <aside include-html="/static/aside.html"></aside>
-  	</div>
-    <footer include-html="/static/footer.html"></footer>
-    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
-    <script src="/script/scroll.js"></script>
-    <script>
-      includeHTML();      
-      window.onscroll = function() {scrollFunction()};
-    </script>    
-  </div>
-</body>
+      </section>
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <script src="" async defer></script>
+  </body>
 </html>
