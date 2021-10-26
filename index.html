@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>CUSP - 2ka Paleoclimate</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="pics/favicon.png">
+  <script type="text/javascript" src="script/mod.js"></script>
+  <script type="text/javascript" src="script/helper.js"></script>
+  <script type="text/javascript" src="script/surface.js"></script>
+</head>
+<body>
+
+<nav>
+	<!--
+	a mobilos navigációt kapcsolgató csekbox
+	a csekboxot eltüntetjük
+	a három <span> tag a hamburger ikont fogja megvalósítani
+	-->
+	<label for="mobile-menu" class="mobile-menu-button">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<input type="checkbox" id="mobile-menu">
+
+	<!--
+	a navigáció elemei, melyből az első <li> kivételével
+	mindent eltüntetünk mobilnézetben
+	-->
+	<ul class="navigation">
+		<li class="cusp"><a href="index.html">CUSP Home</a></li>
+		<li><a href="https://paleoclimate2ka.hu/?lang=en" target="_blank">Paleoklíma 2ka Kutatócsoport</a></li>
+		<li><a href="https://www.climate-risk-analysis.com/" target="_blank">Climate Risk Analysis</a></li>
+		<li><a href="">Publication</a></li>
+    <li class="has-submenu">
+      <a href="">Noise Models</a>
+      <ul class="submenu">
+        <li><a href="whitenoise.html">Gaussian white noise</a></li>
+        <li><a href="rednoise.html">Gaussian red noise</a></li>
+      </ul>
+    </li>		
+	</ul>
+</nav>
+
+
+<div class="wrapper">
+	
+	<div class="intro">
+		<h1>Chronological Uncertainty & Spectral Peaks</h1>
+		<img src="images/logos.png" alt="">
+    <p>Assessment of the robustness of spectral peaks in proxy records with chronological uncertainty</p>
+		<p>Developers: István Gábor Hatvani, Péter Tanos and Zoltán Kern</p>
+		<p>Original publication describing the model: Hatvani, I.G., Tanos, P., Mudelsee, M. and Kern, Z., 2021. Robust periodic signals in proxy records with chronological uncertainty. Quaternary Science Reviews, in secound review.</p>		
+	
+    <h2>Usage</h2>
+  
+    <p>Please input the required for the model to assess if the period sought for can indeed be robustly detected under the given chronological circumstances. 
+      Input the chronological uncertainty (Unc [time step]), mean sampling resolution (MSR [sample / time step]) and the period [time step] sought for. 
+      Please note that the values can either be in years (yrs) or 1000 years (kyrs), just make sure all the variables have the same measurement unit for time steps. 
+      For further details on the underlying model and real-life examples, the user is referred to the original study (Hatvani et al., 2021).
+    </p>
+ 
+    <h2>Input</h2>
+    <div class="box-wrapper">
+      
+      <div class="box2">
+        <form name="noiseModel">
+          <h3>1) Select a noise model:</h3>
+          <div>
+            <input type="radio" id="white" name="noise" value="0" checked>
+            <label for="white">Gaussian white noise</label>
+          </div>
+          <div>
+            <input type="radio" id="red" name="noise" value="1">
+            <label for="red">Gaussian red noise</label>
+          </div>      
+        </form>
+      </div>
+
+      <div class="box2">
+        <h3>2) Select a timestep:</h3>
+        <form name="timestepSelector">
+          <div>
+            <input type="radio" id="yr" name="timestep" value="" checked>
+            <label for="yr">year</label>
+          </div>
+          <div>
+            <input type="radio" id="10yrs" name="timestep" value="">
+            <label for="10yrs">10 years</label>
+          </div>
+          <div>
+            <input type="radio" id="100yrs" name="timestep" value="">
+            <label for="100yrs">100 years</label>
+          </div>    
+          <div>
+            <input type="radio" id="kyr" name="timestep" value="">
+            <label for="kyr">1000 years</label>
+          </div>
+        </form>       
+      </div>
+      
+      
+      <div class="box2">
+        <h3>3) Select unit of mean sampling resolution:</h3>
+        <div>
+          <input type="radio" id="timePerSample" name="optionsRadios2" value="1" checked>
+          <label for="timePerSample">timestep/sample</label>
+        </div>
+        <div>
+          <input type="radio" id="samplePerTime" name="optionsRadios2" value="0" disabled>
+          <label for="samplePerTime">sample/timestep</label>
+        </div>
+      </div>
+      
+    </div>
+
+    <h3>4) Enter the input values:</h3>
+    <div>
+      <label for="uncTextBox">Chronological uncertainty:</label>
+      <input type="text" id="uncTextBox" placeholder="Unc">
+    </div>
+    <div>
+      <label for="windowTextBox">Mean sampling resolution:</label>
+      <input type="text" id="windowTextBox" placeholder="Unc"> 
+    </div>
+    <div>
+      <label for="periodTextBox">Period:</label>
+      <input type="text" id="periodTextBox" placeholder="Period">        
+    </div>
+    <br>
+    <button class="btn" onclick="runMod()">Submit</button>
+    <button class="btn" onclick="clearOutput()">Clear</button>
+    <br>
+    <h2>Output</h2>
+    <div class="row" id="results">
+    </div>	  
+  </div>	
+
+  <div id="counter" style="display:none">1</div>
+
+  
+</div>
+<footer>
+  <div class="footer-box">
+    <p>© 2021 2ka Paleoklíma Lendület & Climate Risk Analysis Mudelsee. All Rights Reserved.</p>
+  </div>
+  <div class="footer-box">
+    <p>Powered by Tanos</p>
+  </div>
+  
+</footer>
+
+</body>
+</html>

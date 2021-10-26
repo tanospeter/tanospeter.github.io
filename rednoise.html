@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>CUSP - 2ka Paleoclimate</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="pics/favicon.png">
+  <script type="text/javascript" src="script/mod.js"></script>
+  <script type="text/javascript" src="script/helper.js"></script>
+  <script type="text/javascript" src="script/surface.js"></script>
+</head>
+<body>
+
+  <nav>
+    <!--
+    a mobilos navigációt kapcsolgató csekbox
+    a csekboxot eltüntetjük
+    a három <span> tag a hamburger ikont fogja megvalósítani
+    -->
+    <label for="mobile-menu" class="mobile-menu-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <input type="checkbox" id="mobile-menu">
+
+    <!--
+    a navigáció elemei, melyből az első <li> kivételével
+    mindent eltüntetünk mobilnézetben
+    -->
+    <ul class="navigation">
+      <li><a href="index.html">CUSP Home</a></li>
+      <li><a href="https://paleoclimate2ka.hu/?lang=en" target="_blank">Paleoklíma 2ka Kutatócsoport</a></li>
+      <li><a href="https://www.climate-risk-analysis.com/" target="_blank">Climate Risk Analysis</a></li>
+      <li><a href="">Publication</a></li>
+      <li class="has-submenu">
+        <a href="">Noise Models</a>
+        <ul class="submenu">
+          <li><a href="whitenoise.html">Gaussian white noise</a></li>
+          <li><a href="rednoise.html">Gaussian red noise</a></li>
+        </ul>
+      </li>		
+    </ul>
+  </nav>
+  <div class="wrapper">
+    <div class="intro">
+		  <h1>Chronological Uncertainty & Spectral Peaks</h1>
+      <h2>Noise model: Gaussian red noise</h2>      
+        <div id="htmlwidget_container">
+          <div id="htmlwidget-b0959a66ca875408a850" style="width:1000px;height:1000px;" class="plotly html-widget"></div>
+        </div>          
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-box">
+      <p>© 2021 2ka Paleoklíma Lendület & Climate Risk Analysis Mudelsee. All Rights Reserved.</p>
+    </div>
+    <div class="footer-box">
+      <p>Powered by Tanos</p>
+    </div>  
+  </footer>
+</body>
+</html>

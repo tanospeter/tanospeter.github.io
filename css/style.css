@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+* {
+	box-sizing: border-box
+}
+html {
+	font-size: 16px
+}
+body {
+	background: #ddd;
+	font-family: 'Roboto';
+	margin: 0
+}
+img {
+	max-width: 100%
+}
+
+/*
+1rem = a html elemen megadott betűméret
+ha nincs megadva, akkor általában 16px az alapértelmezett értéke
+a CSS mértékegységekről itt olvashatsz bővebben:
+https://cyrex.hu/2017/11/09/css-mertekegysegek/
+*/
+h2 {
+	font-size: 3rem;
+	font-weight: 300
+}
+
+/*
+görgetéskor a fejléc feltapad
+a position: sticky csak akkor működik, ha a top érték be van állítva
+dokumentáció:
+https://www.w3schools.com/css/css_positioning.asp
+*/
+nav {
+	background: #0c2c0d;
+	position: sticky;
+	top: 0
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+nav ul li {
+	float: left;
+}
+nav::after {
+	content:'';
+	clear: both;
+	display: table
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	color: rgba(255,255,255,.8);
+	padding: 1.2rem 1rem
+}
+nav a:hover {
+	background: rgba(0,0,0,.1)
+}
+/*
+.navigation-ön belüli első <li> kiszelektálása
+*/
+.navigation li:first-child a{
+	padding: 1.2rem 1rem;
+	color: rgba(255,255,255,1)
+}
+
+footer {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:space-between;
+	background: #0c2c0d;
+	color: white;	
+}
+
+footer p{
+	margin: 0;
+	padding:.3rem 1rem;
+}
+
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 95%
+}
+.intro {
+	line-height: 1.7;
+	font-size: 1.2rem;
+	margin: 5rem 0
+}
+.intro p {
+	margin: 0 0 1rem 0
+}
+.intro img {
+	float: right;
+	margin: 0 0 2rem 2rem;
+	border-radius: 50%
+}
+.intro h1 {
+	font-weight: 100;
+	font-size: 5rem;
+	margin: 0 0 2rem 0
+}
+.intro h2 {
+	font-weight: 300;
+	font-size: 3rem;
+	margin: 0 0 .5rem 0
+}
+.intro h3 {
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin: 0 0 0 0
+}
+
+/*
+ha a kijelző mérete legfeljebb 800px széles
+*/
+@media(max-width:800px) {
+	.intro {
+		margin: 2rem 0
+	}
+	.intro img {
+		max-width: 200px
+	}
+}
+
+/*
+ha a kijelző mérete legfeljebb 480px széles
+*/
+@media(max-width:480px) {
+	.intro img {
+		float: none;
+		margin: 1rem auto;
+		display: block
+	}
+}
+
+
+.box-wrapper {
+	display: flex;		
+	flex-flow: row wrap;
+	margin: 0 -10px
+}
+.box {
+	flex: 1;
+	margin: 10px;
+	min-width: 300px;	
+	background: white;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1)
+}
+.box2 {
+	flex: 1;
+	margin: 10px;
+	min-width: 300px;		
+}
+.box-content {
+	padding: 1.5rem;
+	font-size: .9rem
+}
+.box h4 {
+	margin: 0;
+	font-size: 1.2rem
+}
+.btn {
+	display: inline-block;
+	padding: .5rem 1rem;
+	background: #0c2c0de5;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px
+}
+
+
+
+.mobile-menu-button {
+	width: 50px;
+	display: block;
+	float: right;
+	border: 1px solid rgba(255,255,255,.2);
+	padding: 10px;
+	margin: 7px 5px 0 0;
+	display: none
+}
+.mobile-menu-button span {
+	display: block;
+	height: 4px;
+	background: white;
+	margin: 0 0 5px 0;
+	border-radius: 2px
+}
+/*
+az utolsó <span> típusú elem kiszelektálása a .mobile-menu-button class-on belül
+*/
+.mobile-menu-button span:last-of-type {
+	margin: 0
+}
+
+/*
+a .mobile-menu-button után található checkbox típusú input kiszelektálása
+*/
+.mobile-menu-button + input[type="checkbox"] {
+	display: none
+}
+
+/*
+a .mobile-menu-button után található checkbox típusú input kiszelektálása,
+és, ha ez be van jelölve (checked), akkor a .navigation-ön belül összes <li>-t
+eltüntetjük, kivéve az elsőt
+*/
+.mobile-menu-button + input[type="checkbox"]:checked ~ .navigation li:not(:first-child) {
+	display: block
+}
+
+
+
+/*
+ha a kijelző mérete legfeljebb 800px széles
+*/
+@media(max-width:800px) {
+	.mobile-menu-button {
+		display: block
+	}
+	.navigation li:not(:first-child) {
+		display: none
+	}
+	.navigation li {
+		float: none;
+		border-top: 1px solid rgba(255,255,255,.2)
+	}
+	.navigation a {
+		padding: .8rem 1rem
+	}
+}
+
+
+/*
+nyomtatási nézetre vonatkozó CSS beállítások
+*/
+@media print {
+	nav {
+		display: none
+	}
+	.intro {
+		margin-top: 0
+	}
+	.intro h1 {
+		line-height: 1
+	}
+	.intro img {
+		display: none
+	}
+}
+
+
+.navigation .has-submenu {
+	position: relative
+}
+
+.navigation .has-submenu li:first-child a{
+	padding: 10px 20px;
+	color: rgba(255,255,255,.8);
+}
+
+/*
+ha van almenüje és föléhúzzuk az egereket,
+akkor a .submenu-t megjelenítjük
+*/
+.navigation .has-submenu:hover .submenu {
+	display: block
+}
+
+/*
+az ::after szelektorral nyilat teszünk a menüpont neve mögé,
+ha van neki almenüje
+*/
+.navigation .has-submenu::after {
+	content: '🢓';
+	color: white;
+	position: absolute;
+	top: 23px;
+  right: 10px
+}
+
+/*
+a nyíl miatt a jobb oldali padding-et feljebb toljuk
+*/
+.navigation .has-submenu>a {
+	padding-right: 35px
+}
+
+/*
+az almenüt abszolút pozicionáljuk
+*/
+.navigation .submenu {
+	position: absolute;
+	width: 220px;
+	display: none
+}
+.navigation .submenu a {
+	background: #0c2c0d;
+	padding: 10px 20px;
+	width: 220px;
+	color: rgba(255,255,255,.8);
+}
+.navigation .submenu a:hover {
+	background: black
+}
