@@ -13,6 +13,7 @@ function estimatePeriod(unc, msr, per, noise) {
   var lastPer = ''
   var comp = ''
   var resp = -1
+  var data = -1
   
 
   if (isNaN(unc) || unc < uncMin) {
@@ -27,6 +28,7 @@ function estimatePeriod(unc, msr, per, noise) {
   else{    
     if (per < 2 * msr){
       txt = "The given sampling rate is probably insufficient to carry the period sought for."
+      data = 0
       resp = 1
     }
     else if (unc > uncMax) {
