@@ -5,7 +5,7 @@ function findTimeStep(){
     if (element.checked) {
       id = element.id
       switch (id) {
-        case "yr":
+        case "yrs":
           timeStep = 1
           break;
         case "10yrs":
@@ -14,7 +14,7 @@ function findTimeStep(){
         case "100yrs":
           timeStep = 100
           break;
-        case "kyr":
+        case "kyrs":
           timeStep = 1000
           break;
         default:
@@ -22,7 +22,7 @@ function findTimeStep(){
       }
     }
   });
-  return timeStep;
+  return {timeStep, id};
 }
 
 function findNoise(){
@@ -42,7 +42,8 @@ function findNoise(){
           break;
       }
     }
-  });
+  })
+  //console.log(`noise=${noise}`)
   return noise;
 }
 
@@ -93,10 +94,10 @@ function scale(){
   var per = document.getElementById("periodTextBox").value;
   per = per.replace(",", ".")
   per = parseFloat(per)
-    
+      
   var timeStep = findTimeStep()
-  console.log(unc, msr, per, timeStep)
-  
+  var unit = timeStep.id
+  /*  
   unc = unc*timeStep
   msr = msr*timeStep
   per = per*timeStep
@@ -107,10 +108,11 @@ function scale(){
   msr = parseInt(msr);
   per = per.toFixed(0);
   per = parseInt(per);
+  */
   
-  console.log(unc, msr, per, timeStep)
+  console.log(unc, msr, per, unit)
    
-  return {unc, msr, per}
+  return {unc, msr, per, unit}
 } 
 
 function makeOutput(no, res, unc, msr, per, noise, out1, out2, data){
@@ -212,29 +214,30 @@ function runMod(){
   var unc = scaled.unc
   var msr = scaled.msr
   var per = scaled.per
+  var unit = scaled.unit
 
   var noise = findNoise()
   //noise = parseInt(noise)  
 
-  console.log(`unc=${unc}; msr=${msr}; per=${per}; noise=${noise}`)
+  console.log(`unc=${unc}; msr=${msr}; per=${per}; noise=${noise}; unit=${unit}`)
   checked = checkParams(unc, msr, per)
   console.log(`Value of checkParams().txt: ${checked.txt}`)
   if (checked.resp == 0){
-    var res = estimatePeriod(unc, msr, per, noise)
+    var res = estimatePeriod(unc, msr, per, unit, noise)
     console.log(`Result of estimatePeriod()-> ${JSON.stringify(res)}\nunc:${res.unc}, msr:${res.msr}, per:${res.per}, data:${res.data}, resp:${res.resp}, txt:\n${res.txt}`)
     var d = document.createElement("div")
     var s = document.createElement("p")        
     var node = document.createTextNode(res.txt)
     s.appendChild(node);
     d.appendChild(s);
-    var element = document.getElementById("teszt")
+    //var element = document.getElementById("teszt")
     //element.appendChild(d)
     //makeOutput(1,res.resp,unc,msr,per, noise, res.txt)
-    makeOutputNew(res.resp,unc,msr,per, noise, res.txt)
+    makeOutputNew(res.resp,unc,msr,per, unit, noise, res.txt)
   }  
 }
 
-function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
+function makeOutputNew(res, unc, msr, per, unit, noise, out1, out2, data){
   // sorszám
   let no = document.getElementById("counter").innerHTML
   no = parseInt(no)
@@ -284,21 +287,21 @@ function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
 
   // input text
   var s1 = document.createElement("span")    
-  var s1txt = document.createTextNode(`Chronological uncertainty: ${unc} yr`)    
+  var s1txt = document.createTextNode(`Chronological uncertainty: ${unc} ${unit}`)    
   s1.appendChild(s1txt)
   s1.appendChild(document.createElement("br"))  
-  var s1txt = document.createTextNode(`Mean sampling resolution: ${msr} yr/sample`)
+  var s1txt = document.createTextNode(`Mean sampling resolution: ${msr} ${unit}/sample`)
   s1.appendChild(s1txt)
   s1.appendChild(document.createElement("br"))  
-  var s1txt = document.createTextNode(`Period: ${per} yrs`)
+  var s1txt = document.createTextNode(`Period: ${per} ${unit}`)
   s1.appendChild(s1txt)
   s1.appendChild(document.createElement("br"))
-  if (noise = 0) {
+  if (noise == 0) {
     noiseTxt = 'white'
   }
-  else if (noise = 1) {
+  else if (noise == 1) {
     noiseTxt = 'red' 
-  }
+  }  
   var s1txt = document.createTextNode(`Noise: ${noiseTxt}`)
   s1.appendChild(s1txt)
   d3.appendChild(s1) // input text hozzáadása az input div hez
@@ -331,5 +334,5 @@ function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
 
 function clearOutput(){
   document.getElementById("results").innerHTML = ''
-  document.getElementById("counter").innerHTML=1
+  document.getElementById("counter").innerHTML = 1
 }
