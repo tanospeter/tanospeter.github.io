@@ -220,8 +220,8 @@ function runMod(){
   checked = checkParams(unc, msr, per)
   console.log(`Value of checkParams().txt: ${checked.txt}`)
   if (checked.resp == 0){
-    var res = calcPeriod(unc, msr, per, noise)
-    console.log(`Result of calcPeriod()-> ${JSON.stringify(res)}\nunc:${res.unc}, msr:${res.msr}, per:${res.per}, data:${res.data}, resp:${res.resp}, txt:\n${res.txt}`)
+    var res = estimatePeriod(unc, msr, per, noise)
+    console.log(`Result of estimatePeriod()-> ${JSON.stringify(res)}\nunc:${res.unc}, msr:${res.msr}, per:${res.per}, data:${res.data}, resp:${res.resp}, txt:\n${res.txt}`)
     var d = document.createElement("div")
     var s = document.createElement("p")        
     var node = document.createTextNode(res.txt)
@@ -240,7 +240,7 @@ function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
   no = parseInt(no)
   document.getElementById("counter").innerHTML=no+1
   //console.log(document.getElementById("counter").innerHTML)
-
+  noiseTxt=-1
   // kártya placeholder div
   var d1 = document.createElement("div")
   d1.className = "box"  
@@ -292,8 +292,14 @@ function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
   s1.appendChild(document.createElement("br"))  
   var s1txt = document.createTextNode(`Period: ${per} yrs`)
   s1.appendChild(s1txt)
-  s1.appendChild(document.createElement("br"))  
-  var s1txt = document.createTextNode(`Noise: AR(${noise})`)
+  s1.appendChild(document.createElement("br"))
+  if (noise = 0) {
+    noiseTxt = 'white'
+  }
+  else if (noise = 1) {
+    noiseTxt = 'red' 
+  }
+  var s1txt = document.createTextNode(`Noise: ${noiseTxt}`)
   s1.appendChild(s1txt)
   d3.appendChild(s1) // input text hozzáadása az input div hez
 
@@ -306,12 +312,6 @@ function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
   var d4 = document.createElement("p")
   //d4.style = "padding-left: 5px"
 
-  // output string1
-  var s2 = document.createElement("p")
-  var s2txt = document.createTextNode("Treshold period: ...") 
-  s2.appendChild(s2txt)
-  //d4.appendChild(s2)
-
   //output string2
   var d5 = document.createElement("p")  
   var d5txt = document.createTextNode(out1)
@@ -322,8 +322,7 @@ function makeOutputNew(res, unc, msr, per, noise, out1, out2, data){
   d2.appendChild(h1)
   d2.appendChild(h2)
   d2.appendChild(d3)
-  d2.appendChild(h3)
-  //d2.appendChild(d4)
+  d2.appendChild(h3) 
   d2.appendChild(d5)
   d1.appendChild(d2)
   var element = document.getElementById("results")
