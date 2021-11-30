@@ -18,6 +18,6 @@ function cusp_mod(unc, msr, noise){
 		b = 0.9239105
 		period = calcPeriod(a,unc,b,msr)
 	}
-
+	period=Math.trunc(period)
 	return period
 }
