@@ -31,112 +31,65 @@
 	mindent eltüntetünk mobilnézetben
 	-->
 	<ul class="navigation">
-		<li class="cusp"><a href="index.html">CUSP Home</a></li>
-		<li><a href="https://paleoclimate2ka.hu/?lang=en">Paleoklíma 2ka Kutatócsoport</a></li>
-		<li><a href="https://www.climate-risk-analysis.com/">Climate Risk Analysis</a></li>
-		<li><a href="https://doi.org/10.1016/j.quascirev.2021.107294">Publication</a></li>
+		<li class="cusp"><a href="index.html">Title...</a></li>		
     <li class="has-submenu">
-      <a href="">Noise Models</a>
+      <a href="">menu1</a>
       <ul class="submenu">
-        <li><a href="whitenoise.html">Gaussian white noise</a></li>
-        <li><a href="rednoise.html">Gaussian red noise</a></li>
+        <li><a href="">submenu1</a></li>
+        <li><a href="">submenu1</a></li>
       </ul>
-    </li>		
+    </li>
+    <li class="has-submenu">
+      <a href="">menu2</a>
+      <ul class="submenu">
+        <li><a href="">submenu2</a></li>
+        <li><a href="">submenu2</a></li>
+      </ul>
+    </li>	
+    <li><a href="">menu3</a></li>
+    <li><a href="">Publication</a></li>
 	</ul>
 </nav>
 
 
 <div class="wrapper">
-	
+	  
 	<div class="intro">
 		<h1>Chronological Uncertainty & Spectral Peaks</h1>
-		<img src="images/logo_p2.png" alt="">
-    <img src="images/logo_ca.png" alt="">
-    <p>Assessment of the robustness of spectral peaks in proxy records with chronological uncertainty</p>
-		<p>Original publication describing the model: Hatvani, I.G., Tanos, P., Mudelsee, M. and Kern, Z., 2022. Robust periodic signals in proxy records with chronological uncertainty. Quaternary Science Reviews, in press doi:  <a href="https://doi.org/10.1016/j.quascirev.2021.107294">https://doi.org/10.1016/j.quascirev.2021.107294</a></p>
+    <a href="https://pastglobalchanges.org/science/wg/sisal/intro"><img src="images/PAGES_logo.png" alt=""></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis aliquam erat quis eleifend. Nulla vitae posuere mi. Mauris in placerat tellus. Aliquam condimentum mauris at lobortis finibus. Nam et sem lectus. Etiam ex sem, aliquam ultricies pulvinar non, lacinia eu orci. Praesent efficitur hendrerit efficitur. Ut volutpat, magna eget porta hendrerit, dui velit hendrerit arcu, id accumsan magna orci in neque. Nulla iaculis aliquam tristique.</p>
+		<p>Sed id ultrices nisl. Phasellus laoreet massa volutpat sapien ornare, a posuere magna lobortis. Vestibulum feugiat mattis metus a consectetur. Fusce pellentesque placerat dui, aliquet consectetur elit blandit in. Quisque ut consequat dui, id vestibulum est. Quisque quis tincidunt felis, sed imperdiet ligula. Mauris mi massa, sollicitudin ut nibh et, efficitur rhoncus lectus. Nulla ac lectus id elit tristique semper ac id nulla. Nullam et pellentesque elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla gravida id elit ut suscipit. Integer commodo velit suscipit sollicitudin varius. Sed varius, leo vel faucibus tincidunt, metus sapien scelerisque quam, ut auctor orci sem vel lectus. Sed vel enim eu lacus pharetra maximus pretium nec leo. Phasellus pharetra lectus non urna fermentum, sodales porttitor arcu feugiat. Aenean varius ante id venenatis accumsan.</p>
+    <p>Original publication: ...:  <a href="https://doi.org/">https://doi.org/</a></p>
 			
 	
     <h2>Usage</h2>
-  
-    <p>
-      Please provide the input parameters for the model to assess if the period sought for can indeed be robustly detected under the given chronological circumstances. Input the chronological uncertainty (Unc [time step]), mean sampling resolution (MSR [sample / time step]) and the period [time step] sought for. Please note that the values can either be in years (yrs) or 1000 years (kyrs), just make sure all the variables have the same measurement unit for the time steps. For further details on the underlying model and real-life examples, the user is referred to Sect. 6 of the original study, Hatvani et al. (2022) <a href="https://doi.org/10.1016/j.quascirev.2021.107294">Read more...</a>
-    </p>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam vel molestie ligula. Nulla ut varius sapien, in mattis velit. Etiam vehicula nunc sed risus rutrum fermentum. Fusce tincidunt ipsum eu turpis tincidunt interdum. Proin aliquet odio at elit euismod sollicitudin. Duis vitae porta dui. Curabitur dictum nulla a tempus tincidunt.</p>
+    <p>Please provide the list of the field names and filters...</p>
+    
  
     <h2>Input</h2>
-    <div class="box-wrapper">
+    
+    
+    <h3>1) Select the fields:</h3>
+    
       
-      <div class="box2">
-        <form name="noiseModel">
-          <h3>1) Select a noise model:</h3>
-          <div>
-            <input type="radio" id="white" name="noise" value="0">
-            <label for="white">Gaussian white noise</label>
-          </div>
-          <div>
-            <input type="radio" id="red" name="noise" value="1" checked>
-            <label for="red">Gaussian red noise</label>
-          </div>      
-        </form>
-      </div>
 
-      <div class="box2">
-        <h3>2) Select a timestep:</h3>
-        <form name="timestepSelector">
-          <div>
-            <input type="radio" id="yrs" name="timestep" value="" checked>
-            <label for="yrs">yrs</label>
-          </div>              
-          <div>
-            <input type="radio" id="kyrs" name="timestep" value="">
-            <label for="kyrs">kyrs</label>
-          </div>
-        </form>       
-      </div>
-      
-      
-      <div class="box2">
-        <h3>3) Select unit of mean sampling resolution:</h3>
-        <div>
-          <input type="radio" id="timePerSample" name="optionsRadios2" value="1" checked>
-          <label for="timePerSample">timestep/sample</label>
-        </div>
-        <div>
-          <input type="radio" id="samplePerTime" name="optionsRadios2" value="0" disabled>
-          <label for="samplePerTime">sample/timestep</label>
-        </div>
-      </div>
-      
-    </div>
 
-    <h3>4) Enter the input values:</h3>
-    <div>
-      <label for="uncTextBox">Chronological uncertainty:</label>
-      <input type="text" id="uncTextBox" placeholder="Unc">
-    </div>
-    <div>
-      <label for="windowTextBox">Mean sampling resolution:</label>
-      <input type="text" id="windowTextBox" placeholder="MSR"> 
-    </div>
-    <div>
-      <label for="periodTextBox">Period:</label>
-      <input type="text" id="periodTextBox" placeholder="Period">        
-    </div>
-    <br>
+    <h3>2) Filters:</h3>
+
+      
     <button class="btn" onclick="runMod()">Submit</button>
     <button class="btn" onclick="clearOutput()">Clear</button>
-    <br>
-    <h2>Output</h2>
-    <div class="row" id="results">
-    </div>	  
-  </div>	
+  </div>  	
 
-  <div id="counter" style="display:none">1</div>
+    
 
   
 </div>
+</div>
 <footer>
   <div class="footer-box">
-    <p>© 2021 2ka Paleoklíma Lendület & Climate Risk Analysis Mudelsee. All Rights Reserved.</p>
+    <p>© 2022 All Rights Reserved.</p>
   </div>
   <div class="footer-box">
     <p>Powered by Tanos</p>

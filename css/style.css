@@ -12,7 +12,7 @@ body {
 	margin: 0
 }
 img {
-	max-width: 100%
+	max-width: 300px
 }
 
 /*
@@ -33,7 +33,7 @@ dokumentáció:
 https://www.w3schools.com/css/css_positioning.asp
 */
 nav {
-	background: #0c2c0d;
+	background: #1c1c1c;
 	position: sticky;
 	top: 0
 }
@@ -64,14 +64,14 @@ nav a:hover {
 */
 .navigation li:first-child a{
 	padding: 1.2rem 1rem;
-	color: rgba(255,255,255,1)
+	/*color: rgba(255,255,255,1)*/
 }
 
 footer {
 	display:flex;
 	flex-flow: row wrap;
 	justify-content:space-between;
-	background: #0c2c0d;
+	background: #1c1c1c;
 	color: white;	
 }
 
@@ -79,13 +79,18 @@ footer p{
 	margin: 0;
 	padding:.3rem 1rem;
 }
-
+footer a{
+	text-decoration: none;
+	color: rgba(255,255,255,.8);
+}
 
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 95%
 }
+
+
 .intro {
 	line-height: 1.7;
 	font-size: 1.2rem;
@@ -167,7 +172,7 @@ ha a kijelző mérete legfeljebb 480px széles
 .btn {
 	display: inline-block;
 	padding: .5rem 1rem;
-	background: #0c2c0de5;
+	background: #fd7e14;
 	color: white;
 	text-decoration: none;
 	border-radius: 5px
@@ -261,7 +266,7 @@ nyomtatási nézetre vonatkozó CSS beállítások
 
 .navigation .has-submenu li:first-child a{
 	padding: 10px 20px;
-	color: rgba(255,255,255,.8);
+	/*color: rgba(255,255,255,.8);*/
 }
 
 /*
@@ -300,11 +305,13 @@ az almenüt abszolút pozicionáljuk
 	display: none
 }
 .navigation .submenu a {
-	background: #0c2c0d;
+	background: #f7931e;
+	color:#1c1c1c;
 	padding: 10px 20px;
 	width: 220px;
-	color: rgba(255,255,255,.8);
+	/*color: rgba(255,255,255,.8);*/
 }
 .navigation .submenu a:hover {
-	background: black
+	background: black;
+	color: rgba(255,255,255,.8);
 }
