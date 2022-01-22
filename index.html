@@ -6,10 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/listbox.css">
 	<link rel="icon" type="image/png" href="pics/favicon.png">
   <script type="text/javascript" src="script/mod.js"></script>
   <script type="text/javascript" src="script/cusp.js"></script>
   <script type="text/javascript" src="script/helper.js"></script>  
+  <script type="text/javascript" src="script/listbox.js"></script>  
+  <script type="text/javascript" src="script/toolbar.js"></script>
+  <script type="text/javascript" src="script/listbox-rearrangeable.js"></script>
 </head>
 <body>
 
@@ -55,7 +59,7 @@
 <div class="wrapper">
 	  
 	<div class="intro">
-		<h1>Chronological Uncertainty & Spectral Peaks</h1>
+		<h1>Title...</h1>
     <a href="https://pastglobalchanges.org/science/wg/sisal/intro"><img src="images/PAGES_logo.png" alt=""></a>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis aliquam erat quis eleifend. Nulla vitae posuere mi. Mauris in placerat tellus. Aliquam condimentum mauris at lobortis finibus. Nam et sem lectus. Etiam ex sem, aliquam ultricies pulvinar non, lacinia eu orci. Praesent efficitur hendrerit efficitur. Ut volutpat, magna eget porta hendrerit, dui velit hendrerit arcu, id accumsan magna orci in neque. Nulla iaculis aliquam tristique.</p>
 		<p>Sed id ultrices nisl. Phasellus laoreet massa volutpat sapien ornare, a posuere magna lobortis. Vestibulum feugiat mattis metus a consectetur. Fusce pellentesque placerat dui, aliquet consectetur elit blandit in. Quisque ut consequat dui, id vestibulum est. Quisque quis tincidunt felis, sed imperdiet ligula. Mauris mi massa, sollicitudin ut nibh et, efficitur rhoncus lectus. Nulla ac lectus id elit tristique semper ac id nulla. Nullam et pellentesque elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla gravida id elit ut suscipit. Integer commodo velit suscipit sollicitudin varius. Sed varius, leo vel faucibus tincidunt, metus sapien scelerisque quam, ut auctor orci sem vel lectus. Sed vel enim eu lacus pharetra maximus pretium nec leo. Phasellus pharetra lectus non urna fermentum, sodales porttitor arcu feugiat. Aenean varius ante id venenatis accumsan.</p>
@@ -71,7 +75,96 @@
     
     
     <h3>1) Select the fields:</h3>
-    
+    <p>
+      Site metadata
+    </p>
+    <div class="listbox-area">
+      <div class="left-area">
+        <span id="ms_av_l">
+          Available fieldset:
+        </span>
+        <ul id="ms_imp_list"
+            tabindex="0"
+            role="listbox"
+            aria-labelledby="ms_av_l"
+            aria-multiselectable="true">
+          <li id="ms_opt1"
+              role="option"
+              aria-selected="false">
+            site_name
+          </li>
+          <li id="ms_opt2"
+              role="option"
+              aria-selected="false">
+              latitude
+          </li>
+          <li id="ms_opt3"
+              role="option"
+              aria-selected="false">
+              longitude
+          </li>
+          <li id="ms_opt4"
+              role="option"
+              aria-selected="false">
+              elevation
+          </li>
+          <li id="ms_opt5"
+              role="option"
+              aria-selected="false">
+              geology
+          </li>
+          <li id="ms_opt6"
+              role="option"
+              aria-selected="false">
+              rock_age
+          </li>
+          <li id="ms_opt7"
+              role="option"
+              aria-selected="false">
+              monitoring
+          </li>
+          <li id="ms_opt8"
+              role="option"
+              aria-selected="false">
+            Food synthesizer
+          </li>
+          <li id="ms_opt9"
+              role="option"
+              aria-selected="false">
+            Advanced waste recycling system
+          </li>          
+          
+        </ul>
+        <button id="ex2-add"
+                class="move-right-btn"
+                aria-keyshortcuts="Alt+ArrowRight Enter"
+                aria-disabled="true">
+          Add
+        </button>
+      </div>
+      <div class="right-area">
+        <span id="ms_ch_l">
+          Selected fieldset:
+        </span>
+        <ul id="ms_unimp_list"
+            tabindex="0"
+            role="listbox"
+            aria-labelledby="ms_ch_l"
+            aria-activedescendant=""
+            aria-multiselectable="true">
+        </ul>
+        <button id="ex2-delete"
+                class="move-left-btn"
+                aria-keyshortcuts="Alt+ArrowLeft Delete"
+                aria-disabled="true">
+          Remove
+        </button>
+      </div>
+      <div class="offscreen">
+        Last change:
+        <span aria-live="polite" id="ms_live_region"></span>
+      </div>
+    </div>
       
 
 
