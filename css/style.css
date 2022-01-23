@@ -119,6 +119,11 @@ footer a{
 	font-size: 1.5rem;
 	margin: 0 0 0 0
 }
+.intro h4 {
+	font-weight: 300;
+	font-size: 1rem;
+	margin: 0 0 0 0
+}
 
 /*
 ha a kijelző mérete legfeljebb 800px széles
@@ -314,4 +319,44 @@ az almenüt abszolút pozicionáljuk
 .navigation .submenu a:hover {
 	background: black;
 	color: rgba(255,255,255,.8);
+}
+
+#tables {    
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 20px 20px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"fb_site_meta fb_entity_meta fb_references"
+		"fb_dating_information fb_lamina_age_vs_depth fb_sample_data";
+}	
+#fb_site_meta { grid-area: fb_site_meta; }
+#fb_entity_meta { grid-area: fb_entity_meta; }
+#fb_references { grid-area: fb_references; }
+#fb_dating_information { grid-area: fb_dating_information; }
+#fb_lamina_age_vs_depth { grid-area: fb_lamina_age_vs_depth; }
+#fb_sample_data { grid-area: fb_sample_data; }
+
+#filters {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr ; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "fb_filter_r1_c1 fb_filter_r1_c2";    
+	line-height: 1.7;
+	font-size: 1rem;
+}
+#fb_filter_r1_c1{grid-area:fb_filter_r1_c1}
+#fb_filter_r1_c2{grid-area:fb_filter_r1_c2}
+
+
+#filters select{
+	width:200px;
+}
+
+#fields select {
+	width: 250px;
+	height: 160px;
 }

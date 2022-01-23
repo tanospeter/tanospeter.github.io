@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>CUSP - 2ka Paleoclimate</title>
+	<title>SISLA</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/listbox.css">
-	<link rel="icon" type="image/png" href="pics/favicon.png">
+	<link rel="icon" type="image/png" href="images/fav.png">
   <script type="text/javascript" src="script/mod.js"></script>
   <script type="text/javascript" src="script/cusp.js"></script>
   <script type="text/javascript" src="script/helper.js"></script>  
@@ -70,264 +70,240 @@
     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam vel molestie ligula. Nulla ut varius sapien, in mattis velit. Etiam vehicula nunc sed risus rutrum fermentum. Fusce tincidunt ipsum eu turpis tincidunt interdum. Proin aliquet odio at elit euismod sollicitudin. Duis vitae porta dui. Curabitur dictum nulla a tempus tincidunt.</p>
     <p>Please provide the list of the field names and filters...</p>
     
- 
-    <h2>Input</h2>
+    <div id="fields">
+      <h2>Input</h2>
     
     
     <h3>1) Select the fields:</h3>
     <p>
       
     </p>
-    <div class="listbox-area">
-      <div class="left-area">
-        <span id="ms_av_l">
-          Site metadata - Available fieldset:
-        </span>
-        <ul id="ms_imp_list"
-            tabindex="0"
-            role="listbox"
-            aria-labelledby="ms_av_l"
-            aria-multiselectable="true">
-          <li id="ms_opt1"
-              role="option"
-              aria-selected="false">
-            site_name
-          </li>
-          <li id="ms_opt2"
-              role="option"
-              aria-selected="false">
-              latitude
-          </li>
-          <li id="ms_opt3"
-              role="option"
-              aria-selected="false">
-              longitude
-          </li>
-          <li id="ms_opt4"
-              role="option"
-              aria-selected="false">
-              elevation
-          </li>
-          <li id="ms_opt5"
-              role="option"
-              aria-selected="false">
-              geology
-          </li>
-          <li id="ms_opt6"
-              role="option"
-              aria-selected="false">
-              rock_age
-          </li>
-          <li id="ms_opt7"
-              role="option"
-              aria-selected="false">
-              monitoring
-          </li>
-          <li id="ms_opt8"
-              role="option"
-              aria-selected="false">
-            Food synthesizer
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-            Advanced waste recycling system
-          </li>          
-          
-        </ul>
-        <button id="ex2-add"
-                class="move-right-btn"
-                aria-keyshortcuts="Alt+ArrowRight Enter"
-                aria-disabled="true">
-          Add
-        </button>
+    <div id ="tables">
+      <div id="fb_site_meta">
+        <h4>Site metadata</h4>
+        <select id="lb_site_meta" name="list_box_name[]" size="number_of_options" multiple="multiple">
+          <option value="option1">site_name</option>
+          <option value="option2">latitude</option>
+          <option value="Option3">longitude</option>
+          <option value="option1">elevation</option>
+          <option value="option2">rock_age</option>
+          <option value="Option3">monitoring</option>      
+        </select>
       </div>
-      <div class="right-area">
-        <span id="ms_ch_l">
-          Selected fieldset:
-        </span>
-        <ul id="ms_unimp_list"
-            tabindex="0"
-            role="listbox"
-            aria-labelledby="ms_ch_l"
-            aria-activedescendant=""
-            aria-multiselectable="true">
-        </ul>
-        <button id="ex2-delete"
-                class="move-left-btn"
-                aria-keyshortcuts="Alt+ArrowLeft Delete"
-                aria-disabled="true">
-          Remove
-        </button>
+      <div id="fb_entity_meta">
+        <h4>Entity metadata</h4>
+        <select id="lb_entity_meta" name="list_box_name[]" size="number_of_options" multiple="multiple">
+          <option value="option1">entity_name</option>
+          <option value="option2">one_and_only</option>
+          <option value="Option3">entity_status_info</option>
+          <option value="option1">entity_status_notes</option>
+          <option value="option2">depth_ref</option>
+          <option value="option2">cover_thickness</option>
+          <option value="Option3">speleothem_type</option>
+          <option value="Option3">drip_type</option>
+          <option value="Option3">d13C</option>
+          <option value="Option3">d18O</option>
+          <option value="Option3">d18O_water_equilibrium</option>
+          <option value="Option3">trace_elements</option>
+          <option value="Option3">organics</option>
+          <option value="Option3">fluid_inclusions</option>
+          <option value="Option3">mineralogy_petrology_fabric</option>
+          <option value="Option3">clumped_isotopes</option>
+          <option value="Option3">noble_gas_temperatures</option>
+          <option value="Option3">C14</option>
+          <option value="Option3">ODL</option>
+          <option value="Option3">Mg_Ca</option>
+          <option value="Option3">contact</option>
+          <option value="Option3">data_DOI_URL</option>      
+        </select>
       </div>
-      <div class="offscreen">
-        Last change:
-        <span aria-live="polite" id="ms_live_region"></span>
+      <div id="fb_references">
+        <h4> References</h4>
+        <select id="lb_references" name="list_box_name[]" size="number_of_options" multiple="multiple">
+          <option value="option1">entity_name</option>
+          <option value="option2">citation</option>
+          <option value="Option3">publication_DOI</option>            
+        </select>
+      </div>	
+      <div id="fb_dating_information">
+        <h4>Dating information</h4>
+        <select id="lb_dating_information" name="list_box_name[]" size="number_of_options" multiple="multiple">
+          <option value="option1">entity_name</option>
+          <option value="option2">date_type</option>
+          <option value="Option3">depth_dating</option>
+          <option value="option1">dating_thickness</option>
+          <option value="option2">lab_num</option>
+          <option value="Option3">material_dated</option>
+          <option value="Option3">min_weight</option>
+          <option value="Option3">max_weight</option>
+          <option value="Option3">uncorr_age</option>
+          <option value="Option3">uncorr_age_uncert_pos</option>
+          <option value="Option3">uncorr_age_uncert_neg</option>
+          <option value="Option3">14C_correction</option>
+          <option value="Option3">calib_used</option>
+          <option value="Option3">date_used</option>
+          <option value="Option3">238U_content</option>
+          <option value="Option3">238U_uncertainty</option>
+          <option value="Option3">232Th_content</option>
+          <option value="Option3">232Th_uncertainty</option>
+          <option value="Option3">230Th_content</option>
+          <option value="Option3">230Th_uncertainty</option>
+          <option value="Option3">230Th_232Th_ratio</option>   
+          <option value="Option3">230Th_232Th_ratio_uncertainty</option>  
+          <option value="Option3">230Th_238U_activity</option>  
+          <option value="Option3">230Th_238U_activity_uncertainty</option>  
+          <option value="Option3">234U_238U_activity</option>  
+          <option value="Option3">234U_238U_activity_uncertainty</option>  
+          <option value="Option3">decay_constant</option>  
+          <option value="Option3">ini_230Th_232Th_ratio</option>  
+          <option value="Option3">ini_230Th_232Th_ratio_uncertainty</option> 
+          <option value="Option3">corr_age</option> 
+          <option value="Option3">corr_age_uncert_pos</option>  
+          <option value="Option3">corr_age_uncert_neg</option> 
+          <option value="Option3">modern_reference</option> 
+          <option value="Option3">chem_year</option>    
+        </select>
+      </div>																	
+      <div id="fb_lamina_age_vs_depth">
+        <h4>Lamina age vs depth</h4>
+        <select id="lb_lamina_age_vs_depth" name="list_box_name[]" size="number_of_options" multiple="multiple">
+          <option value="option1">entity_name</option>
+          <option value="option2">depth_lam</option>
+          <option value="Option3">lam_thickness</option>
+          <option value="option1">lam_age</option>
+          <option value="option2">lam_age_uncert_pos</option>
+          <option value="option1">lam_age_uncert_neg</option>
+          <option value="option1">modern_reference</option>                  
+        </select>
+      </div>
+      <div id="fb_sample_data">
+        <h4>Sample data</h4>
+        <select id="lb_sample_data" name="list_box_name[]" size="number_of_options" multiple="multiple">
+          <option value="option1">entity_name</option>
+          <option value="option2">depth_sample</option>
+          <option value="Option3">hiatus</option>
+          <option value="option1">gap</option>
+          <option value="option2">mineralogy</option> 
+          <option value="option1">arag_corr</option>
+          <option value="option2">interp_age</option>
+          <option value="Option3">interp_age_uncert_pos</option>
+          <option value="option1">interp_age_uncert_neg</option>
+          <option value="option2">age_model_type</option>           
+          <option value="option1">modern_reference</option>
+          <option value="option2">ann_lam_check</option>
+          <option value="Option3">dep_rate_check</option>
+          <option value="option1">sample_thickness</option>
+          <option value="option2">d13C_measurement</option>
+          <option value="option1">d13C_precision</option>
+          <option value="option2">d18O_measurement</option>
+          <option value="Option3">d18O_precision</option>
+          <option value="option1">iso_std</option>      
+        </select>
       </div>
     </div>
+    
+
+    
     <p>
       
     </p>
-    <div class="listbox-area">
-      <div class="left-area">
-        <span id="ms_av_l">
-          Entity metadata - Available fieldset:
-        </span>
-        <ul id="ms_imp_list"
-            tabindex="0"
-            role="listbox"
-            aria-labelledby="ms_av_l"
-            aria-multiselectable="true">
-          <li id="ms_opt1"
-              role="option"
-              aria-selected="false">
-              entity_name
-          </li>
-          <li id="ms_opt2"
-              role="option"
-              aria-selected="false">
-              one_and_only
-          </li>
-          <li id="ms_opt3"
-              role="option"
-              aria-selected="false">
-              entity_status_info
-          </li>
-          <li id="ms_opt4"
-              role="option"
-              aria-selected="false">
-              entity_status_notes
-          </li>
-          <li id="ms_opt5"
-              role="option"
-              aria-selected="false">
-              depth_ref
-          </li>
-          <li id="ms_opt6"
-              role="option"
-              aria-selected="false">
-              cover_thickness
-          </li>
-          <li id="ms_opt7"
-              role="option"
-              aria-selected="false">
-              distance_entrance
-          </li>
-          <li id="ms_opt8"
-              role="option"
-              aria-selected="false">
-              speleothem_type
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              drip_type
-          </li>          
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              d13C
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              d18O
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              d18O_water_equilibrium
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              trace_elements
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              organics
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              fluid_inclusions
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              mineralogy_petrology_fabric
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              clumped_isotopes
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              noble_gas_temperatures
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              C14
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              ODL
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              Mg_Ca
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              contact
-          </li>
-          <li id="ms_opt9"
-              role="option"
-              aria-selected="false">
-              data_DOI_URL
-          </li>
-        </ul>
-        <button id="ex2-add"
-                class="move-right-btn"
-                aria-keyshortcuts="Alt+ArrowRight Enter"
-                aria-disabled="true">
-          Add
-        </button>
-      </div>
-      <div class="right-area">
-        <span id="ms_ch_l">
-          Selected fieldset:
-        </span>
-        <ul id="ms_unimp_list"
-            tabindex="0"
-            role="listbox"
-            aria-labelledby="ms_ch_l"
-            aria-activedescendant=""
-            aria-multiselectable="true">
-        </ul>
-        <button id="ex2-delete"
-                class="move-left-btn"
-                aria-keyshortcuts="Alt+ArrowLeft Delete"
-                aria-disabled="true">
-          Remove
-        </button>
-      </div>
-      <div class="offscreen">
-        Last change:
-        <span aria-live="polite" id="ms_live_region"></span>
+    </div>
+    <hr>
+    
+    <h3>2) Filters:</h3>
+    <div id="filters_of_site_metadata">
+      <h4>Filters of site metadata</h4>
+      <div id="filters">      
+        <div id="fb_filter_r1_c1">
+          <div>
+            <label for="f_site_name">Site name:</label>
+            <input type="text" id="f_site_name", placeholder="">
+          </div>
+          <div>
+            <label for="lat_from">Lat from:</label>
+            <input type="text" id="lat_from", placeholder="">        
+            <label for="lat_from">Lat to:</label>
+            <input type="text" id="lat_to", placeholder="">
+          </div>
+          <div>
+            <label for="lat_from">Lon from:</label>
+            <input type="text" id="lat_from", placeholder="">        
+            <label for="lat_from">Lon to:</label>
+            <input type="text" id="lat_to", placeholder="">
+          </div>
+          <div>
+            <label for="f_elevation">Elevation:</label>
+            <input type="text" id="f_elevation", placeholder="">
+            <label for="f_monitoring">Monitoring:</label>
+            <input type="text" id="f_monitoring", placeholder="">
+          </div>
+
+        </div>
+        <div id="fb_filter_r1_c2">
+          <label for="select_geology">Geology:</label>
+          <select name="pets" id="select_geology">
+            <option value=""></option>
+            <option value="dog">limestone</option>
+            <option value="cat">dolomite</option>
+            <option value="hamster">magmatic</option>
+            <option value="parrot">marble</option>
+            <option value="spider">granite</option>
+            <option value="goldfish">mixed</option>
+            <option value="goldfish">unknown</option>
+            <option value="goldfish">other</option>
+          </select>
+          <label for="select_rock_age">Rock age:</label>
+          <select name="pets" id="select_rock_age">
+            <option value=""></option>
+            <option value="">Holocene</option>
+            <option value="">Pleistocene</option>
+            <option value="">Pliocene</option>
+            <option value="">Miocene</option>
+            <option value="">Oligocene</option>
+            <option value="">Eocene</option>
+            <option value="">Palaeocene</option>
+            <option value="">Cretaceous</option>
+            <option value="">Jurassic</option>
+            <option value="">Triassic</option>
+            <option value="">Permian</option>
+            <option value="">Carboniferous</option>
+            <option value="">Devonian</option>
+            <option value="">Silurian</option>
+            <option value="">Ordovician</option>
+            <option value="">Cambrian</option>
+            <option value="">Precambrian</option>
+            <option value="">unknown</option>
+          </select>
+  
+        </div>
+        
+        
       </div>
     </div>
+
+    <div id="filters_of_entity_metadata">
+      <h4>Filters of entity metadata</h4>
+      <div id="filters">      
+        <div id="fb_filter_r1_c1">
+          <div>
+            <label for="f_entity_name">Entity name:</label>
+            <input type="text" id="f_entity_name", placeholder="">
+          </div>
+          <div>
+            <label for="f_one_and_only">One and only:</label>
+            <input type="text" id="f_one_and_only", placeholder="">
+          </div>          
+
+        
+        
+        
+      </div>
+    </div>
+    
+    
       
 
-    <h3>2) Filters:</h3>
-
+    
       
     <button class="btn" onclick="runMod()">Submit</button>
     <button class="btn" onclick="clearOutput()">Clear</button>
