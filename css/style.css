@@ -14,6 +14,9 @@ body {
 img {
 	max-width: 300px
 }
+#eer {
+	max-width: 100%;
+}
 
 /*
 1rem = a html elemen megadott betűméret

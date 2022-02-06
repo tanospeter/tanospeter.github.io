@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SISLA</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/listbox.css">
+	<link rel="icon" type="image/png" href="images/fav.png">
+  <script type="text/javascript" src="script/mod.js"></script>
+  <script type="text/javascript" src="script/cusp.js"></script>
+  <script type="text/javascript" src="script/helper.js"></script>  
+  <script type="text/javascript" src="script/listbox.js"></script>  
+  <script type="text/javascript" src="script/toolbar.js"></script>
+  <script type="text/javascript" src="script/listbox-rearrangeable.js"></script>
+</head>
+<body>
+
+<nav>
+	<!--
+	a mobilos navigációt kapcsolgató csekbox
+	a csekboxot eltüntetjük
+	a három <span> tag a hamburger ikont fogja megvalósítani
+	-->
+	<label for="mobile-menu" class="mobile-menu-button">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<input type="checkbox" id="mobile-menu">
+
+	<!--
+	a navigáció elemei, melyből az első <li> kivételével
+	mindent eltüntetünk mobilnézetben
+	-->
+	<ul class="navigation">
+		<li class="cusp"><a href="index.html">Title...</a></li>		
+    <li class="has-submenu">
+      <a href="">menu1</a>
+      <ul class="submenu">
+        <li><a href="">submenu1</a></li>
+        <li><a href="">submenu1</a></li>
+      </ul>
+    </li>
+    <li class="has-submenu">
+      <a href="">menu2</a>
+      <ul class="submenu">
+        <li><a href="">submenu2</a></li>
+        <li><a href="">submenu2</a></li>
+      </ul>
+    </li>	
+    <li><a href="">Database EER diagram</a></li>
+    <li><a href="">Publication</a></li>
+	</ul>
+</nav>
+
+
+<div class="wrapper">
+	
+  
+  <img id="eer" src="images/sisalv2_eer.png" alt="">
+
+    
+
+  
+
+</div>
+<footer>
+  <div class="footer-box">
+    <p>© 2022 All Rights Reserved.</p>
+  </div>
+  <div class="footer-box">
+    <p>Powered by Tanos</p>
+  </div>
+  
+</footer>
+
+</body>
+</html>
