@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>SISLA</title>
+	<title>SISAL</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
@@ -46,21 +46,46 @@
         <li><a href="">submenu2</a></li>
       </ul>
     </li>	
-    <li><a href="">Database EER diagram</a></li>
+    <li><a href="sisalv2_eer.html">Database EER diagram</a></li>
     <li><a href="">Publication</a></li>
 	</ul>
 </nav>
 
 
 <div class="wrapper">
-	
+	  
+	<div class="intro">
+		<h2>SISAL query page</h2>
+    <h3>STEP 1</h3>
+    <h4>Filters:</h4>
+    <div>
+      <label for="f_site_name">Site name:</label>
+      <input type="text" id="f_site_name", value="Bittoo">
+    </div>
+    <div>
+      <label for="lat_from">Lat from:</label>
+      <input type="text" id="lat_from", placeholder="", value="30">        
+      <label for="lat_to">Lat to:</label>
+      <input type="text" id="lat_to", placeholder="", value="31">
+    </div>
+    <div>
+      <label for="lat_from">Lon from:</label>
+      <input type="text" id="lat_from", placeholder="", value="77">        
+      <label for="lat_ot">Lon to:</label>
+      <input type="text" id="lat_to", placeholder="", value="78">
+    </div>
+    <div>
+      <label for="int_age_from">Iterp_age from:</label>
+      <input type="text" id="int_age_from", value="800">        
+      <label for="int_age_ot">Iterp_age to:</label>
+      <input type="text" id="int_age_to", value="300000">
+    </div>
+    <button class="btn" onclick="">Clear</button>
+    <button class="btn" onclick="">Get entity list</button>
+    <a href="query_s2.html">next</a>
+  </div>  
   
-  <img id="eer" src="images/sisalv2_eer.png" alt="">
-
-    
-
-  
-
+</div>
 </div>
 <footer>
   <div class="footer-box">
