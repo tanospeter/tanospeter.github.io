@@ -7,6 +7,8 @@
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/listbox.css">
+  <link rel="stylesheet" type="text/css" href="css/bt5/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bt5/bootstrap-grid.css">
 	<link rel="icon" type="image/png" href="images/fav.png">
   <script type="text/javascript" src="script/mod.js"></script>
   <script type="text/javascript" src="script/cusp.js"></script>
@@ -14,6 +16,7 @@
   <script type="text/javascript" src="script/listbox.js"></script>  
   <script type="text/javascript" src="script/toolbar.js"></script>
   <script type="text/javascript" src="script/listbox-rearrangeable.js"></script>
+  
 </head>
 <body>
 
@@ -52,423 +55,589 @@
 </nav>
 
 
-<div class="wrapper">
-	  
-	<div>
+<div class="wrapper">	  
+	<div class="intro">
 		<h2>SISAL query page</h2>
     <h3>STEP 2</h3>
     <h4>Filters:</h4>
-    <div>
-      <p>Site name: Bittoo</p>
-      <p>Latitude between: 30 and 31</p>
-      <p>Longitude between: 77 and 78</p>
-      <p>Interp_age between: 800 and 300000</p>      
+  </div>
+  <div class="container">
+    <div class="control-area">    
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="tanospeter@gmail.com" disabled readonly>
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" value="Bittoo" disabled readonly>
+        <label for="floatingInput">Site name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="30" disabled readonly>
+              <label for="floatingInputGrid">Latitude from</label>
+            </div>        
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="31" disabled readonly>
+              <label for="floatingInputGrid">Latitude to</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating mb-3">
+        <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="77" disabled readonly>
+              <label for="floatingInputGrid">Longitude from</label>
+            </div>        
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="78" disabled readonly>
+              <label for="floatingInputGrid">Longitude to</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating mb-3">
+        <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="800" disabled readonly>
+              <label for="floatingInputGrid">Iterp_age from</label>
+            </div>        
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="300000" disabled readonly>
+              <label for="floatingInputGrid">Iterp_age to</label>
+            </div>
+          </div>
+        </div>
+      </div>      
     </div>
-    <div>
-      <table border="1">
-        <tbody><tr>
-        <td bgcolor="silver" class="medium">site_id</td>
-        <td bgcolor="silver" class="medium">entity_id</td>
-        <td bgcolor="silver" class="medium">entity_name</td>
-        <td bgcolor="silver" class="medium">entity_status</td>
-        <td bgcolor="silver" class="medium">corresponding_current</td>
-        <td bgcolor="silver" class="medium">depth_ref</td>
-        <td bgcolor="silver" class="medium">cover_thickness</td>
-        <td bgcolor="silver" class="medium">distance_entrance</td>
-        <td bgcolor="silver" class="medium">speleothem_type</td>
-        <td bgcolor="silver" class="medium">drip_type</td>
-        <td bgcolor="silver" class="medium">d13C</td>
-        <td bgcolor="silver" class="medium">d18O</td>
-        <td bgcolor="silver" class="medium">d18O_water_equilibrium</td>
-        <td bgcolor="silver" class="medium">trace_elements</td>
-        <td bgcolor="silver" class="medium">organics</td>
-        <td bgcolor="silver" class="medium">fluid_inclusions</td>
-        <td bgcolor="silver" class="medium">mineralogy_petrology_fabric</td>
-        <td bgcolor="silver" class="medium">clumped_isotopes</td>
-        <td bgcolor="silver" class="medium">noble_gas_temperatures</td>
-        <td bgcolor="silver" class="medium">C14</td>
-        <td bgcolor="silver" class="medium">ODL</td>
-        <td bgcolor="silver" class="medium">Mg_Ca</td>
-        <td bgcolor="silver" class="medium">contact</td>
-        <td bgcolor="silver" class="medium">data_DOI_URL</td>
-        <td bgcolor="silver" class="medium">site_id</td>
-        <td bgcolor="silver" class="medium">site_name</td>
-        <td bgcolor="silver" class="medium">latitude</td>
-        <td bgcolor="silver" class="medium">longitude</td>
-        <td bgcolor="silver" class="medium">elevation</td>
-        <td bgcolor="silver" class="medium">geology</td>
-        <td bgcolor="silver" class="medium">rock_age</td>
-        <td bgcolor="silver" class="medium">monitoring</td>
-        <td bgcolor="silver" class="medium">interp_age</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">BT-1</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">12209.1918</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">2</td>
-        <td class="normal" valign="top">BT-2.1</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">24957</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">3</td>
-        <td class="normal" valign="top">BT-2.2</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">43675</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">4</td>
-        <td class="normal" valign="top">BT-2.3</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">58310</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">5</td>
-        <td class="normal" valign="top">BT-2.4</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">179279.9152</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">6</td>
-        <td class="normal" valign="top">BT-2.5</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">227021</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">7</td>
-        <td class="normal" valign="top">BT-4</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">271150</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">8</td>
-        <td class="normal" valign="top">BT-6</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">199872</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">9</td>
-        <td class="normal" valign="top">BT-8</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">874</td>
-        </tr>
-        
-        <tr>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">10</td>
-        <td class="normal" valign="top">BT-9</td>
-        <td class="normal" valign="top">current</td>
-        <td class="normal" valign="top">NULL</td>
-        <td class="normal" valign="top">from top</td>
-        <td class="normal" valign="top">30</td>
-        <td class="normal" valign="top">32.4</td>
-        <td class="normal" valign="top">stalagmite</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">unknown</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">no</td>
-        <td class="normal" valign="top">Hai Cheng</td>
-        <td class="normal" valign="top">https://www.ncdc.noaa.gov/paleo/study/20449</td>
-        <td class="normal" valign="top">1</td>
-        <td class="normal" valign="top">Bittoo cave</td>
-        <td class="normal" valign="top">30.7903</td>
-        <td class="normal" valign="top">77.7764</td>
-        <td class="normal" valign="top">3000.0</td>
-        <td class="normal" valign="top">limestone</td>
-        <td class="normal" valign="top">Pleistocene</td>
-        <td class="normal" valign="top">yes</td>
-        <td class="normal" valign="top">243063</td>
-        </tr>
-        </tbody></table>
-    </div>   
-    <button class="btn" onclick="">Clear</button>
-    <button class="btn" onclick="">Get entity list</button>
-  </div>  
+  </div>
+
+  <div class="mb-3" id="loading" style="visibility:visible">    
+    <div class="row g-3">
+      <div class="col-md"></div>
+      <div class="col-md">
+        <div class="d-flex align-items-center">
+          <strong>Loading...</strong>
+          <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="col-md"></div>       
+    </div>
+  </div>
+
+
+  <div class="mb-3" id="meta-table" style="visibility: hidden;">
+    <div class="container">
+      <table class="table table-striped table-sm align-middle">
+        <thead>
+          <tr>
+            <th scope="col">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </th>
+            <th scope="col">site_id</th>
+            <th scope="col">entity_id</th>
+            <th scope="col">entity_name</th>
+            <th scope="col">entity_status</th>
+            <th scope="col">corresponding_current</th>
+            <th scope="col">depth_ref</th>
+            <th scope="col">cover_thickness</th>
+            <th scope="col">distance_entrance</th>
+            <th scope="col">speleothem_type</th>
+            <th scope="col">drip_type</th>
+            <th scope="col">d13C</th>
+            <th scope="col">d18O</th>
+            <th scope="col">d18O_water_equilibrium</th>
+            <th scope="col">trace_elements</th>
+            <th scope="col">organics</th>
+            <th scope="col">fluid_inclusions</th>
+            <th scope="col">mineralogy_petrology_fabric</th>
+            <th scope="col">clumped_isotopes</th>
+            <th scope="col">noble_gas_temperatures</th>
+            <th scope="col">C14</th>
+            <th scope="col">ODL</th>
+            <th scope="col">Mg_Ca</th>
+            <th scope="col">contact</th>
+            <th scope="col">data_DOI_URL</th>
+            <th scope="col">site_id</th>
+            <th scope="col">site_name</th>
+            <th scope="col">latitude</th>
+            <th scope="col">longitude</th>
+            <th scope="col">elevation</th>
+            <th scope="col">geology</th>
+            <th scope="col">rock_age</th>
+            <th scope="col">monitoring</th>
+            <th scope="col">interp_age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>BT-1</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>12209.1918</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>2</td>
+            <td>BT-2.1</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>24957</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>3</td>
+            <td>BT-2.2</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>43675</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>4</td>
+            <td>BT-2.3</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>58310</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>5</td>
+            <td>BT-2.4</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>179279.9152</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>6</td>
+            <td>BT-2.5</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>227021</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>7</td>
+            <td>BT-4</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>271150</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>8</td>
+            <td>BT-6</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>199872</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>9</td>
+            <td>BT-8</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>874</td>
+          </tr>
+          
+          <tr>
+            <td>            
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>            
+            </td>
+            <td>1</td>
+            <td>10</td>
+            <td>BT-9</td>
+            <td>current</td>
+            <td>NULL</td>
+            <td>from top</td>
+            <td>30</td>
+            <td>32.4</td>
+            <td>stalagmite</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>unknown</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>Hai Cheng</td>
+            <td>https://www.ncdc.noaa.gov/paleo/study/20449</td>
+            <td>1</td>
+            <td>Bittoo cave</td>
+            <td>30.7903</td>
+            <td>77.7764</td>
+            <td>3000.0</td>
+            <td>limestone</td>
+            <td>Pleistocene</td>
+            <td>yes</td>
+            <td>243063</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   
+  
+  
+    <div class="control-area">    
+      <div class="mb-3">
+        <div class="row g-2">
+          <div class="col-md">
+            <select class="form-select" multiple aria-label="multiple select example" size="15">
+              <option selected>SISAL chronology</option>
+              <option value="1">lin_interp_age</option>
+              <option value="2">lin_interp_age_uncert_pos</option>
+              <option value="3">lin_interp_age_uncert_neg</option>
+              <option value="4">lin_reg_age</option>
+              <option value="5">lin_reg_age_uncert_pos</option>
+              <option value="6">lin_reg_age_uncert_neg</option>
+              <option value="7">Bchron_age</option>
+              <option value="8">Bchron_age_uncert_pos</option>
+              <option value="9">Bchron_age_uncert_neg</option>
+              <option value="10">Bacon_age</option>
+              <option value="11">Bacon_age_uncert_pos</option>
+              <option value="12">Bacon_age_uncert_neg</option>
+              <option value="13">OxCal_age</option>
+              <option value="14">OxCal_age_uncert_pos</option>
+              <option value="15">OxCal_age_uncert_neg</option>
+              <option value="16">copRa_age</option>
+              <option value="17">copRa_age_uncert_pos</option>
+              <option value="18">copRa_age_uncert_neg</option>
+              <option value="19">StalAge_age</option>
+              <option value="20">StalAge_age_uncert_pos</option>
+              <option value="21">StalAge_age_uncert_neg</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <div class="mb-3">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="lin_interp_age_uncert_pos" checked>
+                <label class="form-check-label" for="lin_interp_age_uncert_pos">lin_interp_age_uncert_pos</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="lin_interp_age_uncert_neg" checked>
+                <label class="form-check-label" for="lin_interp_age_uncert_neg">lin_interp_age_uncert_neg</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="d13C" checked>
+                <label class="form-check-label" for="d13C">d13C</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="d18O" checked>
+                <label class="form-check-label" for="d18O">d18O</label>
+              </div>
+            </div>     
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a class="btn btn-outline-primary" href="query_s1.html" role="button">Back</a>
+          <a class="btn btn-outline-primary" href="data/step1_meta.csv" role="button">Download meta data</a>      
+          <a class="btn btn-primary" href="data/step2_sisal_chrono.csv" role="button">Download Sisal Chronology</a>
+        </div>
+      </div> 
+    </div>
+  </div>  
 </div>
 </div>
+
 <footer>
   <div class="footer-box">
     <p>© 2022 All Rights Reserved.</p>
@@ -478,6 +647,6 @@
   </div>
   
 </footer>
-
+<script type="text/javascript" src="script/loading.js"></script>
 </body>
 </html>

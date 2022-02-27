@@ -18,6 +18,17 @@ img {
 	max-width: 100%;
 }
 
+.control-area {
+	padding: 1.5rem;
+	margin-right: 0;
+	margin-left: 0;
+	border-width: 10px;
+	border-color: var(--bs-gray-800);
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+	background-color: var(--bs-body-bg);
+}
+
 /*
 1rem = a html elemen megadott betűméret
 ha nincs megadva, akkor általában 16px az alapértelmezett értéke
@@ -38,7 +49,8 @@ https://www.w3schools.com/css/css_positioning.asp
 nav {
 	background: #1c1c1c;
 	position: sticky;
-	top: 0
+	top: 0;
+	z-index: 1
 }
 nav ul {
 	margin: 0;
@@ -106,7 +118,7 @@ p {
 .intro {
 	line-height: 1.7;
 	font-size: 1.2rem;
-	margin: 5rem 0
+	margin: 0
 }
 .intro p {
 	margin: 0 0 1rem 0
@@ -186,6 +198,7 @@ ha a kijelző mérete legfeljebb 480px széles
 	margin: 0;
 	font-size: 1.2rem
 }
+/*
 .btn {
 	display: inline-block;
 	padding: .5rem 1rem;
@@ -194,6 +207,7 @@ ha a kijelző mérete legfeljebb 480px széles
 	text-decoration: none;
 	border-radius: 5px
 }
+*/
 
 
 

@@ -7,6 +7,8 @@
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/listbox.css">
+  <link rel="stylesheet" type="text/css" href="css/bt5/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bt5/bootstrap-grid.css">
 	<link rel="icon" type="image/png" href="images/fav.png">
   <script type="text/javascript" src="script/mod.js"></script>
   <script type="text/javascript" src="script/cusp.js"></script>
@@ -58,6 +60,74 @@
 		<h2>SISAL query page</h2>
     <h3>STEP 1</h3>
     <h4>Filters:</h4>
+  </div>  
+  
+  <div class="control-area">    
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="tanospeter@gmail.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" value="Bittoo">
+      <label for="floatingInput">Site name</label>
+    </div>
+    <div class="form-floating mb-3">
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="30">
+            <label for="floatingInputGrid">Latitude from</label>
+          </div>        
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="31">
+            <label for="floatingInputGrid">Latitude to</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-floating mb-3">
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="77">
+            <label for="floatingInputGrid">Longitude from</label>
+          </div>        
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="78">
+            <label for="floatingInputGrid">Longitude to</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-floating mb-3">
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="800">
+            <label for="floatingInputGrid">Iterp_age from</label>
+          </div>        
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="300000">
+            <label for="floatingInputGrid">Iterp_age to</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn btn-outline-primary" type="submit">Clear</button>
+      <a class="btn btn-primary" href="query_s2.html" role="button">Get entity list</a>
+    </div>
+  </div> 
+
+
+<!--
     <div>
       <label for="f_site_name">Site name:</label>
       <input type="text" id="f_site_name", value="Bittoo">
@@ -83,7 +153,11 @@
     <button class="btn" onclick="">Clear</button>
     <button class="btn" onclick="">Get entity list</button>
     <a href="query_s2.html">next</a>
-  </div>  
+-->
+  
+    
+    
+   
   
 </div>
 </div>
