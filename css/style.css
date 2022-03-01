@@ -72,7 +72,8 @@ nav a {
 	padding: 1.2rem 1rem
 }
 nav a:hover {
-	background: rgba(0,0,0,.1)
+	background: rgba(0,0,0,.1);
+	color:#fd7e14;
 }
 /*
 .navigation-ön belüli első <li> kiszelektálása
@@ -147,6 +148,17 @@ p {
 	font-weight: 300;
 	font-size: 1rem;
 	margin: 0 0 0 0
+}
+.cite-box{
+	width: 87%;
+	padding: 12px;
+	border: 1px solid;
+	border-radius: 8px;
+	margin: 5px;
+	font-weight: 300;
+	font-size: smaller;
+	background: #f3f3f3;
+	border-color: gray;
 }
 
 /*

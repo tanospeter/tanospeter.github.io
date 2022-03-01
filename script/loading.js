@@ -1,4 +1,4 @@
-setTimeout(loading, 1700)
+setTimeout(loading, 700)
 
 function loading(){
   document.getElementById("loading").style.visibility = "hidden";

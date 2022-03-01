@@ -3016,7 +3016,7 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #1c1c1c;
+  background-color: #4b2d61;
   border-color: #fd7e14;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -3255,8 +3255,8 @@ textarea.form-control-lg {
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #1c1c1c;
-  border-color: #1c1c1c;
+  background-color: #4b2d61;
+  border-color: #fd7e14;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
